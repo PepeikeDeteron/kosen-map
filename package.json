@@ -11,7 +11,9 @@
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "test-all": "npx yarn-run-all lint check-types format lint:fix"
+    "test-all": "npx yarn-run-all lint check-types format lint:fix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o build"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -21,11 +23,19 @@
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@react-theming/storybook-addon": "^1.1.1",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-docs": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
     "@types/node": "^16.10.1",
     "@types/react": "^17.0.24",
     "@types/styled-components": "^5.1.14",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.2",
