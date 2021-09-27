@@ -14,7 +14,9 @@
     "test": "jest",
     "test-all": "npx yarn-run-all lint check-types format lint:fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o build"
+    "build-storybook": "build-storybook -o build",
+    "storyshots": "jest --config ./jest.storyshots.config.js",
+    "update-storyshots": "jest --config ./jest.storyshots.config.js --updateSnapshot"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -30,10 +32,12 @@
     "@storybook/addon-docs": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.8",
     "@storybook/addon-links": "^6.3.8",
+    "@storybook/addon-storyshots": "^6.3.8",
     "@storybook/react": "^6.3.8",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.10.1",
     "@types/react": "^17.0.24",
+    "@types/storybook__addon-storyshots": "^5.3.1",
     "@types/styled-components": "^5.1.14",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
