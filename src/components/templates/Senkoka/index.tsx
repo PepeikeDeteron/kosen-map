@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
-import SwitchButton from '@/components/molecules/SwitchButton'
 
 type Props = {
   className?: string
@@ -18,22 +17,12 @@ const Component: React.VFC<Props> = (props) => {
       <h1 className="title">Map</h1>
 
       <body className="home">
-        <MapDisplay>トップページ用の校内案内図をここに表示</MapDisplay>
+        <MapDisplay>専攻科・教育棟の立体地図をここに表示</MapDisplay>
 
         <div className="button-list">
-          <SwitchButton
-            color="primary"
-            label="専攻科・教育棟"
-            onClick={() => router.push('/Senkoka')}
-          />
           <div className="home-button">
             <HomeButton onClick={() => router.push('/')} />
           </div>
-          <SwitchButton
-            color="secondary"
-            label="管理・教育棟"
-            onClick={() => router.push('/Kanri')}
-          />
         </div>
       </body>
     </div>
