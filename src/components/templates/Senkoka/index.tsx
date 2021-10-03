@@ -33,7 +33,6 @@ const Component: React.VFC<Props> = (props) => {
         </body>
       </div>
       <div>
-        {/* TODO: スタイリング修正 */}
         {isMobileScreen && (
           <h2>このページは、現在スマートフォンには対応しておりません。</h2>
         )}
