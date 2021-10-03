@@ -1,31 +1,44 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 
-type Props = {
-  className?: string
+type ContainerProps = {
+  isMobileScreen: boolean
 }
 
+type Props = {
+  className?: string
+} & ContainerProps
+
 const Component: React.VFC<Props> = (props) => {
-  const { className } = props
+  const { className, isMobileScreen } = props
   const router = useRouter()
 
   return (
-    <div className={className}>
-      <h1 className="title">Map</h1>
+    <>
+      <div className={className}>
+        <h2 className="title">Map</h2>
 
-      <body className="home">
-        <MapDisplay>専攻科・教育棟の立体地図をここに表示</MapDisplay>
+        <body className="home">
+          <MapDisplay>専攻科・教育棟の立体地図をここに表示</MapDisplay>
 
-        <div className="button-list">
-          <div className="home-button">
-            <HomeButton onClick={() => router.push('/')} />
+          <div className="button-list">
+            <div className="home-button">
+              <HomeButton onClick={() => router.push('/')} />
+            </div>
           </div>
-        </div>
-      </body>
-    </div>
+        </body>
+      </div>
+      <div>
+        {/* TODO: スタイリング修正 */}
+        {isMobileScreen && (
+          <h2>このページは、現在スマートフォンには対応しておりません。</h2>
+        )}
+      </div>
+    </>
   )
 }
 
@@ -35,22 +48,17 @@ const StyledComponent = styled(Component)`
 
   .title {
     font-family: Trebuchet MS, Courier New, Courier, sans-serif;
-    font-size: 5rem;
+    font-size: 8rem;
     letter-spacing: 1rem;
     color: #90a4ae;
     text-align: right;
     margin-right: 2rem;
-    margin-bottom: -10rem;
+    margin-bottom: -8rem;
     user-select: none;
   }
 
   .home {
-    padding-top: 6rem;
-
-    // タブレット
-    @media screen and (max-width: 1024px) {
-      padding-top: 18rem;
-    }
+    padding-top: 8rem;
   }
 
   .button-list {
@@ -62,10 +70,19 @@ const StyledComponent = styled(Component)`
   .home-button {
     padding: 0.5rem 4rem;
   }
+
+  // スマホ
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
 `
 
-const Container: React.VFC<Props> = (props) => {
-  return <StyledComponent {...props} />
+const Container: React.VFC<Partial<ContainerProps>> = () => {
+  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' })
+
+  const containerProps = { isMobileScreen }
+
+  return <StyledComponent {...{ ...containerProps }} />
 }
 
 export default Container
