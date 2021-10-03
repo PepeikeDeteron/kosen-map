@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/template/Kanri Default 1`] = `
+Array [
+  <div
+    className="Kanri__StyledComponent-sc-1qk46b7-0 iPEEHx"
+  >
+    <h2
+      className="title"
+    >
+      Map
+    </h2>
+    <body
+      className="home"
+    >
+      <div
+        className="css-1u3py3d"
+      >
+        <div
+          className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 paper css-1ps6pg7-MuiPaper-root"
+        >
+          管理・教育棟の立体地図をここに表示
+        </div>
+      </div>
+      <div
+        className="button-list"
+      >
+        <div
+          className="home-button"
+        >
+          <button
+            aria-label="ホームボタン"
+            className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y1cdmr-MuiButtonBase-root-MuiIconButton-root"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onContextMenu={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-i4bv87-MuiSvgIcon-root"
+              data-testid="HomeIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </body>
+  </div>,
+  <div />,
+]
+`;
