@@ -1,10 +1,10 @@
 import React, { ComponentProps } from 'react'
 import { Meta, Story } from '@storybook/react'
-import Button from '.'
+import SwitchButton from '.'
 
 export default {
-  title: 'components/molecules/Button',
-  components: Button,
+  title: 'components/molecules/SwitchButton',
+  components: SwitchButton,
   argTypes: {
     color: {
       control: 'color',
@@ -15,8 +15,8 @@ export default {
   },
 } as Meta
 
-const Template: Story<ComponentProps<typeof Button>> = (props) => (
-  <Button {...props} />
+const Template: Story<ComponentProps<typeof SwitchButton>> = (props) => (
+  <SwitchButton {...props} />
 )
 
 export const Default = Template.bind({})
