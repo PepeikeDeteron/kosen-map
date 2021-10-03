@@ -15,7 +15,7 @@ const Component: React.VFC<Props> = (props) => {
   const { className, ...restProps } = props
 
   return (
-    <IconButton className={className} {...restProps}>
+    <IconButton className={className} aria-label="ホームボタン" {...restProps}>
       <HomeIcon className="icon" />
     </IconButton>
   )
