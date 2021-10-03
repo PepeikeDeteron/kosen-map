@@ -1,16 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
+import Top from '@/components/templates/Home'
 
 const Home: React.VFC = () => {
   return (
     <>
       <Head>
-        <title>Hello World</title>
+        <title>一関高専Map｜校内案内図</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h1>yarn dev test</h1>
-      </div>
+
+      <Top />
     </>
   )
 }
