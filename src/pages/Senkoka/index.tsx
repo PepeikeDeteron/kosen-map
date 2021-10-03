@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import Template from '@/components/templates/Home'
+import Template from '@/components/templates/Senkoka'
 
-const Home: React.VFC = () => {
+const Senkoka: React.VFC = () => {
   return (
     <>
       <Head>
-        <title>一関高専Map｜校内案内図</title>
+        <title>一関高専Map｜専攻科・教育棟</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -15,4 +15,4 @@ const Home: React.VFC = () => {
   )
 }
 
-export default Home
+export default Senkoka

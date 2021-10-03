@@ -6,6 +6,7 @@ import { ColorProps } from '@/models/types'
 type ContainerProps = {
   color: ColorProps
   label: string
+  onClick: () => void
 }
 
 type Props = {
