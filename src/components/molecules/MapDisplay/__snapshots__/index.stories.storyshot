@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/molecules/MapDisplay Default 1`] = `
+<div
+  className="css-11z7ur7"
+>
+  <div
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 paper css-1ps6pg7-MuiPaper-root"
+  >
+    ここに地図を表示
+  </div>
+</div>
+`;
