@@ -2,6 +2,7 @@
 
 exports[`Storyshots components/molecules/HomeButton Default 1`] = `
 <button
+  aria-label="ホームボタン"
   className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y1cdmr-MuiButtonBase-root-MuiIconButton-root"
   disabled={false}
   onBlur={[Function]}
