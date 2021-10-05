@@ -5,11 +5,6 @@ Array [
   <div
     className="Home__StyledComponent-sc-1ojnorm-0 dwRIlR"
   >
-    <h2
-      className="title"
-    >
-      Map
-    </h2>
     <body
       className="home"
     >

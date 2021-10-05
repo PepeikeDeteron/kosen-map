@@ -3,13 +3,8 @@
 exports[`Storyshots components/templates/Kanri Default 1`] = `
 Array [
   <div
-    className="Kanri__StyledComponent-sc-1qk46b7-0 hXxXyH"
+    className="Kanri__StyledComponent-sc-1qk46b7-0 eRJibT"
   >
-    <h2
-      className="title"
-    >
-      Map
-    </h2>
     <body
       className="home"
     >

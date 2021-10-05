@@ -46,7 +46,7 @@ const StyledComponent = styled(Component)`
     font-family: Trebuchet MS, Courier New, Courier, sans-serif;
     font-size: 8rem;
     letter-spacing: 1rem;
-    color: #90a4ae;
+    color: #808080;
     text-align: right;
     margin-bottom: -8rem;
     user-select: none;

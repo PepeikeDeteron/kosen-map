@@ -3,13 +3,8 @@
 exports[`Storyshots components/templates/Senkoka Default 1`] = `
 Array [
   <div
-    className="Senkoka__StyledComponent-sc-1owotod-0 fkjpAL"
+    className="Senkoka__StyledComponent-sc-1owotod-0 fuDlUL"
   >
-    <h2
-      className="title"
-    >
-      Map
-    </h2>
     <body
       className="home"
     >
