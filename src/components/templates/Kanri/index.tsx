@@ -51,7 +51,6 @@ const StyledComponent = styled(Component)`
     letter-spacing: 1rem;
     color: #90a4ae;
     text-align: right;
-    margin-right: 2rem;
     margin-bottom: -8rem;
     user-select: none;
   }
