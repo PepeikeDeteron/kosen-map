@@ -22,27 +22,25 @@ const Component: React.VFC<Props> = (props) => {
   return (
     <>
       <div className={className}>
-        {/* <h2 className="title">Map</h2> */}
-
-        <body className="home">
+        <h2 className="title">Map</h2>
+        <div className="display">
           <MapDisplay>トップページ用の校内案内図をここに表示</MapDisplay>
-
-          <div className="button-list">
-            <SwitchButton
-              color="primary"
-              label="専攻科・教育棟"
-              onClick={() => router.push('/Senkoka')}
-            />
-            <div className="home-button">
-              <HomeButton onClick={() => router.push('/')} />
-            </div>
-            <SwitchButton
-              color="secondary"
-              label="管理・教育棟"
-              onClick={() => router.push('/Kanri')}
-            />
+        </div>
+        <div className="button-list">
+          <SwitchButton
+            color="primary"
+            label="専攻科・教育棟"
+            onClick={() => router.push('/Senkoka')}
+          />
+          <div className="home-button">
+            <HomeButton onClick={() => router.push('/')} />
           </div>
-        </body>
+          <SwitchButton
+            color="secondary"
+            label="管理・教育棟"
+            onClick={() => router.push('/Kanri')}
+          />
+        </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
     </>
@@ -50,21 +48,20 @@ const Component: React.VFC<Props> = (props) => {
 }
 
 const StyledComponent = styled(Component)`
-  margin: 0 auto;
-  text-align: center;
+  padding: 2rem 3vh;
 
   .title {
     font-family: Trebuchet MS, Courier New, Courier, sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
     letter-spacing: 1rem;
     color: #808080;
     text-align: right;
-    margin-bottom: -8rem;
+    padding-bottom: 1rem;
     user-select: none;
   }
 
-  .home {
-    padding-top: 8rem;
+  .display {
+    text-align: center;
   }
 
   .button-list {
