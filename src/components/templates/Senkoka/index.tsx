@@ -21,7 +21,7 @@ const Component: React.VFC<Props> = (props) => {
   return (
     <>
       <div className={className}>
-        <h2 className="title">Map</h2>
+        {/* <h2 className="title">Map</h2> */}
 
         <body className="home">
           <MapDisplay>専攻科・教育棟の立体地図をここに表示</MapDisplay>
