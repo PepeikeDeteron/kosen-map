@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react'
 import Senkoka from '.'
 
 export default {
-  title: 'components/template/Senkoka',
+  title: 'components/templates/Senkoka',
   components: Senkoka,
   argTypes: {},
 } as Meta

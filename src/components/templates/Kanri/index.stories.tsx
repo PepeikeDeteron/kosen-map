@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react'
 import Kanri from '.'
 
 export default {
-  title: 'components/template/Kanri',
+  title: 'components/templates/Kanri',
   components: Kanri,
   argTypes: {},
 } as Meta

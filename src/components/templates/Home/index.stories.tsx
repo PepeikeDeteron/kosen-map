@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react'
 import Home from '.'
 
 export default {
-  title: 'components/template/Home',
+  title: 'components/templates/Home',
   components: Home,
   argTypes: {},
 } as Meta
