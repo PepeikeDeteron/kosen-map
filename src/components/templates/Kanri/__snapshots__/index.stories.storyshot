@@ -3,10 +3,15 @@
 exports[`Storyshots components/templates/Kanri Default 1`] = `
 Array [
   <div
-    className="Kanri__StyledComponent-sc-1qk46b7-0 eRJibT"
+    className="Kanri__StyledComponent-sc-1qk46b7-0 lhvxzm"
   >
-    <body
-      className="home"
+    <h2
+      className="title"
+    >
+      Map
+    </h2>
+    <div
+      className="display"
     >
       <div
         className="css-1u3py3d"
@@ -17,47 +22,47 @@ Array [
           管理・教育棟の立体地図をここに表示
         </div>
       </div>
+    </div>
+    <div
+      className="button-list"
+    >
       <div
-        className="button-list"
+        className="home-button"
       >
-        <div
-          className="home-button"
+        <button
+          aria-label="ホームボタン"
+          className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y1cdmr-MuiButtonBase-root-MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
         >
-          <button
-            aria-label="ホームボタン"
-            className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y1cdmr-MuiButtonBase-root-MuiIconButton-root"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onContextMenu={[Function]}
-            onDragLeave={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            tabIndex={0}
-            type="button"
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="HomeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <svg
-              aria-hidden={true}
-              className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-i4bv87-MuiSvgIcon-root"
-              data-testid="HomeIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-              />
-            </svg>
-          </button>
-        </div>
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+        </button>
       </div>
-    </body>
+    </div>
   </div>,
   <div />,
 ]
