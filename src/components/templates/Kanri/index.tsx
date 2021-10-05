@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
+import Home404 from '@/components/templates/Home404'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -32,11 +33,7 @@ const Component: React.VFC<Props> = (props) => {
           </div>
         </body>
       </div>
-      <div>
-        {isMobileScreen && (
-          <h2>このページは、現在スマートフォンには対応しておりません。</h2>
-        )}
-      </div>
+      <div>{isMobileScreen && <Home404 />}</div>
     </>
   )
 }
