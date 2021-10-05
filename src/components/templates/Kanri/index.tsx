@@ -21,7 +21,7 @@ const Component: React.VFC<Props> = (props) => {
   return (
     <>
       <div className={className}>
-        <h2 className="title">Map</h2>
+        {/* <h2 className="title">Map</h2> */}
 
         <body className="home">
           <MapDisplay>管理・教育棟の立体地図をここに表示</MapDisplay>
@@ -46,7 +46,7 @@ const StyledComponent = styled(Component)`
     font-family: Trebuchet MS, Courier New, Courier, sans-serif;
     font-size: 8rem;
     letter-spacing: 1rem;
-    color: #90a4ae;
+    color: #808080;
     text-align: right;
     margin-bottom: -8rem;
     user-select: none;
