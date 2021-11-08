@@ -2,56 +2,52 @@ import React, { useEffect } from 'react'
 import * as THREE from 'three'
 
 const Model: React.VFC = () => {
-  // Three.js 動作確認
-  const createBox = () => {
-    // サイズを指定
-    const width = 960
-    const height = 540
+  const createModel = () => {
+    const width: any = document?.getElementById('map-display')?.clientWidth
+    const height: any = document?.getElementById('map-display')?.clientHeight
 
-    // レンダラを作成
     const renderer = new THREE.WebGLRenderer({
-      canvas: document.querySelector('#myCanvas') as HTMLCanvasElement,
+      canvas: document.querySelector('#draw-canvas') as HTMLCanvasElement,
     })
-
-    renderer.setPixelRatio(window.devicePixelRatio)
-    renderer.setSize(width, height)
-
-    // シーンを作成
     const scene = new THREE.Scene()
-
-    // カメラを作成
-    const camera = new THREE.PerspectiveCamera(45, width / height)
-
-    camera.position.set(0, 0, +1000)
+    const camera = new THREE.PerspectiveCamera(45, width / height, 1, 100000)
 
     // 箱を作成
     const geometry = new THREE.BoxGeometry(400, 400, 400)
     const material = new THREE.MeshNormalMaterial()
     const box = new THREE.Mesh(geometry, material)
 
-    scene.add(box)
-    tick()
-
-    // 毎フレーム毎に実行されるループイベント
-    function tick() {
+    const tick = () => {
       box.rotation.y += 0.01
       renderer.render(scene, camera)
 
-      // レンダリング
       requestAnimationFrame(tick)
     }
+
+    const onResize = () => {
+      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer.setSize(width, height)
+
+      camera.aspect = width / height
+      camera.updateProjectionMatrix()
+    }
+
+    window.addEventListener('draw-canvas', onResize)
+    camera.position.set(0, 0, +1000)
+    scene.add(box)
+    tick()
+    onResize()
   }
 
-  // didMount で描画しないと Cannot read property 'width' of null というエラーが出る
   useEffect(() => {
-    createBox()
+    createModel()
   }, [])
 
   return (
-    <>
-      <canvas id="myCanvas" />
-    </>
+    <body>
+      <canvas id="draw-canvas" />
+    </body>
   )
 }
 
-export default Model
+export default React.memo(Model)

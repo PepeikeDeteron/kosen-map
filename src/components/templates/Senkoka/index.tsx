@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 import Home404 from '@/components/templates/Home404'
+import ThreeTest from '@/data/3Dmap/Senkoka/model'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -23,7 +24,9 @@ const Component: React.VFC<Props> = (props) => {
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
-          <MapDisplay>専攻科・教育棟の立体地図をここに表示</MapDisplay>
+          <MapDisplay>
+            <ThreeTest />
+          </MapDisplay>
         </div>
         <div className="button-list">
           <div className="home-button">

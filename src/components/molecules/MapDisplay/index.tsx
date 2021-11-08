@@ -14,7 +14,7 @@ const Component: React.VFC<Props> = (props) => {
   const { className, children, ...restProps } = props
 
   return (
-    <div className={className}>
+    <div className={className} id="map-display">
       <Paper className={'paper'} {...restProps}>
         {children}
       </Paper>
