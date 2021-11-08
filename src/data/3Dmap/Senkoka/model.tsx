@@ -21,7 +21,7 @@ const Model: React.VFC = () => {
       requestAnimationFrame(tick)
     }
 
-    function onResize() {
+    const onResize = () => {
       const width: any = document?.getElementById('map-display')?.clientWidth
       const height: any = document?.getElementById('map-display')?.clientHeight
 
@@ -43,12 +43,12 @@ const Model: React.VFC = () => {
 
   useEffect(() => {
     createModel()
-  }, [createModel])
+  }, [])
 
   return (
-    <div id="canvas-wrapper">
+    <>
       <canvas id="canvas" />
-    </div>
+    </>
   )
 }
 
