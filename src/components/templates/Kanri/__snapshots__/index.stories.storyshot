@@ -3,7 +3,7 @@
 exports[`Storyshots components/templates/Kanri Default 1`] = `
 Array [
   <div
-    className="Kanri__StyledComponent-sc-1qk46b7-0 lhvxzm"
+    className="Kanri__StyledComponent-sc-1qk46b7-0 lkrcAR"
   >
     <h2
       className="title"
@@ -14,7 +14,7 @@ Array [
       className="display"
     >
       <div
-        className="css-1u3py3d"
+        className="css-i4w9sd"
         id="map-display"
       >
         <div

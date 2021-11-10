@@ -2,7 +2,7 @@
 
 exports[`Storyshots components/molecules/MapDisplay Default 1`] = `
 <div
-  className="css-1u3py3d"
+  className="css-i4w9sd"
   id="map-display"
 >
   <div
