@@ -40,9 +40,9 @@ const Model: React.VFC = () => {
         (object) => {
           const objects: THREE.Group[] = []
 
-          object.scale.set(120, 170, 150)
-          object.rotation.set(-50, -100, 0)
-          object.position.set(-300, -3000, 0)
+          object.scale.set(130, 180, 150)
+          object.rotation.set(0, -100, 0)
+          object.position.set(-300, -4000, 0)
 
           scene.add(object)
           objects.push(object)
