@@ -19,15 +19,7 @@ Array [
       >
         <div
           className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 paper css-1ps6pg7-MuiPaper-root"
-        >
-          <div
-            id="canvas-wrapper"
-          >
-            <canvas
-              id="canvas"
-            />
-          </div>
-        </div>
+        />
       </div>
     </div>
     <div
