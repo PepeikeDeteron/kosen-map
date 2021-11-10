@@ -6,6 +6,7 @@ import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 import SwitchButton from '@/components/molecules/SwitchButton'
 import Home404 from '@/components/templates/Home404'
+import { mobileMaxWidth } from '@/constants/common'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -75,7 +76,7 @@ const StyledComponent = styled(Component)`
   }
 
   // スマホ
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
 `

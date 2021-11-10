@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 import Home404 from '@/components/templates/Home404'
+import { mobileMaxWidth } from '@/constants/common'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -63,8 +64,7 @@ const StyledComponent = styled(Component)`
     padding: 0.5rem 4rem;
   }
 
-  // スマホ
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
 `

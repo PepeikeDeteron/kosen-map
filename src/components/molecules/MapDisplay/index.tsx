@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
 import { Paper } from '@mui/material'
+import { tabletMaxWidth } from '@/constants/common'
 
 type ContainerProps = {
   children: React.ReactChild
@@ -44,8 +45,7 @@ const StyledComponent = styled(Component)`
     left: 0;
   }
 
-  // タブレット
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: ${tabletMaxWidth}) {
     width: 90%;
   }
 `
