@@ -52,12 +52,12 @@ const Model: React.VFC = () => {
           const loader = document.getElementById('loader') as HTMLElement
           const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
 
-          if (progress !== 100) {
+          if (progress < 100) {
             loader.innerHTML = `Loading... ${progress}%`
           } else {
             setInterval(() => {
               loader.style.display = 'none'
-            }, 100)
+            }, 1000)
           }
         },
         // 読込失敗
