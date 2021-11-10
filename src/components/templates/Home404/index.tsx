@@ -12,9 +12,8 @@ const Component: React.VFC<Props> = (props) => {
   return (
     <div className={className}>
       <h2>
-        このページは、
-        <br />
-        現在スマートフォンには対応しておりません。
+        <p>このページは、</p>
+        <p>現在スマートフォンには対応しておりません。</p>
       </h2>
       <StyledNotFoundTopPage />
     </div>

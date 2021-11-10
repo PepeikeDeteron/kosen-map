@@ -75,7 +75,6 @@ const StyledComponent = styled(Component)`
     padding: 0.5rem 4rem;
   }
 
-  // スマホ
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }

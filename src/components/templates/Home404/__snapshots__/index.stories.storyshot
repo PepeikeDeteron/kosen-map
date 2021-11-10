@@ -5,9 +5,12 @@ exports[`Storyshots components/templates/Home404 Default 1`] = `
   className="Home404__StyledComponent-sc-jz3w88-1 jlOkts"
 >
   <h2>
-    このページは、
-    <br />
-    現在スマートフォンには対応しておりません。
+    <p>
+      このページは、
+    </p>
+    <p>
+      現在スマートフォンには対応しておりません。
+    </p>
   </h2>
   <svg
     className="Home404__StyledNotFoundTopPage-sc-jz3w88-0 dnFQuN"
