@@ -8,9 +8,10 @@ const Model: React.VFC = () => {
   const createModel = () => {
     const renderer = new THREE.WebGLRenderer({
       canvas: document.querySelector('#canvas') as HTMLCanvasElement,
+      alpha: true,
     })
     const scene = new THREE.Scene()
-    const camera = new THREE.PerspectiveCamera()
+    const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 100000)
     const light = new THREE.AmbientLight(0x666666, 2.5)
     const orbitControls = new OrbitControls(camera, renderer.domElement)
 
@@ -18,7 +19,7 @@ const Model: React.VFC = () => {
     const material = new THREE.MeshNormalMaterial()
     const mesh = new THREE.Mesh(geometry, material)
 
-    camera.position.set(0, 0, 1500)
+    camera.position.set(0, 0, 15000)
     orbitControls.enableDamping = true
     orbitControls.dampingFactor = 0.2
     scene.add(mesh)
@@ -39,9 +40,9 @@ const Model: React.VFC = () => {
         (object) => {
           const objects: THREE.Group[] = []
 
-          object.scale.set(115, 155, 145)
+          object.scale.set(120, 170, 150)
           object.rotation.set(-50, -100, 0)
-          object.position.set(-400, -2700, 0)
+          object.position.set(-300, -3000, 0)
 
           scene.add(object)
           objects.push(object)

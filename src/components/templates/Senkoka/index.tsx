@@ -15,7 +15,7 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const ThreeTestWithNoSSR = dynamic(() => import('@/data/3Dmap/Senkoka/model'), {
+const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka/model'), {
   ssr: false,
 })
 
@@ -29,7 +29,7 @@ const Component: React.VFC<Props> = (props) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            <ThreeTestWithNoSSR />
+            <SenkokaModel />
           </MapDisplay>
         </div>
         <div className="button-list">
