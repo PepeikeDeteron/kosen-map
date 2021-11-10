@@ -49,9 +49,16 @@ const Model: React.VFC = () => {
         },
         // 読込状況
         (xhr) => {
-          console.log(
-            `Three.js: ${Math.ceil((xhr.loaded / xhr.total) * 100)} % loaded`
-          )
+          const loader = document.getElementById('loader') as HTMLElement
+          const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
+
+          if (progress < 100) {
+            loader.innerHTML = `Loading... ${progress}%`
+          } else {
+            setInterval(() => {
+              loader.style.display = 'none'
+            }, 1000)
+          }
         },
         // 読込失敗
         (error) => {
@@ -90,6 +97,7 @@ const Model: React.VFC = () => {
 
   return (
     <>
+      <p id="loader">Loading... 0%</p>
       <canvas id="canvas" />
     </>
   )
