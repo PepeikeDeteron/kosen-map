@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import * as THREE from 'three'
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 const Model: React.VFC = () => {
   const createModel = () => {
@@ -8,14 +11,56 @@ const Model: React.VFC = () => {
     })
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera()
+    const light = new THREE.AmbientLight(0x666666, 2.5)
+    const orbitControls = new OrbitControls(camera, renderer.domElement)
 
-    // 箱を作成
-    const geometry = new THREE.BoxGeometry(400, 400, 400)
+    const geometry = new THREE.SphereGeometry(1)
     const material = new THREE.MeshNormalMaterial()
-    const box = new THREE.Mesh(geometry, material)
+    const mesh = new THREE.Mesh(geometry, material)
+
+    camera.position.set(0, 0, 1500)
+    orbitControls.enableDamping = true
+    orbitControls.dampingFactor = 0.2
+    scene.add(mesh)
+    scene.add(light)
+
+    const mtlLoader = new MTLLoader()
+    const objLoader = new OBJLoader()
+
+    mtlLoader.setPath('senkoka/')
+    mtlLoader.load('senkoka.mtl', (material) => {
+      material.preload()
+
+      objLoader.setMaterials(material)
+      objLoader.setPath('senkoka/')
+      objLoader.load(
+        'senkoka.obj',
+        // 読込処理
+        (object) => {
+          const objects: THREE.Group[] = []
+
+          object.scale.set(115, 155, 145)
+          object.rotation.set(-50, -100, 0)
+          object.position.set(-400, -2700, 0)
+
+          scene.add(object)
+          objects.push(object)
+        },
+        // 読込状況
+        (xhr) => {
+          console.log(
+            `Three.js: ${Math.ceil((xhr.loaded / xhr.total) * 100)} % loaded`
+          )
+        },
+        // 読込失敗
+        (error) => {
+          console.error(`Three.js: ${error}`)
+        }
+      )
+    })
 
     const tick = () => {
-      box.rotation.y += 0.01
+      mesh.rotation.y += 0.01
       renderer.render(scene, camera)
 
       requestAnimationFrame(tick)
@@ -33,12 +78,9 @@ const Model: React.VFC = () => {
       camera.updateProjectionMatrix()
     }
 
+    tick()
     onResize()
     window.addEventListener('resize', onResize, false)
-
-    camera.position.set(0, 0, +1000)
-    scene.add(box)
-    tick()
   }
 
   useEffect(() => {
