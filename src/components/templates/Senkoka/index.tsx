@@ -1,11 +1,11 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
+import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 import Home404 from '@/components/templates/Home404'
-import ThreeTest from '@/data/3Dmap/Senkoka/model'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -14,6 +14,10 @@ type ContainerProps = {
 type Props = {
   className?: string
 } & ContainerProps
+
+const ThreeTestWithNoSSR = dynamic(() => import('@/data/3Dmap/Senkoka/model'), {
+  ssr: false,
+})
 
 const Component: React.VFC<Props> = (props) => {
   const { className, isMobileScreen } = props
@@ -25,7 +29,7 @@ const Component: React.VFC<Props> = (props) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            <ThreeTest />
+            <ThreeTestWithNoSSR />
           </MapDisplay>
         </div>
         <div className="button-list">
