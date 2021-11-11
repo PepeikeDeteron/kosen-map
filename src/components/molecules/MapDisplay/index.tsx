@@ -43,6 +43,7 @@ const StyledComponent = styled(Component)`
     right: 0;
     bottom: 0;
     left: 0;
+    user-select: none;
   }
 
   @media screen and (max-width: ${tabletMaxWidth}) {
