@@ -15,14 +15,9 @@ const Model: React.VFC = () => {
     const light = new THREE.AmbientLight(0x666666, 2.5)
     const orbitControls = new OrbitControls(camera, renderer.domElement)
 
-    const geometry = new THREE.SphereGeometry(1)
-    const material = new THREE.MeshNormalMaterial()
-    const mesh = new THREE.Mesh(geometry, material)
-
     camera.position.set(0, 0, 15000)
     orbitControls.enableDamping = true
     orbitControls.dampingFactor = 0.2
-    scene.add(mesh)
     scene.add(light)
 
     const mtlLoader = new MTLLoader()
@@ -68,9 +63,7 @@ const Model: React.VFC = () => {
     })
 
     const tick = () => {
-      mesh.rotation.y += 0.01
       renderer.render(scene, camera)
-
       requestAnimationFrame(tick)
     }
 
