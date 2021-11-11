@@ -75,9 +75,9 @@ const Model: React.VFC = () => {
     }
 
     const onResize = () => {
-      const width = document?.getElementById('map-display')
+      const width = document.getElementById('map-display')
         ?.clientWidth as number
-      const height = document?.getElementById('map-display')
+      const height = document.getElementById('map-display')
         ?.clientHeight as number
 
       renderer.setPixelRatio(window.devicePixelRatio)
