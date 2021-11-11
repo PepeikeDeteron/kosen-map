@@ -11,7 +11,7 @@ const Model: React.VFC = () => {
       alpha: true,
     })
     const scene = new THREE.Scene()
-    const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 100000)
+    const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 18475)
     const light = new THREE.AmbientLight(0x666666, 2.5)
     const orbitControls = new OrbitControls(camera, renderer.domElement)
 
