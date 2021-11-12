@@ -4,7 +4,7 @@ import { Paper } from '@mui/material'
 import { tabletMaxWidth } from '@/constants/common'
 
 type ContainerProps = {
-  children: React.ReactChild
+  children: React.ReactNode
 }
 
 type Props = {
