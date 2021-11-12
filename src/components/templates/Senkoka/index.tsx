@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
 import dynamic from 'next/dynamic'
@@ -10,6 +10,8 @@ import { mobileMaxWidth } from '@/constants/common'
 
 type ContainerProps = {
   isMobileScreen: boolean
+  changeModel: boolean
+  onChangeModel: () => void
 }
 
 type Props = {
@@ -20,8 +22,15 @@ const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka/model'), {
   ssr: false,
 })
 
+const SenkokaSplitModel = dynamic(
+  () => import('@/data/3Dmap/SenkokaSplit/model'),
+  {
+    ssr: false,
+  }
+)
+
 const Component: React.VFC<Props> = (props) => {
-  const { className, isMobileScreen } = props
+  const { className, isMobileScreen, changeModel, onChangeModel } = props
   const router = useRouter()
 
   return (
@@ -30,13 +39,16 @@ const Component: React.VFC<Props> = (props) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            <SenkokaModel />
+            {changeModel ? <SenkokaSplitModel /> : <SenkokaModel />}
           </MapDisplay>
         </div>
         <div className="button-list">
           <div className="home-button">
             <HomeButton onClick={() => router.push('/')} />
           </div>
+          <button type="button" onClick={onChangeModel}>
+            {changeModel ? '全体表示モード' : '分割表示モード'}
+          </button>
         </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
@@ -77,9 +89,17 @@ const StyledComponent = styled(Component)`
 `
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
+  const [changeModel, setChangeModel] = useState(false)
+
+  const onChangeModel = () => setChangeModel(!changeModel)
+
   const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' })
 
-  const containerProps = { isMobileScreen }
+  const containerProps = {
+    isMobileScreen,
+    changeModel,
+    onChangeModel,
+  }
 
   return <StyledComponent {...{ ...containerProps }} />
 }
