@@ -11,7 +11,7 @@ const Model: React.VFC = () => {
       alpha: true,
     })
     const scene = new THREE.Scene()
-    const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 18745)
+    const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000)
     const light = new THREE.AmbientLight(0x666666, 2.5)
     const controls = new OrbitControls(camera, renderer.domElement)
 
@@ -169,7 +169,7 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = []
 
-    guide.position.y = -99999 // 初期値
+    guide.position.y = -999999 // 初期値
     guides.push(guide)
     scene.add(guide)
 
