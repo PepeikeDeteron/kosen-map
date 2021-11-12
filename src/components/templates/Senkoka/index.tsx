@@ -19,16 +19,13 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka/model'), {
+const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka'), {
   ssr: false,
 })
 
-const SenkokaSplitModel = dynamic(
-  () => import('@/data/3Dmap/SenkokaSplit/model'),
-  {
-    ssr: false,
-  }
-)
+const SenkokaSplitModel = dynamic(() => import('@/data/3Dmap/SenkokaSplit'), {
+  ssr: false,
+})
 
 const Component: React.VFC<Props> = (props) => {
   const { className, isMobileScreen, changeModel, onChangeModel } = props
