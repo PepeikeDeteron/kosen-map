@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
+import SwitchButton from '@/components/molecules/SwitchButton'
 import Home404 from '@/components/templates/Home404'
 import { mobileMaxWidth } from '@/constants/common'
 
@@ -46,9 +47,11 @@ const Component: React.VFC<Props> = (props) => {
           <div className="home-button">
             <HomeButton onClick={() => router.push('/')} />
           </div>
-          <button type="button" onClick={onChangeModel}>
-            {changeModel ? '全体表示モード' : '分割表示モード'}
-          </button>
+          <SwitchButton
+            color="primary"
+            label={changeModel ? '全体表示モード' : '分割表示モード'}
+            onClick={onChangeModel}
+          />
         </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
