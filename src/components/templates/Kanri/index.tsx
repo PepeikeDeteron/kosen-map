@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
-import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
@@ -16,13 +15,6 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const SenkokaSplitModel = dynamic(
-  () => import('@/data/3Dmap/SenkokaSplit/model'),
-  {
-    ssr: false,
-  }
-)
-
 const Component: React.VFC<Props> = (props) => {
   const { className, isMobileScreen } = props
   const router = useRouter()
@@ -32,10 +24,7 @@ const Component: React.VFC<Props> = (props) => {
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
-          {/* 仮配置 */}
-          <MapDisplay>
-            <SenkokaSplitModel />
-          </MapDisplay>
+          <MapDisplay>管理・教育棟のデータをここに表示</MapDisplay>
         </div>
         <div className="button-list">
           <div className="home-button">
