@@ -61,6 +61,12 @@ Array [
           </svg>
         </button>
       </div>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        分割表示モード
+      </button>
     </div>
   </div>,
   <div />,
