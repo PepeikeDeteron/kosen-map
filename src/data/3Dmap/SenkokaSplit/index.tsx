@@ -291,6 +291,38 @@ const Model: React.VFC = () => {
     guide1.position.set(1900, -2600, 1200)
   }
 
+  // 専-301 1-1
+  const senkoka301 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, -650, 1200)
+  }
+
+  // 専-302 1-2
+  const senkoka302 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, -650, -1200)
+  }
+
+  // 専-303 1-3
+  const senkoka303 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, -650, -1200)
+  }
+
+  // 専-304 1-4
+  const senkoka304 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, -650, 1200)
+  }
+
   useEffect(() => {
     createModel()
   }, [])
@@ -333,6 +365,20 @@ const Model: React.VFC = () => {
         </button>
         <button type="button" onClick={senkoka205}>
           ゼミ室3
+        </button>
+      </span>
+      <span>
+        <button type="button" onClick={senkoka301}>
+          1年1組
+        </button>
+        <button type="button" onClick={senkoka302}>
+          1年2組
+        </button>
+        <button type="button" onClick={senkoka303}>
+          1年3組
+        </button>
+        <button type="button" onClick={senkoka304}>
+          1年4組
         </button>
       </span>
     </>
