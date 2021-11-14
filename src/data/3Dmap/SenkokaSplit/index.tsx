@@ -355,6 +355,38 @@ const Model: React.VFC = () => {
     guide1.position.set(1900, 1400, 1200)
   }
 
+  // 専-501 4C
+  const senkoka501 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, 3400, 1200)
+  }
+
+  // 専-502 5C
+  const senkoka502 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, 3400, -1200)
+  }
+
+  // 専-503 5E
+  const senkoka503 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, 3400, -1200)
+  }
+
+  // 専-504 5J
+  const senkoka504 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, 3400, 1200)
+  }
+
   useEffect(() => {
     createModel()
   }, [])
@@ -425,6 +457,20 @@ const Model: React.VFC = () => {
         </button>
         <button type="button" onClick={senkoka404}>
           2年E組
+        </button>
+      </span>
+      <span>
+        <button type="button" onClick={senkoka501}>
+          4年C組
+        </button>
+        <button type="button" onClick={senkoka502}>
+          5年C組
+        </button>
+        <button type="button" onClick={senkoka503}>
+          5年E組
+        </button>
+        <button type="button" onClick={senkoka504}>
+          5年J組
         </button>
       </span>
     </>
