@@ -251,6 +251,46 @@ const Model: React.VFC = () => {
     guide1.position.set(1900, -4550, 1200)
   }
 
+  // 専-201 ゼミ室1
+  const senkoka201 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, -2600, 1200)
+  }
+
+  // 専-202 ゼミ室2
+  const senkoka202 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, -2600, -1200)
+  }
+
+  // 専-203 教官室1
+  const senkoka203 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(1270, -2600, -1200)
+  }
+
+  // 専-204 教官室2
+  const senkoka204 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(2520, -2600, -1200)
+  }
+
+  // 専-205 ゼミ室3
+  const senkoka205 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, -2600, 1200)
+  }
+
   useEffect(() => {
     createModel()
   }, [])
@@ -258,24 +298,43 @@ const Model: React.VFC = () => {
   return (
     <>
       <canvas id="canvas" />
-      <button type="button" onClick={senkoka101}>
-        講義室1
-      </button>
-      <button type="button" onClick={senkoka102}>
-        コンピューター室
-      </button>
-      <button type="button" onClick={senkoka103}>
-        生産工学実験室
-      </button>
-      <button type="button" onClick={senkoka104}>
-        物質化学工学実験室
-      </button>
-      <button type="button" onClick={senkoka105}>
-        機器測定室
-      </button>
-      <button type="button" onClick={senkoka106}>
-        講義室2
-      </button>
+      <span>
+        <button type="button" onClick={senkoka101}>
+          講義室1
+        </button>
+        <button type="button" onClick={senkoka102}>
+          コンピューター室
+        </button>
+        <button type="button" onClick={senkoka103}>
+          生産工学実験室
+        </button>
+        <button type="button" onClick={senkoka104}>
+          物質化学工学実験室
+        </button>
+        <button type="button" onClick={senkoka105}>
+          機器測定室
+        </button>
+        <button type="button" onClick={senkoka106}>
+          講義室2
+        </button>
+      </span>
+      <span>
+        <button type="button" onClick={senkoka201}>
+          ゼミ室1
+        </button>
+        <button type="button" onClick={senkoka202}>
+          ゼミ室2
+        </button>
+        <button type="button" onClick={senkoka203}>
+          教官室1
+        </button>
+        <button type="button" onClick={senkoka204}>
+          教官室2
+        </button>
+        <button type="button" onClick={senkoka205}>
+          ゼミ室3
+        </button>
+      </span>
     </>
   )
 }
