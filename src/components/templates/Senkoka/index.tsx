@@ -37,7 +37,7 @@ const Component: React.VFC<Props> = (props) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            {changeModel ? <SenkokaSplitModel /> : <SenkokaModel />}
+            {changeModel ? <SenkokaModel /> : <SenkokaSplitModel />}
           </MapDisplay>
         </div>
         <div className="button-list">
@@ -46,7 +46,7 @@ const Component: React.VFC<Props> = (props) => {
           </div>
           <SwitchButton
             color="primary"
-            label={changeModel ? '全体表示モード' : '分割表示モード'}
+            label={changeModel ? '分割表示モード' : '全体表示モード'}
             onClick={onChangeModel}
           />
         </div>

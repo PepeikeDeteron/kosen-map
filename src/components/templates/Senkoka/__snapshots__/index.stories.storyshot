@@ -80,7 +80,7 @@ Array [
         tabIndex={0}
         type="button"
       >
-        分割表示モード
+        全体表示モード
       </button>
     </div>
   </div>,
