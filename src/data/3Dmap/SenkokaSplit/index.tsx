@@ -169,18 +169,21 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = []
 
-    guide.position.y = -999999 // 初期値
-    guides.push(guide)
-    scene.add(guide)
+    guide1.position.y = -999999 // 初期値
+    guide2.position.y = -999999
+    guides.push(guide1, guide2)
+    scene.add(guide1, guide2)
 
     tick()
     onResize()
     window.addEventListener('resize', onResize, false)
   }
 
-  // 特定の箇所を光らせるためのガイド
-  const guide = new THREE.Mesh(
-    new THREE.BoxGeometry(7000, 1000, 4500),
+  // 特定の箇所を光らせるためのガイド ---------------------------------
+
+  // 講義室・ゼミ室・教室
+  const guide1 = new THREE.Mesh(
+    new THREE.BoxGeometry(2500, 1000, 2500),
     new THREE.MeshBasicMaterial({
       color: 0xee476e,
       transparent: true,
@@ -188,12 +191,65 @@ const Model: React.VFC = () => {
     })
   )
 
-  // ガイドを配置する位置
-  const senkoka1F = () => (guide.position.y = -4550)
-  const senkoka2F = () => (guide.position.y = -2600)
-  const senkoka3F = () => (guide.position.y = -650)
-  const senkoka4F = () => (guide.position.y = 1400)
-  const senkoka5F = () => (guide.position.y = 3400)
+  // コンピューター室・物質化学工学実験室・機器測定室・生産工学実験室・教官室
+  const guide2 = new THREE.Mesh(
+    new THREE.BoxGeometry(1250, 1000, 2500),
+    new THREE.MeshBasicMaterial({
+      color: 0xee476e,
+      transparent: true,
+      opacity: 0.5,
+    })
+  )
+
+  // ガイドを配置する位置 -------------------------------------------
+
+  // 専-101 講義室1
+  const senkoka101 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(-1900, -4550, 1200)
+  }
+
+  // 専-102 コンピューター室
+  const senkoka102 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(-2520, -4550, -1200)
+  }
+
+  // 専-103 生産工学実験室
+  const senkoka103 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(-1270, -4550, -1200)
+  }
+
+  // 専-104 物質化学工学実験室
+  const senkoka104 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(1270, -4550, -1200)
+  }
+
+  // 専-105 機器測定室
+  const senkoka105 = () => {
+    guide1.visible = false
+    guide2.visible = true
+
+    guide2.position.set(2520, -4550, -1200)
+  }
+
+  // 専-106 講義室2
+  const senkoka106 = () => {
+    guide1.visible = true
+    guide2.visible = false
+
+    guide1.position.set(1900, -4550, 1200)
+  }
 
   useEffect(() => {
     createModel()
@@ -202,20 +258,23 @@ const Model: React.VFC = () => {
   return (
     <>
       <canvas id="canvas" />
-      <button type="button" onClick={senkoka1F}>
-        1F
+      <button type="button" onClick={senkoka101}>
+        講義室1
       </button>
-      <button type="button" onClick={senkoka2F}>
-        2F
+      <button type="button" onClick={senkoka102}>
+        コンピューター室
       </button>
-      <button type="button" onClick={senkoka3F}>
-        3F
+      <button type="button" onClick={senkoka103}>
+        生産工学実験室
       </button>
-      <button type="button" onClick={senkoka4F}>
-        4F
+      <button type="button" onClick={senkoka104}>
+        物質化学工学実験室
       </button>
-      <button type="button" onClick={senkoka5F}>
-        5F
+      <button type="button" onClick={senkoka105}>
+        機器測定室
+      </button>
+      <button type="button" onClick={senkoka106}>
+        講義室2
       </button>
     </>
   )
