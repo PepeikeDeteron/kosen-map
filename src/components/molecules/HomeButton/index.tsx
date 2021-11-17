@@ -11,9 +11,7 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = (props) => {
-  const { className, ...restProps } = props
-
+const Component: React.VFC<Props> = ({ className, ...restProps }) => {
   return (
     <IconButton className={className} aria-label="ホームボタン" {...restProps}>
       <HomeIcon className="icon" />

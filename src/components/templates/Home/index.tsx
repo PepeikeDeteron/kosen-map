@@ -16,8 +16,7 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = (props) => {
-  const { className, isMobileScreen } = props
+const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
   const router = useRouter()
 
   return (
