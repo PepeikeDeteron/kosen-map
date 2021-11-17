@@ -3,6 +3,19 @@
 exports[`Storyshots components/molecules/GuideButton Default 1`] = `
 <div
   aria-label="vertical outlined button group"
+  buttons={
+    Array [
+      <ForwardRef(Button)>
+        One
+      </ForwardRef(Button)>,
+      <ForwardRef(Button)>
+        Two
+      </ForwardRef(Button)>,
+      <ForwardRef(Button)>
+        Three
+      </ForwardRef(Button)>,
+    ]
+  }
   className="MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-vertical css-1dfoxdl-MuiButtonGroup-root"
   role="group"
 >
@@ -24,7 +37,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    講義室1
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -44,7 +57,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    講義室2
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -64,7 +77,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    ゼミ室1
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -84,7 +97,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    ゼミ室2
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -104,7 +117,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    ゼミ室3
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -124,7 +137,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    コンピューター室
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -144,7 +157,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    機器測定室
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -164,7 +177,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    生産工学実験室
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -184,7 +197,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    物質化学工学実験室
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -204,7 +217,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    1年1組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -224,7 +237,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    1年2組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -244,7 +257,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    1年3組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -264,7 +277,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    1年4組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -284,7 +297,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    2年M組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -304,7 +317,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    2年E組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -324,7 +337,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    3年M組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -344,7 +357,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    3年E組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -364,7 +377,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    4年C組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -384,7 +397,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    5年E組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -404,7 +417,7 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    5年J組
+    undefined
   </button>
   <button
     className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
@@ -424,7 +437,47 @@ exports[`Storyshots components/molecules/GuideButton Default 1`] = `
     tabIndex={0}
     type="button"
   >
-    5年C組
+    undefined
+  </button>
+  <button
+    className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    undefined
+  </button>
+  <button
+    className="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root MuiButtonGroup-grouped MuiButtonGroup-groupedVertical MuiButtonGroup-groupedOutlined MuiButtonGroup-groupedOutlinedVertical MuiButtonGroup-groupedOutlinedPrimary css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    undefined
   </button>
 </div>
 `;
