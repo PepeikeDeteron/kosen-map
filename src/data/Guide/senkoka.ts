@@ -32,6 +32,11 @@ export const senkoka: SenkokaGuideProps[] = [
     position: senkoka101,
   },
   {
+    id: 106,
+    name: `${process.env.SENKOKA_106}`,
+    position: senkoka106,
+  },
+  {
     id: 102,
     name: `${process.env.SENKOKA_102}`,
     position: senkoka102,
@@ -52,11 +57,6 @@ export const senkoka: SenkokaGuideProps[] = [
     position: senkoka105,
   },
   {
-    id: 106,
-    name: `${process.env.SENKOKA_106}`,
-    position: senkoka106,
-  },
-  {
     id: 201,
     name: `${process.env.SENKOKA_201}`,
     position: senkoka201,
@@ -67,6 +67,11 @@ export const senkoka: SenkokaGuideProps[] = [
     position: senkoka202,
   },
   {
+    id: 205,
+    name: `${process.env.SENKOKA_205}`,
+    position: senkoka205,
+  },
+  {
     id: 203,
     name: `${process.env.SENKOKA_203}`,
     position: senkoka203,
@@ -75,11 +80,6 @@ export const senkoka: SenkokaGuideProps[] = [
     id: 204,
     name: `${process.env.SENKOKA_204}`,
     position: senkoka204,
-  },
-  {
-    id: 205,
-    name: `${process.env.SENKOKA_205}`,
-    position: senkoka205,
   },
   {
     id: 301,
@@ -102,16 +102,6 @@ export const senkoka: SenkokaGuideProps[] = [
     position: senkoka304,
   },
   {
-    id: 401,
-    name: `${process.env.SENKOKA_401}`,
-    position: senkoka401,
-  },
-  {
-    id: 402,
-    name: `${process.env.SENKOKA_402}`,
-    position: senkoka402,
-  },
-  {
     id: 403,
     name: `${process.env.SENKOKA_403}`,
     position: senkoka403,
@@ -122,14 +112,19 @@ export const senkoka: SenkokaGuideProps[] = [
     position: senkoka404,
   },
   {
+    id: 401,
+    name: `${process.env.SENKOKA_401}`,
+    position: senkoka401,
+  },
+  {
+    id: 402,
+    name: `${process.env.SENKOKA_402}`,
+    position: senkoka402,
+  },
+  {
     id: 501,
     name: `${process.env.SENKOKA_501}`,
     position: senkoka501,
-  },
-  {
-    id: 502,
-    name: `${process.env.SENKOKA_502}`,
-    position: senkoka502,
   },
   {
     id: 503,
@@ -140,5 +135,10 @@ export const senkoka: SenkokaGuideProps[] = [
     id: 504,
     name: `${process.env.SENKOKA_504}`,
     position: senkoka504,
+  },
+  {
+    id: 502,
+    name: `${process.env.SENKOKA_502}`,
+    position: senkoka502,
   },
 ]
