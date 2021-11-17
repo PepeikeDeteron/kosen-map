@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
 import { Button } from '@mui/material'
-import { ColorProps } from '@/models/types'
+import { ColorProps } from '@/types/color'
 
 type ContainerProps = {
   color: ColorProps
