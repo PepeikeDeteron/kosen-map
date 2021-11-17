@@ -2,20 +2,23 @@ import React from 'react'
 import { styled } from '@mui/system'
 import { Button } from '@mui/material'
 import { ButtonGroup } from '@mui/material'
+import { ColorProps } from '@/models/types'
 
 type ContainerProps = {
-  buttons: JSX.Element[]
+  color: ColorProps
+  buttons?: JSX.Element[]
 }
 
 type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = ({ buttons, ...restProps }) => {
+const Component: React.VFC<Props> = ({ color, buttons, ...restProps }) => {
   return (
     <ButtonGroup
       orientation="vertical"
       aria-label="vertical outlined button group"
+      color={color}
       {...restProps}
     >
       {buttons}
@@ -25,11 +28,9 @@ const Component: React.VFC<Props> = ({ buttons, ...restProps }) => {
 
 const StyledComponent = styled(Component)`
   width: 15rem;
-  padding-top: 62.5%;
-  overflow: scroll;
 `
 
-const Container: React.VFC<Partial<ContainerProps>> = () => {
+const Container: React.VFC<ContainerProps> = (props) => {
   const buttons = [
     <Button key="senkoka101">講義室1</Button>,
     <Button key="senkoka106">講義室2</Button>,
@@ -58,7 +59,7 @@ const Container: React.VFC<Partial<ContainerProps>> = () => {
     buttons,
   }
 
-  return <StyledComponent {...{ ...containerProps }} />
+  return <StyledComponent {...props} {...containerProps} />
 }
 
 export default React.memo(Container)

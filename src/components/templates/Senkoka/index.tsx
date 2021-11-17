@@ -41,7 +41,7 @@ const Component: React.VFC<Props> = (props) => {
             {changeModel ? <SenkokaModel /> : <SenkokaSplitModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton />
+            <GuideButton color="primary" />
           </div>
         </div>
         <div className="button-list">
@@ -78,6 +78,7 @@ const StyledComponent = styled(Component)`
   }
 
   .guide-button {
+    margin-top: 2rem;
     margin-left: -15rem;
   }
 
