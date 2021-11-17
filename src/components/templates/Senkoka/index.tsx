@@ -28,8 +28,12 @@ const SenkokaSplitModel = dynamic(() => import('@/data/3Dmap/SenkokaSplit'), {
   ssr: false,
 })
 
-const Component: React.VFC<Props> = (props) => {
-  const { className, isMobileScreen, changeModel, onChangeModel } = props
+const Component: React.VFC<Props> = ({
+  className,
+  isMobileScreen,
+  changeModel,
+  onChangeModel,
+}) => {
   const router = useRouter()
 
   return (

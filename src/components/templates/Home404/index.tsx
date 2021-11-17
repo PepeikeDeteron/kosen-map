@@ -6,9 +6,7 @@ type Props = {
   className?: string
 }
 
-const Component: React.VFC<Props> = (props) => {
-  const { className } = props
-
+const Component: React.VFC<Props> = ({ className }) => {
   return (
     <div className={className}>
       <h2>

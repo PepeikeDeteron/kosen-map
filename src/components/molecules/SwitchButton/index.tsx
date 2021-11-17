@@ -13,9 +13,7 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = (props) => {
-  const { color, label, ...restProps } = props
-
+const Component: React.VFC<Props> = ({ color, label, ...restProps }) => {
   return (
     <Button variant="outlined" color={color} {...restProps}>
       {label}

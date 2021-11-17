@@ -11,9 +11,7 @@ type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = (props) => {
-  const { className, children, ...restProps } = props
-
+const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {
   return (
     <div className={className} id="map-display">
       <Paper className={'paper'} {...restProps}>
