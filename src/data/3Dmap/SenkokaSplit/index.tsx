@@ -169,8 +169,10 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = []
 
-    guide1.position.y = -999999 // 初期値
+    // 初期値
+    guide1.position.y = -999999
     guide2.position.y = -999999
+
     guides.push(guide1, guide2)
     scene.add(guide1, guide2)
 
@@ -179,302 +181,193 @@ const Model: React.VFC = () => {
     window.addEventListener('resize', onResize, false)
   }
 
-  // 特定の箇所を光らせるためのガイド ---------------------------------
-
-  // 講義室・ゼミ室・教室
-  const guide1 = new THREE.Mesh(
-    new THREE.BoxGeometry(2500, 1000, 2500),
-    new THREE.MeshBasicMaterial({
-      color: 0xee476e,
-      transparent: true,
-      opacity: 0.5,
-    })
-  )
-
-  // コンピューター室・物質化学工学実験室・機器測定室・生産工学実験室・教官室
-  const guide2 = new THREE.Mesh(
-    new THREE.BoxGeometry(1250, 1000, 2500),
-    new THREE.MeshBasicMaterial({
-      color: 0xee476e,
-      transparent: true,
-      opacity: 0.5,
-    })
-  )
-
-  // ガイドを配置する位置 -------------------------------------------
-
-  // 専-101 講義室1
-  const senkoka101 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, -4550, 1200)
-  }
-
-  // 専-102 コンピューター室
-  const senkoka102 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(-2520, -4550, -1200)
-  }
-
-  // 専-103 生産工学実験室
-  const senkoka103 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(-1270, -4550, -1200)
-  }
-
-  // 専-104 物質化学工学実験室
-  const senkoka104 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(1270, -4550, -1200)
-  }
-
-  // 専-105 機器測定室
-  const senkoka105 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(2520, -4550, -1200)
-  }
-
-  // 専-106 講義室2
-  const senkoka106 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, -4550, 1200)
-  }
-
-  // 専-201 ゼミ室1
-  const senkoka201 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, -2600, 1200)
-  }
-
-  // 専-202 ゼミ室2
-  const senkoka202 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, -2600, -1200)
-  }
-
-  // 専-203 教官室1
-  const senkoka203 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(1270, -2600, -1200)
-  }
-
-  // 専-204 教官室2
-  const senkoka204 = () => {
-    guide1.visible = false
-    guide2.visible = true
-
-    guide2.position.set(2520, -2600, -1200)
-  }
-
-  // 専-205 ゼミ室3
-  const senkoka205 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, -2600, 1200)
-  }
-
-  // 専-301 1-1
-  const senkoka301 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, -650, 1200)
-  }
-
-  // 専-302 1-2
-  const senkoka302 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, -650, -1200)
-  }
-
-  // 専-303 1-3
-  const senkoka303 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, -650, -1200)
-  }
-
-  // 専-304 1-4
-  const senkoka304 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, -650, 1200)
-  }
-
-  // 専-401 3M
-  const senkoka401 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, 1400, 1200)
-  }
-
-  // 専-402 3E
-  const senkoka402 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, 1400, -1200)
-  }
-
-  // 専-403 2M
-  const senkoka403 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, 1400, -1200)
-  }
-
-  // 専-404 2E
-  const senkoka404 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, 1400, 1200)
-  }
-
-  // 専-501 4C
-  const senkoka501 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, 3400, 1200)
-  }
-
-  // 専-502 5C
-  const senkoka502 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(-1900, 3400, -1200)
-  }
-
-  // 専-503 5E
-  const senkoka503 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, 3400, -1200)
-  }
-
-  // 専-504 5J
-  const senkoka504 = () => {
-    guide1.visible = true
-    guide2.visible = false
-
-    guide1.position.set(1900, 3400, 1200)
-  }
-
   useEffect(() => {
     createModel()
   }, [])
 
-  return (
-    <>
-      <canvas id="canvas" />
-      <span>
-        <button type="button" onClick={senkoka101}>
-          講義室1
-        </button>
-        <button type="button" onClick={senkoka102}>
-          コンピューター室
-        </button>
-        <button type="button" onClick={senkoka103}>
-          生産工学実験室
-        </button>
-        <button type="button" onClick={senkoka104}>
-          物質化学工学実験室
-        </button>
-        <button type="button" onClick={senkoka105}>
-          機器測定室
-        </button>
-        <button type="button" onClick={senkoka106}>
-          講義室2
-        </button>
-      </span>
-      <span>
-        <button type="button" onClick={senkoka201}>
-          ゼミ室1
-        </button>
-        <button type="button" onClick={senkoka202}>
-          ゼミ室2
-        </button>
-        <button type="button" onClick={senkoka203}>
-          教官室1
-        </button>
-        <button type="button" onClick={senkoka204}>
-          教官室2
-        </button>
-        <button type="button" onClick={senkoka205}>
-          ゼミ室3
-        </button>
-      </span>
-      <span>
-        <button type="button" onClick={senkoka301}>
-          1年1組
-        </button>
-        <button type="button" onClick={senkoka302}>
-          1年2組
-        </button>
-        <button type="button" onClick={senkoka303}>
-          1年3組
-        </button>
-        <button type="button" onClick={senkoka304}>
-          1年4組
-        </button>
-      </span>
-      <span>
-        <button type="button" onClick={senkoka401}>
-          3年M組
-        </button>
-        <button type="button" onClick={senkoka402}>
-          3年E組
-        </button>
-        <button type="button" onClick={senkoka403}>
-          2年M組
-        </button>
-        <button type="button" onClick={senkoka404}>
-          2年E組
-        </button>
-      </span>
-      <span>
-        <button type="button" onClick={senkoka501}>
-          4年C組
-        </button>
-        <button type="button" onClick={senkoka502}>
-          5年C組
-        </button>
-        <button type="button" onClick={senkoka503}>
-          5年E組
-        </button>
-        <button type="button" onClick={senkoka504}>
-          5年J組
-        </button>
-      </span>
-    </>
-  )
+  return <canvas id="canvas" />
+}
+
+// 特定の箇所を光らせるためのガイド -----------------
+const guide1 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 1000, 2500),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+// 専-102, 専-103, 専-104, 専-105, 専-203, 専-204
+const guide2 = new THREE.Mesh(
+  new THREE.BoxGeometry(1250, 1000, 2500),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+// ガイドを配置する位置 (専-101 ~) -------------
+export const senkoka101 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, -4550, 1200)
+}
+
+export const senkoka102 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(-2520, -4550, -1200)
+}
+
+export const senkoka103 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(-1270, -4550, -1200)
+}
+
+export const senkoka104 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(1270, -4550, -1200)
+}
+
+export const senkoka105 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(2520, -4550, -1200)
+}
+
+export const senkoka106 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, -4550, 1200)
+}
+
+export const senkoka201 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, -2600, 1200)
+}
+
+export const senkoka202 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, -2600, -1200)
+}
+
+export const senkoka203 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(1270, -2600, -1200)
+}
+
+export const senkoka204 = (): void => {
+  guide1.visible = false
+  guide2.visible = true
+
+  guide2.position.set(2520, -2600, -1200)
+}
+
+export const senkoka205 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, -2600, 1200)
+}
+
+export const senkoka301 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, -650, 1200)
+}
+
+export const senkoka302 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, -650, -1200)
+}
+
+export const senkoka303 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, -650, -1200)
+}
+
+export const senkoka304 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, -650, 1200)
+}
+
+export const senkoka401 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, 1400, 1200)
+}
+
+export const senkoka402 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, 1400, -1200)
+}
+
+export const senkoka403 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, 1400, -1200)
+}
+
+export const senkoka404 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, 1400, 1200)
+}
+
+export const senkoka501 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, 3400, 1200)
+}
+
+export const senkoka502 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(-1900, 3400, -1200)
+}
+
+export const senkoka503 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, 3400, -1200)
+}
+
+export const senkoka504 = (): void => {
+  guide1.visible = true
+  guide2.visible = false
+
+  guide1.position.set(1900, 3400, 1200)
 }
 
 export default React.memo(Model)
