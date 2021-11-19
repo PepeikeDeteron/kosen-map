@@ -32,7 +32,10 @@ const Component: React.VFC<Props> = ({ color, ...restProps }) => {
 }
 
 const StyledComponent = styled(Component)`
-  width: 15rem;
+  width: 14rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  overflow-y: scroll;
 `
 
 const Container: React.VFC<ContainerProps> = (props) => {

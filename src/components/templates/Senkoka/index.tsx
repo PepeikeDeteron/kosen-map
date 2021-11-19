@@ -82,8 +82,10 @@ const StyledComponent = styled(Component)`
   }
 
   .guide-button {
-    margin-top: 2rem;
-    margin-left: -15rem;
+    display: flex;
+    height: 60vh;
+    margin-left: -14rem;
+    padding-top: 2rem;
   }
 
   .button-list {
