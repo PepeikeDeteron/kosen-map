@@ -23,118 +23,18 @@ const Model: React.VFC = () => {
     const mtlLoader = new MTLLoader()
 
     mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka1F.mtl', (material) => {
+    mtlLoader.load('senkoka-split.mtl', (material) => {
       const mtlLoadEnd = () => {
         const objLoader = new OBJLoader()
 
         material.preload()
         objLoader.setMaterials(material)
         objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka1F.obj', (object) => {
+        objLoader.load('senkoka-split.obj', (object) => {
           const objects: THREE.Group[] = []
           const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, -5000, 0)
-
-            scene.add(object)
-            objects.push(object)
-          }
-
-          setTimeout(objLoadEnd, 10)
-        })
-      }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
-
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka2F.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
-
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka2F.obj', (object) => {
-          const objects: THREE.Group[] = []
-          const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, -3000, 0)
-
-            scene.add(object)
-            objects.push(object)
-          }
-
-          setTimeout(objLoadEnd, 10)
-        })
-      }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
-
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka3F.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
-
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka3F.obj', (object) => {
-          const objects: THREE.Group[] = []
-          const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, -1000, 0)
-
-            scene.add(object)
-            objects.push(object)
-          }
-
-          setTimeout(objLoadEnd, 10)
-        })
-      }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
-
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka4F.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
-
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka4F.obj', (object) => {
-          const objects: THREE.Group[] = []
-          const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, 1000, 0)
-
-            scene.add(object)
-            objects.push(object)
-          }
-
-          setTimeout(objLoadEnd, 10)
-        })
-      }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
-
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka5F&R.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
-
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka5F&R.obj', (object) => {
-          const objects: THREE.Group[] = []
-          const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, 3000, 0)
+            object.scale.set(110, 110, 110)
+            object.position.set(0, -4800, 0)
 
             scene.add(object)
             objects.push(object)
