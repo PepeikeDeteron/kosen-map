@@ -90,7 +90,7 @@ const Model: React.VFC = () => {
 
 // 特定の箇所を光らせるためのガイド -----------------
 const guide1 = new THREE.Mesh(
-  new THREE.BoxGeometry(2500, 1000, 2500),
+  new THREE.BoxGeometry(2500, 1200, 2500),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -100,7 +100,7 @@ const guide1 = new THREE.Mesh(
 
 // 専-102, 専-103, 専-104, 専-105, 専-203, 専-204
 const guide2 = new THREE.Mesh(
-  new THREE.BoxGeometry(1250, 1000, 2500),
+  new THREE.BoxGeometry(1250, 1200, 2500),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -113,161 +113,161 @@ export const senkoka101 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -4550, 1200)
+  guide1.position.set(-2100, -4100, 1000)
 }
 
 export const senkoka102 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-2520, -4550, -1200)
+  guide2.position.set(-2700, -4100, -2000)
 }
 
 export const senkoka103 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-1270, -4550, -1200)
+  guide2.position.set(-1350, -4100, -2000)
 }
 
 export const senkoka104 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1270, -4550, -1200)
+  guide2.position.set(1350, -4100, -2000)
 }
 
 export const senkoka105 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2520, -4550, -1200)
+  guide2.position.set(2700, -4100, -2000)
 }
 
 export const senkoka106 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -4550, 1200)
+  guide1.position.set(2100, -4100, 1000)
 }
 
 export const senkoka201 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -2600, 1200)
+  guide1.position.set(-2100, -2300, 1000)
 }
 
 export const senkoka202 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -2600, -1200)
+  guide1.position.set(-2100, -2300, -2000)
 }
 
 export const senkoka203 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1270, -2600, -1200)
+  guide2.position.set(1350, -2300, -2000)
 }
 
 export const senkoka204 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2520, -2600, -1200)
+  guide2.position.set(2700, -2300, -2000)
 }
 
 export const senkoka205 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -2600, 1200)
+  guide1.position.set(2100, -2300, 1000)
 }
 
 export const senkoka301 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -650, 1200)
+  guide1.position.set(-2100, -450, 1000)
 }
 
 export const senkoka302 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -650, -1200)
+  guide1.position.set(-2100, -450, -2000)
 }
 
 export const senkoka303 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -650, -1200)
+  guide1.position.set(2100, -450, -2000)
 }
 
 export const senkoka304 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -650, 1200)
+  guide1.position.set(2100, -450, 1000)
 }
 
 export const senkoka401 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 1400, 1200)
+  guide1.position.set(-2100, 1500, 1000)
 }
 
 export const senkoka402 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 1400, -1200)
+  guide1.position.set(-2100, 1500, -2000)
 }
 
 export const senkoka403 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 1400, -1200)
+  guide1.position.set(2100, 1500, -2000)
 }
 
 export const senkoka404 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 1400, 1200)
+  guide1.position.set(2100, 1500, 1000)
 }
 
 export const senkoka501 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 3400, 1200)
+  guide1.position.set(-2200, 3400, 1000)
 }
 
 export const senkoka502 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 3400, -1200)
+  guide1.position.set(-2200, 3400, -2000)
 }
 
 export const senkoka503 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 3400, -1200)
+  guide1.position.set(2200, 3400, -2000)
 }
 
 export const senkoka504 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 3400, 1200)
+  guide1.position.set(2200, 3400, 1000)
 }
 
 export default React.memo(Model)
