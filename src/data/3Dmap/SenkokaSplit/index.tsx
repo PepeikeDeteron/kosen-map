@@ -33,8 +33,8 @@ const Model: React.VFC = () => {
         objLoader.load('senkoka-split.obj', (object) => {
           const objects: THREE.Group[] = []
           const objLoadEnd = () => {
-            object.scale.set(100, 100, 100)
-            object.position.set(0, 3000, 0)
+            object.scale.set(110, 110, 110)
+            object.position.set(0, -4800, 0)
 
             scene.add(object)
             objects.push(object)
