@@ -113,42 +113,42 @@ export const senkoka101 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -4550, 1200)
+  guide1.position.set(-2100, -4100, 1000)
 }
 
 export const senkoka102 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-2520, -4550, -1200)
+  guide2.position.set(-2700, -4100, -1700)
 }
 
 export const senkoka103 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-1270, -4550, -1200)
+  guide2.position.set(-1350, -4100, -1700)
 }
 
 export const senkoka104 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1270, -4550, -1200)
+  guide2.position.set(1350, -4100, -1700)
 }
 
 export const senkoka105 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2520, -4550, -1200)
+  guide2.position.set(2700, -4100, -1700)
 }
 
 export const senkoka106 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -4550, 1200)
+  guide1.position.set(2100, -4100, 1000)
 }
 
 export const senkoka201 = (): void => {
