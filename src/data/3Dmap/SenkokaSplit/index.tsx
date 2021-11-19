@@ -30,18 +30,40 @@ const Model: React.VFC = () => {
         material.preload()
         objLoader.setMaterials(material)
         objLoader.setPath('senkoka_split/')
-        objLoader.load('senkoka-split.obj', (object) => {
-          const objects: THREE.Group[] = []
-          const objLoadEnd = () => {
-            object.scale.set(110, 110, 110)
-            object.position.set(0, -4800, 0)
+        objLoader.load(
+          // 読込処理
+          'senkoka-split.obj',
+          (object) => {
+            const objLoadEnd = () => {
+              const objects: THREE.Group[] = []
 
-            scene.add(object)
-            objects.push(object)
+              object.scale.set(110, 110, 110)
+              object.position.set(0, -4800, 0)
+
+              scene.add(object)
+              objects.push(object)
+            }
+
+            setTimeout(objLoadEnd, 10)
+          },
+          // 読込状況
+          (xhr) => {
+            const loader = document.getElementById('loader') as HTMLElement
+            const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
+
+            if (progress < 100) {
+              loader.innerHTML = `Loading... ${progress}%`
+            } else {
+              setInterval(() => {
+                loader.style.display = 'none'
+              }, 1000)
+            }
+          },
+          // 読込失敗
+          (error) => {
+            console.error(`Three.js: ${error}`)
           }
-
-          setTimeout(objLoadEnd, 10)
-        })
+        )
       }
 
       setTimeout(mtlLoadEnd, 10)
@@ -85,7 +107,12 @@ const Model: React.VFC = () => {
     createModel()
   }, [])
 
-  return <canvas id="canvas" />
+  return (
+    <>
+      <p id="loader">Loading... 0%</p>
+      <canvas id="canvas" />
+    </>
+  )
 }
 
 // 特定の箇所を光らせるためのガイド -----------------
