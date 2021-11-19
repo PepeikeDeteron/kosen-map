@@ -90,7 +90,7 @@ const Model: React.VFC = () => {
 
 // 特定の箇所を光らせるためのガイド -----------------
 const guide1 = new THREE.Mesh(
-  new THREE.BoxGeometry(2500, 1000, 2500),
+  new THREE.BoxGeometry(2500, 1200, 2500),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -100,7 +100,7 @@ const guide1 = new THREE.Mesh(
 
 // 専-102, 専-103, 専-104, 専-105, 専-203, 専-204
 const guide2 = new THREE.Mesh(
-  new THREE.BoxGeometry(1250, 1000, 2500),
+  new THREE.BoxGeometry(1250, 1200, 2500),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -155,35 +155,35 @@ export const senkoka201 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -2600, 1200)
+  guide1.position.set(-2100, -2300, 1000)
 }
 
 export const senkoka202 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -2600, -1200)
+  guide1.position.set(-2100, -2300, -1000)
 }
 
 export const senkoka203 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1270, -2600, -1200)
+  guide2.position.set(1350, -2300, -1700)
 }
 
 export const senkoka204 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2520, -2600, -1200)
+  guide2.position.set(2700, -2300, -1700)
 }
 
 export const senkoka205 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -2600, 1200)
+  guide1.position.set(2100, -2300, 1000)
 }
 
 export const senkoka301 = (): void => {
