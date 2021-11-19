@@ -120,28 +120,28 @@ export const senkoka102 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-2700, -4100, -1700)
+  guide2.position.set(-2700, -4100, -2000)
 }
 
 export const senkoka103 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(-1350, -4100, -1700)
+  guide2.position.set(-1350, -4100, -2000)
 }
 
 export const senkoka104 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1350, -4100, -1700)
+  guide2.position.set(1350, -4100, -2000)
 }
 
 export const senkoka105 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2700, -4100, -1700)
+  guide2.position.set(2700, -4100, -2000)
 }
 
 export const senkoka106 = (): void => {
@@ -162,21 +162,21 @@ export const senkoka202 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-2100, -2300, -1000)
+  guide1.position.set(-2100, -2300, -2000)
 }
 
 export const senkoka203 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(1350, -2300, -1700)
+  guide2.position.set(1350, -2300, -2000)
 }
 
 export const senkoka204 = (): void => {
   guide1.visible = false
   guide2.visible = true
 
-  guide2.position.set(2700, -2300, -1700)
+  guide2.position.set(2700, -2300, -2000)
 }
 
 export const senkoka205 = (): void => {
@@ -190,28 +190,28 @@ export const senkoka301 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -650, 1200)
+  guide1.position.set(-2100, -450, 1000)
 }
 
 export const senkoka302 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, -650, -1200)
+  guide1.position.set(-2100, -450, -2000)
 }
 
 export const senkoka303 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -650, -1200)
+  guide1.position.set(2100, -450, -2000)
 }
 
 export const senkoka304 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, -650, 1200)
+  guide1.position.set(2100, -450, 1000)
 }
 
 export const senkoka401 = (): void => {
