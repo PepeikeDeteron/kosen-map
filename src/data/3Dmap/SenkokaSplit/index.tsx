@@ -246,28 +246,28 @@ export const senkoka501 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 3400, 1200)
+  guide1.position.set(-2200, 3400, 1000)
 }
 
 export const senkoka502 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-1900, 3400, -1200)
+  guide1.position.set(-2200, 3400, -2000)
 }
 
 export const senkoka503 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 3400, -1200)
+  guide1.position.set(2200, 3400, -2000)
 }
 
 export const senkoka504 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(1900, 3400, 1200)
+  guide1.position.set(2200, 3400, 1000)
 }
 
 export default React.memo(Model)
