@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
+import dynamic from 'next/dynamic'
 import styled from 'styled-components'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
@@ -15,6 +16,10 @@ type Props = {
   className?: string
 } & ContainerProps
 
+const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
+  ssr: false,
+})
+
 const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
   const router = useRouter()
 
@@ -23,7 +28,9 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
-          <MapDisplay>管理・教育棟のデータをここに表示</MapDisplay>
+          <MapDisplay>
+            <KyoikuModel />
+          </MapDisplay>
         </div>
         <div className="button-list">
           <div className="home-button">
