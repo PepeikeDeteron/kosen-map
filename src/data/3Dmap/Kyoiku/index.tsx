@@ -36,9 +36,9 @@ const Model: React.VFC = () => {
             const objLoadEnd = () => {
               const objects: THREE.Group[] = []
 
-              object.scale.set(50, 50, 50)
-              object.rotation.set(0, -100, 0)
-              object.position.set(-300, -1000, 0)
+              object.scale.set(65, 65, 65)
+              object.rotation.set(0, 100, 0)
+              object.position.set(500, -850, 1500)
 
               scene.add(object)
               objects.push(object)
