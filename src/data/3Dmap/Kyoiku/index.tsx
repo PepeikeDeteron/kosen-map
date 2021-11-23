@@ -36,7 +36,7 @@ const Model: React.VFC = () => {
             const objLoadEnd = () => {
               const objects: THREE.Group[] = []
 
-              object.scale.set(65, 65, 65)
+              object.scale.set(62, 62, 62)
               object.rotation.set(0, 100, 0)
               object.position.set(500, -850, 1500)
 

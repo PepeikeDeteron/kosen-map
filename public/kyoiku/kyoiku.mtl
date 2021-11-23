@@ -1,15 +1,67 @@
 Wavefront OBJ material file
-# Contains 152 materials
+# Contains 161 materials
 
 newmtl Stone
 Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Grass_Block
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dirt
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Coarse_Dirt
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Podzol
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -19,10 +71,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -32,10 +84,10 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -45,10 +97,10 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -58,11 +110,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -72,10 +124,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -85,25 +137,51 @@ Ns 216.75
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.535
 # Tr 0.465
 Tf 0.465 0.465 0.465
+
+newmtl Sand
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gravel
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
 
 newmtl Oak_Log
 Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -113,11 +191,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -127,11 +205,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -141,11 +219,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -155,11 +233,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -169,10 +247,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -182,10 +260,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -195,10 +273,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -208,11 +286,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -222,11 +300,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -236,10 +314,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -249,10 +327,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -262,10 +340,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -275,10 +353,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -288,10 +366,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -301,10 +379,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -314,10 +392,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -327,10 +405,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -340,10 +418,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -353,11 +431,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -367,11 +445,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -381,11 +459,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -395,11 +473,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -409,11 +487,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -423,11 +501,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -437,11 +515,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -451,11 +529,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -465,10 +543,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -478,10 +556,10 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -491,10 +569,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -504,10 +582,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -517,10 +595,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -530,10 +608,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -543,10 +621,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -556,10 +634,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -569,10 +647,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -582,10 +660,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -595,10 +673,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -608,10 +686,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -622,12 +700,12 @@ Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
 Ke 0.901686 0.901686 0.901686
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
-map_Ke kyoiku-RGBA.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
+map_Ke kyoiku-RGBA.webp
 illum 2
 # d 1
 # Tr 0
@@ -637,10 +715,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -650,11 +728,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -664,11 +742,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -678,11 +756,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -692,10 +770,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -705,10 +783,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -718,10 +796,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -731,10 +809,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -744,11 +822,11 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -758,10 +836,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -771,11 +849,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -786,12 +864,12 @@ Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
 Ke 0.318794 0.318794 0.318794
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
-map_Ke kyoiku-RGBA.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
+map_Ke kyoiku-RGBA.webp
 illum 2
 # d 1
 # Tr 0
@@ -801,10 +879,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -814,10 +892,10 @@ Ns 140.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.11 0.11 0.11
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -827,10 +905,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -840,10 +918,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -853,11 +931,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.5
 # Tr 0.5
@@ -868,11 +946,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -882,10 +960,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -895,10 +973,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -908,11 +986,11 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -922,11 +1000,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -936,11 +1014,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -950,10 +1028,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -963,10 +1041,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -976,10 +1054,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -989,10 +1067,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1002,11 +1080,24 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl End_Stone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1016,10 +1107,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1029,10 +1120,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1042,10 +1133,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1055,10 +1146,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1068,10 +1159,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1081,10 +1172,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1095,12 +1186,12 @@ Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
 Ke 1 1 1
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
-map_Ke kyoiku-RGBA.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
+map_Ke kyoiku-RGBA.webp
 illum 2
 # d 1
 # Tr 0
@@ -1110,10 +1201,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1123,10 +1214,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1136,10 +1227,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1149,10 +1240,10 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1162,10 +1253,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1175,10 +1266,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1188,10 +1279,10 @@ Ns 153
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.12 0.12 0.12
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1201,10 +1292,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1214,10 +1305,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1227,10 +1318,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1240,10 +1331,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1253,10 +1344,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1266,10 +1357,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1279,10 +1370,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1292,10 +1383,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1305,10 +1396,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1318,10 +1409,23 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Green_Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1331,11 +1435,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.5
 # Tr 0.5
@@ -1346,11 +1450,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.5
 # Tr 0.5
@@ -1361,11 +1465,11 @@ Ns 242.25
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.5
 # Tr 0.5
@@ -1376,11 +1480,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -1390,10 +1494,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1403,10 +1507,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1416,11 +1520,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.03 0.03 0.03
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.7
 # Tr 0.3
@@ -1431,10 +1535,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1444,10 +1548,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1457,10 +1561,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1470,11 +1574,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -1484,10 +1588,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1497,10 +1601,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1510,10 +1614,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1523,10 +1627,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1536,10 +1640,10 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1549,10 +1653,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1562,10 +1666,23 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Fence_Gate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka kyoiku-RGB.webp
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1575,10 +1692,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1588,10 +1705,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1601,10 +1718,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1614,10 +1731,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1627,10 +1744,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1640,10 +1757,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1653,11 +1770,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -1667,11 +1784,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -1681,10 +1798,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1694,11 +1811,11 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 2
 # d 1
 # Tr 0
@@ -1708,10 +1825,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1722,11 +1839,11 @@ Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
 Ke 1 1 1
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
-map_Ke kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
+map_Ke kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1736,11 +1853,11 @@ Ns 127.5
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.1 0.1 0.1
-map_Ka kyoiku-RGBA.png
+map_Ka kyoiku-RGBA.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGBA.png
-map_d kyoiku-Alpha.png
+map_Kd kyoiku-RGBA.webp
+map_d kyoiku-Alpha.webp
 illum 4
 # d 0.613
 # Tr 0.387
@@ -1751,10 +1868,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1764,10 +1881,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1777,10 +1894,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1790,10 +1907,10 @@ Ns 216.75
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.17 0.17 0.17
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1803,10 +1920,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1816,10 +1933,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1829,10 +1946,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1842,10 +1959,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1855,10 +1972,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1868,10 +1985,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1881,10 +1998,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1894,10 +2011,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1907,10 +2024,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1920,10 +2037,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1933,10 +2050,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1946,10 +2063,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1959,10 +2076,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1972,10 +2089,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1985,10 +2102,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -1998,10 +2115,10 @@ Ns 204
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0.16 0.16 0.16
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -2011,10 +2128,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
@@ -2024,10 +2141,10 @@ Ns 0
 Ka 0.2 0.2 0.2
 Kd 1 1 1
 Ks 0 0 0
-map_Ka kyoiku-RGB.png
+map_Ka kyoiku-RGB.webp
 # for G3D, to make textures look blocky:
 interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
-map_Kd kyoiku-RGB.png
+map_Kd kyoiku-RGB.webp
 illum 2
 # d 1
 # Tr 0
