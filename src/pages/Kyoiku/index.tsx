@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Template from '@/components/templates/Kanri'
+import Template from '@/components/templates/Kyoiku'
 
-const Kanri: React.VFC = () => {
+const Kyoiku: React.VFC = () => {
   return (
     <>
       <Head>
@@ -15,4 +15,4 @@ const Kanri: React.VFC = () => {
   )
 }
 
-export default Kanri
+export default Kyoiku
