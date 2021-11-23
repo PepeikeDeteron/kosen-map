@@ -38,7 +38,7 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
           <SwitchButton
             color="secondary"
             label="管理・教育棟"
-            onClick={() => router.push('/Kanri')}
+            onClick={() => router.push('/Kyoiku')}
           />
         </div>
       </div>
