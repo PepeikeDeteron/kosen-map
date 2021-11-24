@@ -13,13 +13,14 @@ const Model: React.VFC = () => {
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000)
     const light = new THREE.AmbientLight(0x666666, 2.5)
-    const orbitControls = new OrbitControls(camera, renderer.domElement)
-    const mtlLoader = new MTLLoader()
+    const controls = new OrbitControls(camera, renderer.domElement)
 
     camera.position.set(0, 0, 15000)
-    orbitControls.enableDamping = true
-    orbitControls.dampingFactor = 0.2
+    controls.enableDamping = true
+    controls.dampingFactor = 0.2
     scene.add(light)
+
+    const mtlLoader = new MTLLoader()
 
     mtlLoader.setPath('kyoiku/')
     mtlLoader.load('kyoiku.mtl', (material) => {
@@ -36,9 +37,9 @@ const Model: React.VFC = () => {
             const objLoadEnd = () => {
               const objects: THREE.Group[] = []
 
-              object.scale.set(62, 62, 62)
-              object.rotation.set(0, 100, 0)
-              object.position.set(500, -850, 1500)
+              object.scale.set(35, 35, 35)
+              object.rotation.set(121, 0, 0)
+              object.position.set(200, -50, 1500)
 
               scene.add(object)
               objects.push(object)
@@ -70,6 +71,7 @@ const Model: React.VFC = () => {
     })
 
     const tick = () => {
+      controls.update()
       renderer.render(scene, camera)
       requestAnimationFrame(tick)
     }
@@ -88,6 +90,20 @@ const Model: React.VFC = () => {
       camera.updateProjectionMatrix()
     }
 
+    const guides: THREE.Mesh[] = []
+
+    // 初期値
+    kyoiku1.position.y = -999999
+    kyoiku2.position.y = -999999
+    kyoiku3.position.y = -999999
+    kyoiku4.position.y = -999999
+    kyoiku5.position.y = -999999
+    kyoiku6.position.y = -999999
+    kyoiku7.position.y = -999999
+
+    guides.push(kyoiku1, kyoiku2, kyoiku3, kyoiku4, kyoiku5, kyoiku6, kyoiku7)
+    scene.add(kyoiku1, kyoiku2, kyoiku3, kyoiku4, kyoiku5, kyoiku6, kyoiku7)
+
     tick()
     onResize()
     window.addEventListener('resize', onResize, false)
@@ -103,6 +119,115 @@ const Model: React.VFC = () => {
       <canvas id="canvas" />
     </>
   )
+}
+
+// 特定の箇所を光らせるためのガイド -----------------
+
+// 教育棟1号棟~7号棟
+const kyoiku1 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 5000, 1000),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku2 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku3 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku4 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku5 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku6 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const kyoiku7 = new THREE.Mesh(
+  new THREE.BoxGeometry(),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+// ガイドを配置する位置 ------------------------
+export const kyoiku100 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku200 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku300 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku400 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku500 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku600 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
+}
+
+export const kyoiku700 = (): void => {
+  kyoiku1.visible = true
+
+  kyoiku1.position.set(-2000, -500, 1000)
 }
 
 export default React.memo(Model)

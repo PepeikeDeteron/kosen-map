@@ -3,10 +3,12 @@ import { useRouter } from 'next/router'
 import { useMediaQuery } from 'react-responsive'
 import dynamic from 'next/dynamic'
 import styled from 'styled-components'
+import GuideButton from '@/components/molecules/GuideButton'
 import HomeButton from '@/components/molecules/HomeButton'
 import MapDisplay from '@/components/molecules/MapDisplay'
 import Home404 from '@/components/templates/Home404'
 import { mobileMaxWidth } from '@/constants/common'
+import { kyoiku } from '@/data/Guide/kyoiku'
 
 type ContainerProps = {
   isMobileScreen: boolean
@@ -31,6 +33,9 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
           <MapDisplay>
             <KyoikuModel />
           </MapDisplay>
+          <div className="guide-button">
+            <GuideButton color="secondary" data={kyoiku} />
+          </div>
         </div>
         <div className="button-list">
           <div className="home-button">
@@ -57,7 +62,14 @@ const StyledComponent = styled(Component)`
   }
 
   .display {
-    text-align: center;
+    display: flex;
+  }
+
+  .guide-button {
+    display: flex;
+    height: 60vh;
+    margin-left: -14rem;
+    padding-top: 2rem;
   }
 
   .button-list {
