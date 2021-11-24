@@ -23,9 +23,9 @@ import {
   senkoka503,
   senkoka504,
 } from '@/data/3Dmap/SenkokaSplit'
-import { SenkokaGuideProps } from '@/types/guide'
+import { GuideProps } from '@/types/guide'
 
-export const senkoka: SenkokaGuideProps[] = [
+export const senkoka: GuideProps[] = [
   {
     id: 101,
     name: `${process.env.SENKOKA_101}`,
