@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { guideInitialValue } from '@/constants/common'
 
 const Model: React.VFC = () => {
   const createModel = () => {
@@ -92,8 +93,7 @@ const Model: React.VFC = () => {
     const guides: THREE.Mesh[] = []
 
     // 初期値
-    guide1.position.y = -999999
-    guide2.position.y = -999999
+    guide1.position.y = guide2.position.y = guideInitialValue
 
     guides.push(guide1, guide2)
     scene.add(guide1, guide2)
