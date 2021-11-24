@@ -2,18 +2,19 @@ import React from 'react'
 import { styled } from '@mui/system'
 import { Button } from '@mui/material'
 import { ButtonGroup } from '@mui/material'
-import { senkoka } from '@/data/Guide/senkoka'
 import { ColorProps } from '@/types/color'
+import { GuideProps } from '@/types/guide'
 
 type ContainerProps = {
   color: ColorProps
+  data: GuideProps[]
 }
 
 type Props = {
   className?: string
 } & ContainerProps
 
-const Component: React.VFC<Props> = ({ color, ...restProps }) => {
+const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
   return (
     <ButtonGroup
       orientation="vertical"
@@ -21,10 +22,10 @@ const Component: React.VFC<Props> = ({ color, ...restProps }) => {
       color={color}
       {...restProps}
     >
-      {senkoka &&
-        senkoka.map((data) => (
-          <Button key={data.id} onClick={data.position}>
-            {data.name}
+      {data &&
+        data.map((datum) => (
+          <Button key={datum.id} onClick={datum.position}>
+            {datum.name}
           </Button>
         ))}
     </ButtonGroup>

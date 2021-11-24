@@ -1,4 +1,4 @@
-export type SenkokaGuideProps = {
+export type GuideProps = {
   id: number
   name: string
   position: () => void
