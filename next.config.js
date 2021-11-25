@@ -25,6 +25,7 @@ module.exports = {
     SENKOKA_503: process.env.SENKOKA_503,
     SENKOKA_504: process.env.SENKOKA_504,
 
+    KYOIKU_000: process.env.KYOIKU_000,
     KYOIKU_100: process.env.KYOIKU_100,
     KYOIKU_200: process.env.KYOIKU_200,
     KYOIKU_300: process.env.KYOIKU_300,

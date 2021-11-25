@@ -1,4 +1,5 @@
 import {
+  kyoiku000,
   kyoiku100,
   kyoiku200,
   kyoiku300,
@@ -10,6 +11,11 @@ import {
 import { GuideProps } from '@/types/guide'
 
 export const kyoiku: GuideProps[] = [
+  {
+    id: 99,
+    name: `${process.env.KYOIKU_000}`,
+    position: kyoiku000,
+  },
   {
     id: 100,
     name: `${process.env.KYOIKU_100}`,

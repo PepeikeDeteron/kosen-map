@@ -94,17 +94,42 @@ const Model: React.VFC = () => {
     const guides: THREE.Mesh[] = []
 
     // 初期値
-    guide1.position.y =
+    guide0.position.y =
+      guide1.position.y =
       guide2.position.y =
       guide3.position.y =
       guide4.position.y =
       guide5.position.y =
       guide6.position.y =
       guide7.position.y =
+      guide8.position.y =
+      guide9.position.y =
         guideInitialValue
 
-    guides.push(guide1, guide2, guide3, guide4, guide5, guide6, guide7)
-    scene.add(guide1, guide2, guide3, guide4, guide5, guide6, guide7)
+    guides.push(
+      guide0,
+      guide1,
+      guide2,
+      guide3,
+      guide4,
+      guide5,
+      guide6,
+      guide7,
+      guide8,
+      guide9
+    )
+    scene.add(
+      guide0,
+      guide1,
+      guide2,
+      guide3,
+      guide4,
+      guide5,
+      guide6,
+      guide7,
+      guide8,
+      guide9
+    )
 
     tick()
     onResize()
@@ -124,6 +149,15 @@ const Model: React.VFC = () => {
 }
 
 // 特定の箇所を光らせるためのガイド -------------------
+const guide0 = new THREE.Mesh(
+  new THREE.BoxGeometry(1150, 7000, 1500),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
 const guide1 = new THREE.Mesh(
   new THREE.BoxGeometry(4200, 1150, 1250),
   new THREE.MeshBasicMaterial({
@@ -187,8 +221,45 @@ const guide7 = new THREE.Mesh(
   })
 )
 
+const guide8 = new THREE.Mesh(
+  new THREE.BoxGeometry(2950, 1600, 1500),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
+const guide9 = new THREE.Mesh(
+  new THREE.BoxGeometry(1200, 1400, 1250),
+  new THREE.MeshBasicMaterial({
+    color: 0xee476e,
+    transparent: true,
+    opacity: 0.5,
+  })
+)
+
 // ガイドを配置する位置 -------------------------
+export const kyoiku000 = (): void => {
+  guide0.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = false
+  guide8.visible = true
+  guide9.visible = false
+
+  guide0.rotation.set(65, 0, 0)
+  guide8.rotation.set(65, 0, 0)
+  guide0.position.set(500, 150, 1950)
+  guide8.position.set(-1550, -500, 2900)
+}
+
 export const kyoiku100 = (): void => {
+  guide0.visible = false
   guide1.visible = true
   guide2.visible = false
   guide3.visible = false
@@ -196,12 +267,17 @@ export const kyoiku100 = (): void => {
   guide5.visible = false
   guide6.visible = false
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = true
 
   guide1.rotation.set(65, 0, 0)
-  guide1.position.set(-2200, 800, 1000)
+  guide9.rotation.set(65, 0, 0)
+  guide1.position.set(-2300, 800, 1000)
+  guide9.position.set(-2820, 1425, 35)
 }
 
 export const kyoiku200 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = true
   guide3.visible = false
@@ -209,12 +285,15 @@ export const kyoiku200 = (): void => {
   guide5.visible = false
   guide6.visible = false
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = false
 
   guide2.rotation.set(65, 0, 0)
   guide2.position.set(-1100, 2600, -1350)
 }
 
 export const kyoiku300 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = false
   guide3.visible = true
@@ -222,12 +301,15 @@ export const kyoiku300 = (): void => {
   guide5.visible = false
   guide6.visible = false
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = false
 
   guide3.rotation.set(65, 0, 0)
   guide3.position.set(-3000, 2300, -1550)
 }
 
 export const kyoiku400 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = false
   guide3.visible = false
@@ -235,12 +317,15 @@ export const kyoiku400 = (): void => {
   guide5.visible = false
   guide6.visible = false
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = false
 
   guide4.rotation.set(65, 0, 0)
   guide4.position.set(2200, 2500, -1100)
 }
 
 export const kyoiku500 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = false
   guide3.visible = false
@@ -248,12 +333,15 @@ export const kyoiku500 = (): void => {
   guide5.visible = true
   guide6.visible = false
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = false
 
   guide5.rotation.set(65, 0, 0)
   guide5.position.set(500, 3500, -2800)
 }
 
 export const kyoiku600 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = false
   guide3.visible = false
@@ -261,12 +349,15 @@ export const kyoiku600 = (): void => {
   guide5.visible = false
   guide6.visible = true
   guide7.visible = false
+  guide8.visible = false
+  guide9.visible = false
 
   guide6.rotation.set(65, 0, 0)
   guide6.position.set(-700, 3500, -3250)
 }
 
 export const kyoiku700 = (): void => {
+  guide0.visible = false
   guide1.visible = false
   guide2.visible = false
   guide3.visible = false
@@ -274,6 +365,8 @@ export const kyoiku700 = (): void => {
   guide5.visible = false
   guide6.visible = false
   guide7.visible = true
+  guide8.visible = false
+  guide9.visible = false
 
   guide7.rotation.set(65, 0, 0)
   guide7.position.set(3400, 3300, -3000)
