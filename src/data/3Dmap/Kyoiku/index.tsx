@@ -38,9 +38,9 @@ const Model: React.VFC = () => {
             const objLoadEnd = () => {
               const objects: THREE.Group[] = []
 
-              object.scale.set(35, 35, 35)
-              object.rotation.set(121, 0, 0)
-              object.position.set(200, -50, 1500)
+              object.scale.set(40, 40, 40)
+              object.rotation.set(120, 0, 0)
+              object.position.set(200, 800, 0)
 
               scene.add(object)
               objects.push(object)
@@ -94,17 +94,17 @@ const Model: React.VFC = () => {
     const guides: THREE.Mesh[] = []
 
     // 初期値
-    kyoiku1.position.y =
-      kyoiku2.position.y =
-      kyoiku3.position.y =
-      kyoiku4.position.y =
-      kyoiku5.position.y =
-      kyoiku6.position.y =
-      kyoiku7.position.y =
+    guide1.position.y =
+      guide2.position.y =
+      guide3.position.y =
+      guide4.position.y =
+      guide5.position.y =
+      guide6.position.y =
+      guide7.position.y =
         guideInitialValue
 
-    guides.push(kyoiku1, kyoiku2, kyoiku3, kyoiku4, kyoiku5, kyoiku6, kyoiku7)
-    scene.add(kyoiku1, kyoiku2, kyoiku3, kyoiku4, kyoiku5, kyoiku6, kyoiku7)
+    guides.push(guide1, guide2, guide3, guide4, guide5, guide6, guide7)
+    scene.add(guide1, guide2, guide3, guide4, guide5, guide6, guide7)
 
     tick()
     onResize()
@@ -123,11 +123,9 @@ const Model: React.VFC = () => {
   )
 }
 
-// 特定の箇所を光らせるためのガイド -----------------
-
-// 教育棟1号棟~7号棟
-const kyoiku1 = new THREE.Mesh(
-  new THREE.BoxGeometry(1000, 5000, 1000),
+// 特定の箇所を光らせるためのガイド -------------------
+const guide1 = new THREE.Mesh(
+  new THREE.BoxGeometry(4200, 1150, 1250),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -135,8 +133,8 @@ const kyoiku1 = new THREE.Mesh(
   })
 )
 
-const kyoiku2 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide2 = new THREE.Mesh(
+  new THREE.BoxGeometry(2150, 1450, 1600),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -144,8 +142,8 @@ const kyoiku2 = new THREE.Mesh(
   })
 )
 
-const kyoiku3 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide3 = new THREE.Mesh(
+  new THREE.BoxGeometry(2200, 1450, 800),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -153,8 +151,8 @@ const kyoiku3 = new THREE.Mesh(
   })
 )
 
-const kyoiku4 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide4 = new THREE.Mesh(
+  new THREE.BoxGeometry(4200, 1150, 1650),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -162,8 +160,8 @@ const kyoiku4 = new THREE.Mesh(
   })
 )
 
-const kyoiku5 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide5 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 3500, 1250),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -171,8 +169,8 @@ const kyoiku5 = new THREE.Mesh(
   })
 )
 
-const kyoiku6 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide6 = new THREE.Mesh(
+  new THREE.BoxGeometry(1500, 1500, 800),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -180,8 +178,8 @@ const kyoiku6 = new THREE.Mesh(
   })
 )
 
-const kyoiku7 = new THREE.Mesh(
-  new THREE.BoxGeometry(),
+const guide7 = new THREE.Mesh(
+  new THREE.BoxGeometry(2000, 1500, 800),
   new THREE.MeshBasicMaterial({
     color: 0xee476e,
     transparent: true,
@@ -189,47 +187,96 @@ const kyoiku7 = new THREE.Mesh(
   })
 )
 
-// ガイドを配置する位置 ------------------------
+// ガイドを配置する位置 -------------------------
 export const kyoiku100 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = true
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide1.rotation.set(65, 0, 0)
+  guide1.position.set(-2200, 800, 1000)
 }
 
 export const kyoiku200 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = true
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide2.rotation.set(65, 0, 0)
+  guide2.position.set(-1100, 2600, -1350)
 }
 
 export const kyoiku300 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = true
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide3.rotation.set(65, 0, 0)
+  guide3.position.set(-3000, 2300, -1550)
 }
 
 export const kyoiku400 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = true
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide4.rotation.set(65, 0, 0)
+  guide4.position.set(2200, 2500, -1100)
 }
 
 export const kyoiku500 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = true
+  guide6.visible = false
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide5.rotation.set(65, 0, 0)
+  guide5.position.set(500, 3500, -2800)
 }
 
 export const kyoiku600 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = true
+  guide7.visible = false
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide6.rotation.set(65, 0, 0)
+  guide6.position.set(-700, 3500, -3250)
 }
 
 export const kyoiku700 = (): void => {
-  kyoiku1.visible = true
+  guide1.visible = false
+  guide2.visible = false
+  guide3.visible = false
+  guide4.visible = false
+  guide5.visible = false
+  guide6.visible = false
+  guide7.visible = true
 
-  kyoiku1.position.set(-2000, -500, 1000)
+  guide7.rotation.set(65, 0, 0)
+  guide7.position.set(3400, 3300, -3000)
 }
 
 export default React.memo(Model)
