@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import * as THREE from 'three'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { guideInitialValue } from '@/constants/common'
 
@@ -21,54 +20,31 @@ const Model: React.VFC = () => {
     controls.dampingFactor = 0.2
     scene.add(light)
 
-    const mtlLoader = new MTLLoader()
+    const loader = new GLTFLoader()
 
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka-split.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
+    loader.setPath('senkoka_split/')
+    loader.load(
+      'senkoka_split.glb',
+      (gltf) => {
+        const model = gltf.scene
 
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load(
-          // 読込処理
-          'senkoka-split.obj',
-          (object) => {
-            const objLoadEnd = () => {
-              const objects: THREE.Group[] = []
+        model.scale.set(110, 110, 110)
+        model.position.set(0, -4800, 0)
+        scene.add(model)
+      },
+      // 読込状況
+      (xhr) => {
+        const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
 
-              object.scale.set(110, 110, 110)
-              object.position.set(0, -4800, 0)
-
-              scene.add(object)
-              objects.push(object)
-            }
-
-            setTimeout(objLoadEnd, 10)
-          },
-          // 読込状況
-          (xhr) => {
-            const loader = document.getElementById('loader') as HTMLElement
-            const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
-
-            if (progress < 100) {
-              loader.innerHTML = `Loading... ${progress}%`
-            } else {
-              setInterval(() => {
-                loader.style.display = 'none'
-              }, 1000)
-            }
-          },
-          // 読込失敗
-          (error) => {
-            console.error(`Three.js: ${error}`)
-          }
-        )
+        if (progress < 100) {
+          console.log(`nitic-map: Loading... ${progress}%`)
+        }
+      },
+      // 読込失敗
+      (error) => {
+        console.error(`nitic-map: ${error}`)
       }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
+    )
 
     const tick = () => {
       controls.update()
@@ -109,7 +85,6 @@ const Model: React.VFC = () => {
 
   return (
     <>
-      <p id="loader">Loading... 0%</p>
       <canvas id="canvas" />
     </>
   )
