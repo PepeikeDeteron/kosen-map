@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import * as THREE from 'three'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { guideInitialValue } from '@/constants/common'
 
@@ -13,7 +12,7 @@ const Model: React.VFC = () => {
     })
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000)
-    const light = new THREE.AmbientLight(0x666666, 2.5)
+    const light = new THREE.AmbientLight(0xffffff, 1.75)
     const controls = new OrbitControls(camera, renderer.domElement)
 
     camera.position.set(0, 0, 15000)
@@ -21,55 +20,32 @@ const Model: React.VFC = () => {
     controls.dampingFactor = 0.2
     scene.add(light)
 
-    const mtlLoader = new MTLLoader()
+    const loader = new GLTFLoader()
 
-    mtlLoader.setPath('kyoiku/')
-    mtlLoader.load('kyoiku.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
+    loader.load(
+      'kyoiku.glb',
+      (gltf) => {
+        const model = gltf.scene
 
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('kyoiku/')
-        objLoader.load(
-          // 読込処理
-          'kyoiku.obj',
-          (object) => {
-            const objLoadEnd = () => {
-              const objects: THREE.Group[] = []
+        model.scale.set(40, 40, 40)
+        model.rotation.set(120, 0, 0)
+        model.position.set(200, 800, 0)
 
-              object.scale.set(40, 40, 40)
-              object.rotation.set(120, 0, 0)
-              object.position.set(200, 800, 0)
+        scene.add(model)
+      },
+      // 読込状況
+      (xhr) => {
+        const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
 
-              scene.add(object)
-              objects.push(object)
-            }
-
-            setTimeout(objLoadEnd, 10)
-          },
-          // 読込状況
-          (xhr) => {
-            const loader = document.getElementById('loader') as HTMLElement
-            const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
-
-            if (progress < 100) {
-              loader.innerHTML = `Loading... ${progress}%`
-            } else {
-              setInterval(() => {
-                loader.style.display = 'none'
-              }, 1000)
-            }
-          },
-          // 読込失敗
-          (error) => {
-            console.error(`Three.js: ${error}`)
-          }
-        )
+        if (progress < 100) {
+          console.log(`nitic-map: Loading... ${progress}%`)
+        }
+      },
+      // 読込失敗
+      (error) => {
+        console.error(`nitic-map: ${error}`)
       }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
+    )
 
     const tick = () => {
       controls.update()
@@ -93,7 +69,6 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = []
 
-    // 初期値
     guide0.position.y =
       guide1.position.y =
       guide2.position.y =
@@ -142,7 +117,6 @@ const Model: React.VFC = () => {
 
   return (
     <>
-      <p id="loader">Loading... 0%</p>
       <canvas id="canvas" />
     </>
   )
@@ -152,7 +126,7 @@ const Model: React.VFC = () => {
 const guide0 = new THREE.Mesh(
   new THREE.BoxGeometry(1150, 7000, 1500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -161,7 +135,7 @@ const guide0 = new THREE.Mesh(
 const guide1 = new THREE.Mesh(
   new THREE.BoxGeometry(4200, 1150, 1250),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -170,7 +144,7 @@ const guide1 = new THREE.Mesh(
 const guide2 = new THREE.Mesh(
   new THREE.BoxGeometry(2150, 1450, 1600),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -179,7 +153,7 @@ const guide2 = new THREE.Mesh(
 const guide3 = new THREE.Mesh(
   new THREE.BoxGeometry(2200, 1450, 800),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -188,7 +162,7 @@ const guide3 = new THREE.Mesh(
 const guide4 = new THREE.Mesh(
   new THREE.BoxGeometry(4200, 1150, 1650),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -197,7 +171,7 @@ const guide4 = new THREE.Mesh(
 const guide5 = new THREE.Mesh(
   new THREE.BoxGeometry(1000, 3500, 1250),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -206,7 +180,7 @@ const guide5 = new THREE.Mesh(
 const guide6 = new THREE.Mesh(
   new THREE.BoxGeometry(1500, 1500, 800),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -215,7 +189,7 @@ const guide6 = new THREE.Mesh(
 const guide7 = new THREE.Mesh(
   new THREE.BoxGeometry(2000, 1500, 800),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -224,7 +198,7 @@ const guide7 = new THREE.Mesh(
 const guide8 = new THREE.Mesh(
   new THREE.BoxGeometry(2950, 1600, 1500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -233,7 +207,7 @@ const guide8 = new THREE.Mesh(
 const guide9 = new THREE.Mesh(
   new THREE.BoxGeometry(1200, 1400, 1250),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
