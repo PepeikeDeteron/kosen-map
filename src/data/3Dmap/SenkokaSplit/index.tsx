@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import * as THREE from 'three'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { guideInitialValue } from '@/constants/common'
 
@@ -13,7 +12,7 @@ const Model: React.VFC = () => {
     })
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000)
-    const light = new THREE.AmbientLight(0x666666, 2.5)
+    const light = new THREE.AmbientLight(0xffffff, 1.75)
     const controls = new OrbitControls(camera, renderer.domElement)
 
     camera.position.set(0, 0, 15000)
@@ -21,54 +20,31 @@ const Model: React.VFC = () => {
     controls.dampingFactor = 0.2
     scene.add(light)
 
-    const mtlLoader = new MTLLoader()
+    const loader = new GLTFLoader()
 
-    mtlLoader.setPath('senkoka_split/')
-    mtlLoader.load('senkoka-split.mtl', (material) => {
-      const mtlLoadEnd = () => {
-        const objLoader = new OBJLoader()
+    loader.load(
+      'senkoka_split.glb',
+      (gltf) => {
+        const model = gltf.scene
 
-        material.preload()
-        objLoader.setMaterials(material)
-        objLoader.setPath('senkoka_split/')
-        objLoader.load(
-          // 読込処理
-          'senkoka-split.obj',
-          (object) => {
-            const objLoadEnd = () => {
-              const objects: THREE.Group[] = []
+        model.scale.set(110, 110, 110)
+        model.position.set(0, -4800, 0)
 
-              object.scale.set(110, 110, 110)
-              object.position.set(0, -4800, 0)
+        scene.add(model)
+      },
+      // 読込状況
+      (xhr) => {
+        const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
 
-              scene.add(object)
-              objects.push(object)
-            }
-
-            setTimeout(objLoadEnd, 10)
-          },
-          // 読込状況
-          (xhr) => {
-            const loader = document.getElementById('loader') as HTMLElement
-            const progress = Math.ceil((xhr.loaded / xhr.total) * 100)
-
-            if (progress < 100) {
-              loader.innerHTML = `Loading... ${progress}%`
-            } else {
-              setInterval(() => {
-                loader.style.display = 'none'
-              }, 1000)
-            }
-          },
-          // 読込失敗
-          (error) => {
-            console.error(`Three.js: ${error}`)
-          }
-        )
+        if (progress < 100) {
+          console.log(`nitic-map: Loading... ${progress}%`)
+        }
+      },
+      // 読込失敗
+      (error) => {
+        console.error(`nitic-map: ${error}`)
       }
-
-      setTimeout(mtlLoadEnd, 10)
-    })
+    )
 
     const tick = () => {
       controls.update()
@@ -109,7 +85,6 @@ const Model: React.VFC = () => {
 
   return (
     <>
-      <p id="loader">Loading... 0%</p>
       <canvas id="canvas" />
     </>
   )
@@ -119,7 +94,7 @@ const Model: React.VFC = () => {
 const guide1 = new THREE.Mesh(
   new THREE.BoxGeometry(2500, 1200, 2500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -129,7 +104,7 @@ const guide1 = new THREE.Mesh(
 const guide2 = new THREE.Mesh(
   new THREE.BoxGeometry(1250, 1200, 2500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -273,28 +248,28 @@ export const senkoka501 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-2200, 3400, 1000)
+  guide1.position.set(-2100, 3400, 1000)
 }
 
 export const senkoka502 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(-2200, 3400, -2000)
+  guide1.position.set(-2100, 3400, -2000)
 }
 
 export const senkoka503 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(2200, 3400, -2000)
+  guide1.position.set(2100, 3400, -2000)
 }
 
 export const senkoka504 = (): void => {
   guide1.visible = true
   guide2.visible = false
 
-  guide1.position.set(2200, 3400, 1000)
+  guide1.position.set(2100, 3400, 1000)
 }
 
 export default React.memo(Model)
