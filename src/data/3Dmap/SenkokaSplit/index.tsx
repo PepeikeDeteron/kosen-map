@@ -12,7 +12,7 @@ const Model: React.VFC = () => {
     })
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000)
-    const light = new THREE.AmbientLight(0x666666, 2.5)
+    const light = new THREE.AmbientLight(0xffffff, 1.75)
     const controls = new OrbitControls(camera, renderer.domElement)
 
     camera.position.set(0, 0, 15000)
@@ -94,7 +94,7 @@ const Model: React.VFC = () => {
 const guide1 = new THREE.Mesh(
   new THREE.BoxGeometry(2500, 1200, 2500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
@@ -104,7 +104,7 @@ const guide1 = new THREE.Mesh(
 const guide2 = new THREE.Mesh(
   new THREE.BoxGeometry(1250, 1200, 2500),
   new THREE.MeshBasicMaterial({
-    color: 0xee476e,
+    color: 0xff476e,
     transparent: true,
     opacity: 0.5,
   })
