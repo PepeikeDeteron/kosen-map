@@ -22,7 +22,6 @@ const Model: React.VFC = () => {
 
     const loader = new GLTFLoader()
 
-    loader.setPath('senkoka_split/')
     loader.load(
       'senkoka_split.glb',
       (gltf) => {
@@ -30,6 +29,7 @@ const Model: React.VFC = () => {
 
         model.scale.set(110, 110, 110)
         model.position.set(0, -4800, 0)
+
         scene.add(model)
       },
       // 読込状況
