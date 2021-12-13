@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Block_of_Iron.001
 Ns 0.000000
@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Block_of_Iron.002
 Ns 0.000000
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Block_of_Iron.003
 Ns 0.000000
@@ -43,7 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Block_of_Iron.004
 Ns 0.000000
@@ -54,7 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Block_of_Iron.005
 Ns 0.000000
@@ -65,7 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Block_of_Quartz
 Ns 0.000000
@@ -76,7 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Block_of_Quartz.001
 Ns 0.000000
@@ -87,7 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Block_of_Quartz.002
 Ns 0.000000
@@ -98,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Block_of_Quartz.003
 Ns 0.000000
@@ -109,7 +109,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Block_of_Quartz.004
 Ns 0.000000
@@ -120,7 +120,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Block_of_Quartz.005
 Ns 0.000000
@@ -131,7 +131,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Carpet
 Ns 0.000000
@@ -142,7 +142,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Cauldron
 Ns 0.000000
@@ -153,8 +153,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Clay
 Ns 0.000000
@@ -165,7 +165,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Clay.001
 Ns 0.000000
@@ -176,7 +176,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Cobblestone
 Ns 0.000000
@@ -187,7 +187,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Colored_Terracotta
 Ns 0.000000
@@ -198,7 +198,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Colored_Terracotta.001
 Ns 0.000000
@@ -209,7 +209,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Colored_Terracotta.002
 Ns 0.000000
@@ -220,7 +220,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Colored_Terracotta.003
 Ns 0.000000
@@ -231,7 +231,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Colored_Terracotta.004
 Ns 0.000000
@@ -242,7 +242,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Colored_Terracotta.005
 Ns 0.000000
@@ -253,7 +253,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Dirt
 Ns 0.000000
@@ -264,7 +264,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Double_Stone_Slab
 Ns 0.000000
@@ -275,7 +275,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Double_Stone_Slab.001
 Ns 0.000000
@@ -286,7 +286,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Double_Stone_Slab.002
 Ns 0.000000
@@ -297,7 +297,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Double_Stone_Slab.003
 Ns 0.000000
@@ -308,7 +308,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Double_Stone_Slab.004
 Ns 0.000000
@@ -319,7 +319,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Fence
 Ns 0.000000
@@ -330,7 +330,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Fence.001
 Ns 0.000000
@@ -341,7 +341,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Furnace
 Ns 0.000000
@@ -352,7 +352,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Furnace.001
 Ns 0.000000
@@ -363,7 +363,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Furnace.002
 Ns 0.000000
@@ -374,7 +374,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Glass
 Ns 0.000000
@@ -385,8 +385,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Glass.001
 Ns 0.000000
@@ -397,8 +397,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Glass.002
 Ns 0.000000
@@ -409,8 +409,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Glass.003
 Ns 0.000000
@@ -421,8 +421,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Glass.004
 Ns 0.000000
@@ -433,8 +433,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Glass_Pane
 Ns 0.000000
@@ -445,8 +445,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Glass_Pane.001
 Ns 0.000000
@@ -457,8 +457,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Glass_Pane.002
 Ns 0.000000
@@ -469,8 +469,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Glass_Pane.003
 Ns 0.000000
@@ -481,8 +481,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Glass_Pane.004
 Ns 0.000000
@@ -493,8 +493,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Glass_Pane.005
 Ns 0.000000
@@ -505,8 +505,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Grass
 Ns 0.000000
@@ -517,8 +517,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Grass_Block
 Ns 0.000000
@@ -529,7 +529,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Heavy_Weighted_Pressure_Plate
 Ns 0.000000
@@ -540,7 +540,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Hopper
 Ns 0.000000
@@ -551,7 +551,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Inverted_Daylight_Sensor
 Ns 0.000000
@@ -562,7 +562,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Inverted_Daylight_Sensor.001
 Ns 0.000000
@@ -573,7 +573,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Inverted_Daylight_Sensor.002
 Ns 0.000000
@@ -584,7 +584,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Inverted_Daylight_Sensor.003
 Ns 0.000000
@@ -595,7 +595,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Inverted_Daylight_Sensor.004
 Ns 0.000000
@@ -606,7 +606,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Inverted_Daylight_Sensor.005
 Ns 0.000000
@@ -617,7 +617,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Iron_Bars
 Ns 0.000000
@@ -628,8 +628,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Iron_Bars.001
 Ns 0.000000
@@ -640,8 +640,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Iron_Bars.002
 Ns 0.000000
@@ -652,8 +652,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Iron_Bars.003
 Ns 0.000000
@@ -664,8 +664,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Iron_Bars.004
 Ns 0.000000
@@ -676,8 +676,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Iron_Bars.005
 Ns 0.000000
@@ -688,8 +688,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Iron_Door
 Ns 0.000000
@@ -700,8 +700,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Iron_Door.001
 Ns 0.000000
@@ -712,8 +712,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Iron_Door.002
 Ns 0.000000
@@ -724,8 +724,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Iron_Door.003
 Ns 0.000000
@@ -736,8 +736,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Iron_Door.004
 Ns 0.000000
@@ -748,8 +748,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Iron_Door.005
 Ns 0.000000
@@ -760,8 +760,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Jungle_Stairs
 Ns 0.000000
@@ -772,7 +772,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Lever
 Ns 0.000000
@@ -783,7 +783,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Material
 Ns 323.999994
@@ -824,8 +824,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Oak_Door.001
 Ns 0.000000
@@ -836,8 +836,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Oak_Door.002
 Ns 0.000000
@@ -848,8 +848,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Oak_Door.003
 Ns 0.000000
@@ -860,8 +860,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Oak_Door.004
 Ns 0.000000
@@ -872,8 +872,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Oak_Door.005
 Ns 0.000000
@@ -884,8 +884,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Oak_Planks
 Ns 0.000000
@@ -896,7 +896,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Oak_Planks.001
 Ns 0.000000
@@ -907,7 +907,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Oak_Slab
 Ns 0.000000
@@ -918,7 +918,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Oak_Trapdoor
 Ns 0.000000
@@ -929,8 +929,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Orange_Shulker_Box
 Ns 0.000000
@@ -941,7 +941,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Poppy
 Ns 0.000000
@@ -952,8 +952,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Purple_Shulker_Box
 Ns 0.000000
@@ -964,7 +964,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Quartz_Stairs
 Ns 0.000000
@@ -975,7 +975,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Stained_Glass.001
 Ns 0.000000
@@ -986,8 +986,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Stained_Glass_Pane
 Ns 0.000000
@@ -998,8 +998,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Stained_Glass_Pane.001
 Ns 0.000000
@@ -1010,8 +1010,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Stained_Glass_Pane.002
 Ns 0.000000
@@ -1022,8 +1022,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka2F-RGBA.webp
-map_d senkoka2F-Alpha.webp
+map_Kd senkoka2F-RGBA.png
+map_d senkoka2F-Alpha.png
 
 newmtl Stained_Glass_Pane.003
 Ns 0.000000
@@ -1034,8 +1034,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Stained_Glass_Pane.004
 Ns 0.000000
@@ -1046,8 +1046,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka4F-RGBA.webp
-map_d senkoka4F-Alpha.webp
+map_Kd senkoka4F-RGBA.png
+map_d senkoka4F-Alpha.png
 
 newmtl Stained_Glass_Pane.005
 Ns 0.000000
@@ -1058,8 +1058,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka5F&R-RGBA.webp
-map_d senkoka5F&R-Alpha.webp
+map_Kd senkoka5F&R-RGBA.png
+map_d senkoka5F&R-Alpha.png
 
 newmtl Stationary_Water
 Ns 0.000000
@@ -1070,8 +1070,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Stone
 Ns 0.000000
@@ -1082,7 +1082,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Stone_Bricks
 Ns 0.000000
@@ -1093,7 +1093,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Stone_Pressure_Plate
 Ns 0.000000
@@ -1104,7 +1104,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Stone_Slab
 Ns 0.000000
@@ -1115,7 +1115,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Stone_Slab.001
 Ns 0.000000
@@ -1126,7 +1126,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Stone_Slab.002
 Ns 0.000000
@@ -1137,7 +1137,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka2F-RGB.webp
+map_Kd senkoka2F-RGB.png
 
 newmtl Stone_Slab.003
 Ns 0.000000
@@ -1148,7 +1148,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Stone_Slab.004
 Ns 0.000000
@@ -1159,7 +1159,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Stone_Slab.005
 Ns 0.000000
@@ -1170,7 +1170,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Sunflower
 Ns 0.000000
@@ -1181,8 +1181,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGBA.webp
-map_d senkoka1F-Alpha.webp
+map_Kd senkoka1F-RGBA.png
+map_d senkoka1F-Alpha.png
 
 newmtl Torch
 Ns 0.000000
@@ -1193,9 +1193,9 @@ Ke 0.901686 0.901686 0.901686
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGBA.webp
-map_Ke senkoka3F-RGBA.webp
-map_d senkoka3F-Alpha.webp
+map_Kd senkoka3F-RGBA.png
+map_Ke senkoka3F-RGBA.png
+map_d senkoka3F-Alpha.png
 
 newmtl Wool
 Ns 0.000000
@@ -1206,7 +1206,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
 
 newmtl Wool.001
 Ns 0.000000
@@ -1217,7 +1217,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka3F-RGB.webp
+map_Kd senkoka3F-RGB.png
 
 newmtl Wool.002
 Ns 0.000000
@@ -1228,7 +1228,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka4F-RGB.webp
+map_Kd senkoka4F-RGB.png
 
 newmtl Wool.003
 Ns 0.000000
@@ -1239,7 +1239,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka5F&R-RGB.webp
+map_Kd senkoka5F&R-RGB.png
 
 newmtl Yellow_Glazed_Terracotta
 Ns 0.000000
@@ -1250,4 +1250,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd senkoka1F-RGB.webp
+map_Kd senkoka1F-RGB.png
