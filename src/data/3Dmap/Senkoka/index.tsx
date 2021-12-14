@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import * as THREE from 'three'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
@@ -19,16 +20,20 @@ const Model: React.VFC = () => {
     controls.dampingFactor = 0.2
     scene.add(light)
 
-    const loader = new GLTFLoader()
+    const dracoLoader = new DRACOLoader()
+    const gltfLoader = new GLTFLoader()
 
-    loader.load(
-      'senkoka.glb',
+    dracoLoader.setDecoderConfig({ type: 'js' })
+    dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/')
+
+    gltfLoader.setDRACOLoader(dracoLoader)
+    gltfLoader.load(
+      'senkoka_draco.glb',
       (gltf) => {
         const model = gltf.scene
 
-        model.scale.set(130, 180, 150)
-        model.rotation.set(0, -100, 0)
-        model.position.set(-300, -4000, 0)
+        model.scale.set(110, 110, 110)
+        model.position.set(0, -4800, 0)
 
         scene.add(model)
       },
