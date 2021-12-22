@@ -3,7 +3,7 @@
 exports[`Storyshots components/templates/Home Default 1`] = `
 Array [
   <div
-    className="Home__StyledComponent-sc-1ojnorm-0 gHxdjX"
+    className="Home__StyledComponent-sc-1ojnorm-0 bjVQgx"
   >
     <h2
       className="title"
@@ -14,7 +14,7 @@ Array [
       className="display"
     >
       <div
-        className="css-1dt90ys"
+        className="css-ptn2bx"
         id="map-display"
       >
         <div
