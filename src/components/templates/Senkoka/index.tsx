@@ -109,7 +109,9 @@ const Container: React.VFC<Partial<ContainerProps>> = () => {
 
   const onChangeModel = () => setChangeModel(!changeModel);
 
-  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' });
+  const isMobileScreen = useMediaQuery({
+    query: `(max-width: ${mobileMaxWidth})`,
+  });
 
   const containerProps = {
     isMobileScreen,

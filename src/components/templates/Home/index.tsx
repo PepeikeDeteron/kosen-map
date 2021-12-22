@@ -80,7 +80,9 @@ const StyledComponent = styled(Component)`
 `;
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
-  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' });
+  const isMobileScreen = useMediaQuery({
+    query: `(max-width: ${mobileMaxWidth})`,
+  });
 
   const containerProps = { isMobileScreen };
 
