@@ -11,11 +11,11 @@ import { mobileMaxWidth } from '@/constants/common';
 import { kyoiku } from '@/data/Guide/kyoiku';
 
 type ContainerProps = {
-  isMobileScreen: boolean;
+  readonly isMobileScreen: boolean;
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {

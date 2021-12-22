@@ -4,11 +4,11 @@ import { Paper } from '@mui/material';
 import { tabletMaxWidth } from '@/constants/common';
 
 type ContainerProps = {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {

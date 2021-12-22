@@ -9,11 +9,11 @@ import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 
 type ContainerProps = {
-  isMobileScreen: boolean;
+  readonly isMobileScreen: boolean;
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {

@@ -12,13 +12,13 @@ import { mobileMaxWidth } from '@/constants/common';
 import { senkoka } from '@/data/Guide/senkoka';
 
 type ContainerProps = {
-  isMobileScreen: boolean;
-  changeModel: boolean;
-  onChangeModel: () => void;
+  readonly isMobileScreen: boolean;
+  readonly changeModel: boolean;
+  readonly onChangeModel: () => void;
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka'), {

@@ -6,12 +6,12 @@ import { ColorProps } from '@/types/color';
 import { GuideProps } from '@/types/guide';
 
 type ContainerProps = {
-  color: ColorProps;
-  data: GuideProps[];
+  readonly color: ColorProps;
+  readonly data: GuideProps[];
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
