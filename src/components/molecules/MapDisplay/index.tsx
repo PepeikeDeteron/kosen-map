@@ -1,15 +1,15 @@
-import React from 'react'
-import { styled } from '@mui/system'
-import { Paper } from '@mui/material'
-import { tabletMaxWidth } from '@/constants/common'
+import React from 'react';
+import { styled } from '@mui/system';
+import { Paper } from '@mui/material';
+import { tabletMaxWidth } from '@/constants/common';
 
 type ContainerProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {
   return (
@@ -18,8 +18,8 @@ const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {
         {children}
       </Paper>
     </div>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   position: relative;
@@ -47,10 +47,10 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${tabletMaxWidth}) {
     width: 90%;
   }
-`
+`;
 
 const Container: React.VFC<ContainerProps> = (props) => {
-  return <StyledComponent {...props} />
-}
+  return <StyledComponent {...props} />;
+};
 
-export default React.memo(Container)
+export default React.memo(Container);

@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/system'
+import { createTheme } from '@mui/system';
 
 const theme = createTheme({
   palette: {
@@ -12,6 +12,6 @@ const theme = createTheme({
       default: '#fff',
     },
   },
-})
+});
 
-export default theme
+export default theme;

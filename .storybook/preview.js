@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -8,9 +8,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
 
-const GlobalStyle = createGlobalStyle``
+const GlobalStyle = createGlobalStyle``;
 
 export const decorators = [
   (Story) => (
@@ -19,4 +19,4 @@ export const decorators = [
       <Story />
     </>
   ),
-]
+];

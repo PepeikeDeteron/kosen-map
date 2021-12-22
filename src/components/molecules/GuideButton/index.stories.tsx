@@ -1,9 +1,9 @@
-import React, { ComponentProps } from 'react'
-import { Meta, Story } from '@storybook/react'
-import GuideButton from '.'
-import { senkoka101, senkoka102, senkoka103 } from '@/data/3Dmap/SenkokaSplit'
-import { senkoka } from '@/data/Guide/senkoka'
-import { kyoiku } from '@/data/Guide/kyoiku'
+import React, { ComponentProps } from 'react';
+import { Meta, Story } from '@storybook/react';
+import GuideButton from '.';
+import { senkoka101, senkoka102, senkoka103 } from '@/data/3Dmap/SenkokaSplit';
+import { senkoka } from '@/data/Guide/senkoka';
+import { kyoiku } from '@/data/Guide/kyoiku';
 
 export default {
   title: 'components/molecules/GuideButton',
@@ -16,13 +16,13 @@ export default {
       action: 'clicked',
     },
   },
-} as Meta
+} as Meta;
 
 const Template: Story<ComponentProps<typeof GuideButton>> = (props) => (
   <GuideButton {...props} />
-)
+);
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   color: 'primary',
   data: [
@@ -42,16 +42,16 @@ Default.args = {
       position: senkoka103,
     },
   ],
-}
+};
 
-export const SenkokaSplit = Template.bind({})
+export const SenkokaSplit = Template.bind({});
 SenkokaSplit.args = {
   color: 'primary',
   data: senkoka,
-}
+};
 
-export const Kyoiku = Template.bind({})
+export const Kyoiku = Template.bind({});
 Kyoiku.args = {
   color: 'secondary',
   data: kyoiku,
-}
+};

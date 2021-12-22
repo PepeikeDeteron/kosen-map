@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Template from '@/components/templates/Senkoka'
+import React from 'react';
+import Head from 'next/head';
+import Template from '@/components/templates/Senkoka';
 
 const Senkoka: React.VFC = () => {
   return (
@@ -12,7 +12,7 @@ const Senkoka: React.VFC = () => {
 
       <Template />
     </>
-  )
-}
+  );
+};
 
-export default Senkoka
+export default Senkoka;

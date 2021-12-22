@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import NotFoundTopPage from '../../../../public/not_found_top_page.svg'
+import React from 'react';
+import styled from 'styled-components';
+import NotFoundTopPage from '../../../../public/not_found_top_page.svg';
 
 type Props = {
-  className?: string
-}
+  className?: string;
+};
 
 const Component: React.VFC<Props> = ({ className }) => {
   return (
@@ -15,13 +15,13 @@ const Component: React.VFC<Props> = ({ className }) => {
       </h2>
       <StyledNotFoundTopPage />
     </div>
-  )
-}
+  );
+};
 
 const StyledNotFoundTopPage = styled(NotFoundTopPage)`
   display: block;
   margin: 3rem auto 0;
-`
+`;
 
 const StyledComponent = styled(Component)`
   font-size: 1rem;
@@ -29,10 +29,10 @@ const StyledComponent = styled(Component)`
   color: #4527a0;
   text-align: center;
   margin: 15rem 0 0;
-`
+`;
 
 const Container: React.VFC<Props> = (props) => {
-  return <StyledComponent {...props} />
-}
+  return <StyledComponent {...props} />;
+};
 
-export default Container
+export default Container;

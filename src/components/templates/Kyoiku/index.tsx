@@ -1,29 +1,29 @@
-import React from 'react'
-import { useRouter } from 'next/router'
-import { useMediaQuery } from 'react-responsive'
-import dynamic from 'next/dynamic'
-import styled from 'styled-components'
-import GuideButton from '@/components/molecules/GuideButton'
-import HomeButton from '@/components/molecules/HomeButton'
-import MapDisplay from '@/components/molecules/MapDisplay'
-import Home404 from '@/components/templates/Home404'
-import { mobileMaxWidth } from '@/constants/common'
-import { kyoiku } from '@/data/Guide/kyoiku'
+import React from 'react';
+import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
+import dynamic from 'next/dynamic';
+import styled from 'styled-components';
+import GuideButton from '@/components/molecules/GuideButton';
+import HomeButton from '@/components/molecules/HomeButton';
+import MapDisplay from '@/components/molecules/MapDisplay';
+import Home404 from '@/components/templates/Home404';
+import { mobileMaxWidth } from '@/constants/common';
+import { kyoiku } from '@/data/Guide/kyoiku';
 
 type ContainerProps = {
-  isMobileScreen: boolean
-}
+  isMobileScreen: boolean;
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
   ssr: false,
-})
+});
 
 const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -45,8 +45,8 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
     </>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   padding: 2rem 3vh;
@@ -85,14 +85,14 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
-`
+`;
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
-  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' })
+  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' });
 
-  const containerProps = { isMobileScreen }
+  const containerProps = { isMobileScreen };
 
-  return <StyledComponent {...{ ...containerProps }} />
-}
+  return <StyledComponent {...{ ...containerProps }} />;
+};
 
-export default Container
+export default Container;

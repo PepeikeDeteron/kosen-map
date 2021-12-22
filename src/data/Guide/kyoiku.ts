@@ -7,8 +7,8 @@ import {
   kyoiku500,
   kyoiku600,
   kyoiku700,
-} from '@/data/3Dmap/Kyoiku'
-import { GuideProps } from '@/types/guide'
+} from '@/data/3Dmap/Kyoiku';
+import { GuideProps } from '@/types/guide';
 
 export const kyoiku: GuideProps[] = [
   {
@@ -51,4 +51,4 @@ export const kyoiku: GuideProps[] = [
     name: `${process.env.KYOIKU_700}`,
     position: kyoiku700,
   },
-]
+];

@@ -1,6 +1,6 @@
-import React, { ComponentProps } from 'react'
-import { Meta, Story } from '@storybook/react'
-import HomeButton from '.'
+import React, { ComponentProps } from 'react';
+import { Meta, Story } from '@storybook/react';
+import HomeButton from '.';
 
 export default {
   title: 'components/molecules/HomeButton',
@@ -10,11 +10,11 @@ export default {
       action: 'clicked',
     },
   },
-} as Meta
+} as Meta;
 
 const Template: Story<ComponentProps<typeof HomeButton>> = (props) => (
   <HomeButton {...props} />
-)
+);
 
-export const Default = Template.bind({})
-Default.args = {}
+export const Default = Template.bind({});
+Default.args = {};

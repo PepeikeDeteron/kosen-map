@@ -1,34 +1,34 @@
-import React from 'react'
-import { styled } from '@mui/system'
-import { Button } from '@mui/material'
-import { ColorProps } from '@/types/color'
+import React from 'react';
+import { styled } from '@mui/system';
+import { Button } from '@mui/material';
+import { ColorProps } from '@/types/color';
 
 type ContainerProps = {
-  color: ColorProps
-  label: string
-  onClick: () => void
-}
+  color: ColorProps;
+  label: string;
+  onClick: () => void;
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const Component: React.VFC<Props> = ({ color, label, ...restProps }) => {
   return (
     <Button variant="outlined" color={color} {...restProps}>
       {label}
     </Button>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   width: 15rem;
   height: 5rem;
   font-size: 1.5rem;
-`
+`;
 
 const Container: React.VFC<ContainerProps> = (props) => {
-  return <StyledComponent {...props} />
-}
+  return <StyledComponent {...props} />;
+};
 
-export default React.memo(Container)
+export default React.memo(Container);

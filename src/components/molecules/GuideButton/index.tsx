@@ -1,18 +1,18 @@
-import React from 'react'
-import { styled } from '@mui/system'
-import { Button } from '@mui/material'
-import { ButtonGroup } from '@mui/material'
-import { ColorProps } from '@/types/color'
-import { GuideProps } from '@/types/guide'
+import React from 'react';
+import { styled } from '@mui/system';
+import { Button } from '@mui/material';
+import { ButtonGroup } from '@mui/material';
+import { ColorProps } from '@/types/color';
+import { GuideProps } from '@/types/guide';
 
 type ContainerProps = {
-  color: ColorProps
-  data: GuideProps[]
-}
+  color: ColorProps;
+  data: GuideProps[];
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
   return (
@@ -29,18 +29,18 @@ const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
           </Button>
         ))}
     </ButtonGroup>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   width: 14rem;
   flex-basis: 0;
   flex-grow: 1;
   overflow-y: scroll;
-`
+`;
 
 const Container: React.VFC<ContainerProps> = (props) => {
-  return <StyledComponent {...props} />
-}
+  return <StyledComponent {...props} />;
+};
 
-export default React.memo(Container)
+export default React.memo(Container);

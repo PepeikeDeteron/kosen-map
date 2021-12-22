@@ -1,8 +1,8 @@
-import React from 'react'
-import Head from 'next/head'
-import { AppProps } from 'next/app'
-import 'normalize.css'
-import '../styles/globals.css'
+import React from 'react';
+import Head from 'next/head';
+import { AppProps } from 'next/app';
+import 'normalize.css';
+import '../styles/globals.css';
 
 const App: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
@@ -12,7 +12,7 @@ const App: React.VFC<AppProps> = ({ Component, pageProps }: AppProps) => {
       </Head>
       <Component {...pageProps} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

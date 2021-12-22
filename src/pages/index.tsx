@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Template from '@/components/templates/Home'
+import React from 'react';
+import Head from 'next/head';
+import Template from '@/components/templates/Home';
 
 const Home: React.VFC = () => {
   return (
@@ -12,7 +12,7 @@ const Home: React.VFC = () => {
 
       <Template />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
