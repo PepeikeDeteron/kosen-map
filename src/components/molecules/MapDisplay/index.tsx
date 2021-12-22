@@ -23,7 +23,7 @@ const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {
 
 const StyledComponent = styled(Component)`
   position: relative;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
