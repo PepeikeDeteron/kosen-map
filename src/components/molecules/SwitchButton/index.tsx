@@ -4,13 +4,13 @@ import { Button } from '@mui/material';
 import { ColorProps } from '@/types/color';
 
 type ContainerProps = {
-  color: ColorProps;
-  label: string;
-  onClick: () => void;
+  readonly color: ColorProps;
+  readonly label: string;
+  readonly onClick: () => void;
 };
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const Component: React.VFC<Props> = ({ color, label, ...restProps }) => {

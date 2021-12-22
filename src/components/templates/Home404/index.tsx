@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import NotFoundTopPage from '../../../../public/not_found_top_page.svg';
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 };
 
 const Component: React.VFC<Props> = ({ className }) => {

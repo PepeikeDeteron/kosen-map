@@ -3,12 +3,12 @@ import { styled } from '@mui/system';
 import { IconButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 
-type ContainerProps = {
-  onClick: () => void;
-};
+type ContainerProps = Readonly<{
+  readonly onClick: () => void;
+}>;
 
 type Props = {
-  className?: string;
+  readonly className?: string;
 } & ContainerProps;
 
 const Component: React.VFC<Props> = ({ className, ...restProps }) => {
