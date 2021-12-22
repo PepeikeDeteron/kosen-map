@@ -74,7 +74,7 @@ const StyledComponent = styled(Component)`
     letter-spacing: 1rem;
     color: #808080;
     text-align: right;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     user-select: none;
   }
 

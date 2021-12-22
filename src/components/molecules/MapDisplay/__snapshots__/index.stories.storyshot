@@ -2,7 +2,7 @@
 
 exports[`Storyshots components/molecules/MapDisplay Default 1`] = `
 <div
-  className="css-1dt90ys"
+  className="css-ptn2bx"
   id="map-display"
 >
   <div
