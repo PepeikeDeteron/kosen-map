@@ -1,23 +1,23 @@
-import React from 'react'
-import { useRouter } from 'next/router'
-import { useMediaQuery } from 'react-responsive'
-import styled from 'styled-components'
-import HomeButton from '@/components/molecules/HomeButton'
-import MapDisplay from '@/components/molecules/MapDisplay'
-import SwitchButton from '@/components/molecules/SwitchButton'
-import Home404 from '@/components/templates/Home404'
-import { mobileMaxWidth } from '@/constants/common'
+import React from 'react';
+import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
+import styled from 'styled-components';
+import HomeButton from '@/components/molecules/HomeButton';
+import MapDisplay from '@/components/molecules/MapDisplay';
+import SwitchButton from '@/components/molecules/SwitchButton';
+import Home404 from '@/components/templates/Home404';
+import { mobileMaxWidth } from '@/constants/common';
 
 type ContainerProps = {
-  isMobileScreen: boolean
-}
+  isMobileScreen: boolean;
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -44,8 +44,8 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
     </>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   padding: 2rem 3vh;
@@ -77,14 +77,14 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
-`
+`;
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
-  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' })
+  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' });
 
-  const containerProps = { isMobileScreen }
+  const containerProps = { isMobileScreen };
 
-  return <StyledComponent {...{ ...containerProps }} />
-}
+  return <StyledComponent {...{ ...containerProps }} />;
+};
 
-export default Container
+export default Container;

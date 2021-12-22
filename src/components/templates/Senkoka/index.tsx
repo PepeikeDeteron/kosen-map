@@ -1,33 +1,33 @@
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
-import { useMediaQuery } from 'react-responsive'
-import dynamic from 'next/dynamic'
-import styled from 'styled-components'
-import GuideButton from '@/components/molecules/GuideButton'
-import HomeButton from '@/components/molecules/HomeButton'
-import MapDisplay from '@/components/molecules/MapDisplay'
-import SwitchButton from '@/components/molecules/SwitchButton'
-import Home404 from '@/components/templates/Home404'
-import { mobileMaxWidth } from '@/constants/common'
-import { senkoka } from '@/data/Guide/senkoka'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useMediaQuery } from 'react-responsive';
+import dynamic from 'next/dynamic';
+import styled from 'styled-components';
+import GuideButton from '@/components/molecules/GuideButton';
+import HomeButton from '@/components/molecules/HomeButton';
+import MapDisplay from '@/components/molecules/MapDisplay';
+import SwitchButton from '@/components/molecules/SwitchButton';
+import Home404 from '@/components/templates/Home404';
+import { mobileMaxWidth } from '@/constants/common';
+import { senkoka } from '@/data/Guide/senkoka';
 
 type ContainerProps = {
-  isMobileScreen: boolean
-  changeModel: boolean
-  onChangeModel: () => void
-}
+  isMobileScreen: boolean;
+  changeModel: boolean;
+  onChangeModel: () => void;
+};
 
 type Props = {
-  className?: string
-} & ContainerProps
+  className?: string;
+} & ContainerProps;
 
 const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka'), {
   ssr: false,
-})
+});
 
 const SenkokaSplitModel = dynamic(() => import('@/data/3Dmap/SenkokaSplit'), {
   ssr: false,
-})
+});
 
 const Component: React.VFC<Props> = ({
   className,
@@ -35,7 +35,7 @@ const Component: React.VFC<Props> = ({
   changeModel,
   onChangeModel,
 }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <>
@@ -62,8 +62,8 @@ const Component: React.VFC<Props> = ({
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
     </>
-  )
-}
+  );
+};
 
 const StyledComponent = styled(Component)`
   padding: 2rem 3vh;
@@ -102,22 +102,22 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
-`
+`;
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
-  const [changeModel, setChangeModel] = useState(false)
+  const [changeModel, setChangeModel] = useState(false);
 
-  const onChangeModel = () => setChangeModel(!changeModel)
+  const onChangeModel = () => setChangeModel(!changeModel);
 
-  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' })
+  const isMobileScreen = useMediaQuery({ query: '(max-width: 599px)' });
 
   const containerProps = {
     isMobileScreen,
     changeModel,
     onChangeModel,
-  }
+  };
 
-  return <StyledComponent {...{ ...containerProps }} />
-}
+  return <StyledComponent {...{ ...containerProps }} />;
+};
 
-export default Container
+export default Container;

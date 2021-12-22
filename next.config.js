@@ -34,4 +34,4 @@ module.exports = {
     KYOIKU_600: process.env.KYOIKU_600,
     KYOIKU_700: process.env.KYOIKU_700,
   },
-}
+};

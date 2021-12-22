@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Template from '@/components/templates/Kyoiku'
+import React from 'react';
+import Head from 'next/head';
+import Template from '@/components/templates/Kyoiku';
 
 const Kyoiku: React.VFC = () => {
   return (
@@ -12,7 +12,7 @@ const Kyoiku: React.VFC = () => {
 
       <Template />
     </>
-  )
-}
+  );
+};
 
-export default Kyoiku
+export default Kyoiku;

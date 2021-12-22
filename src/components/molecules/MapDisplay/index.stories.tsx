@@ -1,6 +1,6 @@
-import React, { ComponentProps } from 'react'
-import { Meta, Story } from '@storybook/react'
-import MapDisplay from '.'
+import React, { ComponentProps } from 'react';
+import { Meta, Story } from '@storybook/react';
+import MapDisplay from '.';
 
 export default {
   title: 'components/molecules/MapDisplay',
@@ -10,13 +10,13 @@ export default {
       action: 'clicked',
     },
   },
-} as Meta
+} as Meta;
 
 const Template: Story<ComponentProps<typeof MapDisplay>> = (props) => (
   <MapDisplay {...props} />
-)
+);
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   children: 'ここに地図を表示',
-}
+};

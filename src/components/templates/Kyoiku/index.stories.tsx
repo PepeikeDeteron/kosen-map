@@ -1,16 +1,16 @@
-import React, { ComponentProps } from 'react'
-import { Meta, Story } from '@storybook/react'
-import Kanri from '.'
+import React, { ComponentProps } from 'react';
+import { Meta, Story } from '@storybook/react';
+import Kanri from '.';
 
 export default {
   title: 'components/templates/Kanri',
   components: Kanri,
   argTypes: {},
-} as Meta
+} as Meta;
 
 const Template: Story<ComponentProps<typeof Kanri>> = (props) => (
   <Kanri {...props} />
-)
+);
 
-export const Default = Template.bind({})
-Default.args = {}
+export const Default = Template.bind({});
+Default.args = {};
