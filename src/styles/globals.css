@@ -13,22 +13,6 @@ body {
   font-size: 1.6em;
 }
 
-#loader {
-  display: block;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: gray;
-  font-size: 3rem;
-  text-align: center;
-  height: 60px;
-  line-height: 60px;
-  z-index: 0;
-}
-
 #canvas {
   position: relative;
   z-index: 1;

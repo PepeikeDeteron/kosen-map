@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/molecules/Spinner Default 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa gfLNMF"
+    color="#90A4AE"
+    size="default"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat flDhnP"
+    >
+      <span
+        className="sc-bZQynM bzcoEc"
+        color="#90A4AE"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-bxivhb kINVDU"
+    >
+      <span
+        className="sc-bZQynM bzcoEc"
+        color="#90A4AE"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-ifAKCX gJwEBr"
+    >
+      <span
+        className="sc-bZQynM bzcoEc"
+        color="#90A4AE"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-EHOje hkQVFp"
+    >
+      <span
+        className="sc-bZQynM bzcoEc"
+        color="#90A4AE"
+        size="default"
+      />
+    </div>
+  </div>,
+  <span
+    className="Spinner__StyledComponent-sc-10uxmo1-0 bqcwqs"
+  >
+    <p>
+      ネットワークの接続状況により、
+    </p>
+    <p>
+      読み込みが遅くなる場合があります。
+    </p>
+  </span>,
+]
+`;
+
+exports[`Storyshots components/molecules/Spinner Large 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa gfLNMF"
+    color="#90A4AE"
+    size="large"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat flDhnP"
+    >
+      <span
+        className="sc-bZQynM hEybda"
+        color="#90A4AE"
+        size="large"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-bxivhb kINVDU"
+    >
+      <span
+        className="sc-bZQynM hEybda"
+        color="#90A4AE"
+        size="large"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-ifAKCX gJwEBr"
+    >
+      <span
+        className="sc-bZQynM hEybda"
+        color="#90A4AE"
+        size="large"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-EHOje hkQVFp"
+    >
+      <span
+        className="sc-bZQynM hEybda"
+        color="#90A4AE"
+        size="large"
+      />
+    </div>
+  </div>,
+  <span
+    className="Spinner__StyledComponent-sc-10uxmo1-0 bqcwqs"
+  >
+    <p>
+      ネットワークの接続状況により、
+    </p>
+    <p>
+      読み込みが遅くなる場合があります。
+    </p>
+  </span>,
+]
+`;
+
+exports[`Storyshots components/molecules/Spinner Primary 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa gfLNMF"
+    color="#4DD0E1"
+    size="default"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat flDhnP"
+    >
+      <span
+        className="sc-bZQynM jzuxt"
+        color="#4DD0E1"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-bxivhb kINVDU"
+    >
+      <span
+        className="sc-bZQynM jzuxt"
+        color="#4DD0E1"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-ifAKCX gJwEBr"
+    >
+      <span
+        className="sc-bZQynM jzuxt"
+        color="#4DD0E1"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-EHOje hkQVFp"
+    >
+      <span
+        className="sc-bZQynM jzuxt"
+        color="#4DD0E1"
+        size="default"
+      />
+    </div>
+  </div>,
+  <span
+    className="Spinner__StyledComponent-sc-10uxmo1-0 bqcwqs"
+  >
+    <p>
+      ネットワークの接続状況により、
+    </p>
+    <p>
+      読み込みが遅くなる場合があります。
+    </p>
+  </span>,
+]
+`;
+
+exports[`Storyshots components/molecules/Spinner Secondary 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa gfLNMF"
+    color="#81C784"
+    size="default"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat flDhnP"
+    >
+      <span
+        className="sc-bZQynM kYiles"
+        color="#81C784"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-bxivhb kINVDU"
+    >
+      <span
+        className="sc-bZQynM kYiles"
+        color="#81C784"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-ifAKCX gJwEBr"
+    >
+      <span
+        className="sc-bZQynM kYiles"
+        color="#81C784"
+        size="default"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-EHOje hkQVFp"
+    >
+      <span
+        className="sc-bZQynM kYiles"
+        color="#81C784"
+        size="default"
+      />
+    </div>
+  </div>,
+  <span
+    className="Spinner__StyledComponent-sc-10uxmo1-0 bqcwqs"
+  >
+    <p>
+      ネットワークの接続状況により、
+    </p>
+    <p>
+      読み込みが遅くなる場合があります。
+    </p>
+  </span>,
+]
+`;
+
+exports[`Storyshots components/molecules/Spinner Small 1`] = `
+Array [
+  <div
+    className="sc-bdVaJa gfLNMF"
+    color="#90A4AE"
+    size="small"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "margin": "auto",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      className="sc-bwzfXH sc-htpNat flDhnP"
+    >
+      <span
+        className="sc-bZQynM bQOWDO"
+        color="#90A4AE"
+        size="small"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-bxivhb kINVDU"
+    >
+      <span
+        className="sc-bZQynM bQOWDO"
+        color="#90A4AE"
+        size="small"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-ifAKCX gJwEBr"
+    >
+      <span
+        className="sc-bZQynM bQOWDO"
+        color="#90A4AE"
+        size="small"
+      />
+    </div>
+    <div
+      className="sc-bwzfXH sc-EHOje hkQVFp"
+    >
+      <span
+        className="sc-bZQynM bQOWDO"
+        color="#90A4AE"
+        size="small"
+      />
+    </div>
+  </div>,
+  <span
+    className="Spinner__StyledComponent-sc-10uxmo1-0 bqcwqs"
+  >
+    <p>
+      ネットワークの接続状況により、
+    </p>
+    <p>
+      読み込みが遅くなる場合があります。
+    </p>
+  </span>,
+]
+`;
