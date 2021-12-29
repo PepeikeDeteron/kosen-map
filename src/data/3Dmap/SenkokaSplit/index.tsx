@@ -74,7 +74,6 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = [];
 
-    // 初期値
     guide1.position.y = guide2.position.y = guideInitialValue;
 
     guides.push(guide1, guide2);
