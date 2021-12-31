@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots components/molecules/HomeButton Default 1`] = `
+<button
+  aria-label="ホームボタン"
+  className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y1cdmr-MuiButtonBase-root-MuiIconButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <svg
+    aria-hidden={true}
+    className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon css-i4bv87-MuiSvgIcon-root"
+    data-testid="HomeIcon"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+    />
+  </svg>
+</button>
+`;
