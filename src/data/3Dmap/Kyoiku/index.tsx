@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Spinner from '@/components/molecules/Spinner';
 import { guideInitialValue } from '@/constants/common';
 
 const Model: React.VFC = () => {
@@ -41,10 +42,15 @@ const Model: React.VFC = () => {
       },
       // 読込状況
       (xhr) => {
+        const spinner = document.getElementById('spinner') as HTMLElement;
         const progress = Math.ceil((xhr.loaded / xhr.total) * 100);
 
         if (progress < 100) {
           console.log(`nitic-map: Loading... ${progress}%`);
+        } else {
+          setInterval(() => {
+            spinner.style.display = 'none';
+          }, 3000);
         }
       },
       // 読込失敗
@@ -124,6 +130,9 @@ const Model: React.VFC = () => {
   return (
     <>
       <canvas id="canvas" />
+      <div id="spinner">
+        <Spinner color="#90A4AE" size="default" />
+      </div>
     </>
   );
 };
