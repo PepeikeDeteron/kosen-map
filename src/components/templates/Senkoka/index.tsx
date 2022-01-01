@@ -90,7 +90,7 @@ const StyledComponent = styled(Component)`
     display: flex;
     height: 60vh;
     margin-left: -14rem;
-    padding-top: 2rem;
+    padding-top: 10rem;
   }
 
   .button-list {
