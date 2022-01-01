@@ -8,7 +8,7 @@ import {
   kyoiku600,
   kyoiku700,
 } from '@/data/3Dmap/Kyoiku';
-import { GuideProps } from '@/types/guide';
+import { GuideProps } from '@/models/guide';
 
 export const kyoiku: GuideProps[] = [
   {
