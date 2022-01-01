@@ -24,7 +24,7 @@ const Template: Story<ComponentProps<typeof GuideButton>> = (props) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  color: 'primary',
+  color: 'inherit',
   data: [
     {
       id: 101,
@@ -46,12 +46,12 @@ Default.args = {
 
 export const SenkokaSplit = Template.bind({});
 SenkokaSplit.args = {
-  color: 'primary',
+  color: 'inherit',
   data: senkoka,
 };
 
 export const Kyoiku = Template.bind({});
 Kyoiku.args = {
-  color: 'secondary',
+  color: 'inherit',
   data: kyoiku,
 };
