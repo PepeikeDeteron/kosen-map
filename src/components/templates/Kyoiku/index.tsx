@@ -46,7 +46,7 @@ const Component: React.VFC<Props> = ({
             {changeModel ? <KyoikuModel /> : <KyoikuSplitModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="secondary" data={kyoiku} />
+            <GuideButton color="inherit" data={kyoiku} />
           </div>
         </div>
         <div className="button-list">
@@ -54,7 +54,7 @@ const Component: React.VFC<Props> = ({
             <HomeButton onClick={() => router.push('/')} />
           </div>
           <SwitchButton
-            color="secondary"
+            color="success"
             label={changeModel ? '分割表示モード' : '全体表示モード'}
             onClick={onChangeModel}
           />
