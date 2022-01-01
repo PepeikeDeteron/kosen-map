@@ -8,7 +8,7 @@ import { GuideProps } from '@/models/guide';
 type ContainerProps = {
   readonly color: ColorProps;
   readonly data: GuideProps[];
-  readonly disabled: boolean;
+  readonly disabled?: boolean;
 };
 
 type Props = {
@@ -31,11 +31,7 @@ const Component: React.VFC<Props> = ({
     >
       {data &&
         data.map((datum) => (
-          <Button
-            key={datum.id}
-            onClick={datum.position}
-            disabled={true && disabled}
-          >
+          <Button key={datum.id} onClick={datum.position} disabled={disabled}>
             {datum.name}
           </Button>
         ))}
