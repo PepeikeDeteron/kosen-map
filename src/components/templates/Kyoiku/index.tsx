@@ -18,7 +18,11 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
+// const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
+//   ssr: false,
+// });
+
+const KyoikuSplitModel = dynamic(() => import('@/data/3Dmap/KyoikuSplit'), {
   ssr: false,
 });
 
@@ -31,7 +35,8 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            <KyoikuModel />
+            {/* <KyoikuModel /> */}
+            <KyoikuSplitModel />
           </MapDisplay>
           <div className="guide-button">
             <GuideButton color="secondary" data={kyoiku} />
