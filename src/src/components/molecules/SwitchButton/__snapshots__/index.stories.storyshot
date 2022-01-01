@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots components/molecules/SwitchButton Default 1`] = `
+exports[`Storyshots components/molecules/SwitchButton Error 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1vobx45-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedError MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-hr2hmm-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -19,7 +19,53 @@ exports[`Storyshots components/molecules/SwitchButton Default 1`] = `
   tabIndex={0}
   type="button"
 >
-  Default
+  error
+</button>
+`;
+
+exports[`Storyshots components/molecules/SwitchButton Info 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedInfo MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-18u1aar-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  info
+</button>
+`;
+
+exports[`Storyshots components/molecules/SwitchButton Inherit 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit MuiButtonBase-root css-ybxkcm-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  inherit
 </button>
 `;
 
@@ -66,5 +112,51 @@ exports[`Storyshots components/molecules/SwitchButton Secondary 1`] = `
   type="button"
 >
   secondary
+</button>
+`;
+
+exports[`Storyshots components/molecules/SwitchButton Success 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-2b8zr-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  success
+</button>
+`;
+
+exports[`Storyshots components/molecules/SwitchButton Warning 1`] = `
+<button
+  className="MuiButton-root MuiButton-contained MuiButton-containedWarning MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1zgix4-MuiButtonBase-root-MuiButton-root"
+  disabled={false}
+  onBlur={[Function]}
+  onContextMenu={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  warning
 </button>
 `;
