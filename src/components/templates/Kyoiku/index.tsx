@@ -46,7 +46,7 @@ const Component: React.VFC<Props> = ({
             {changeModel ? <KyoikuModel /> : <KyoikuSplitModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="inherit" data={kyoiku} />
+            <GuideButton color="inherit" data={kyoiku} disabled={false} />
           </div>
         </div>
         <div className="button-list">

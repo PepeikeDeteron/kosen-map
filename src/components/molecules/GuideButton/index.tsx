@@ -8,13 +8,19 @@ import { GuideProps } from '@/models/guide';
 type ContainerProps = {
   readonly color: ColorProps;
   readonly data: GuideProps[];
+  readonly disabled: boolean;
 };
 
 type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
+const Component: React.VFC<Props> = ({
+  color,
+  data,
+  disabled,
+  ...restProps
+}) => {
   return (
     <ButtonGroup
       orientation="vertical"
@@ -25,7 +31,11 @@ const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
     >
       {data &&
         data.map((datum) => (
-          <Button key={datum.id} onClick={datum.position}>
+          <Button
+            key={datum.id}
+            onClick={datum.position}
+            disabled={true && disabled}
+          >
             {datum.name}
           </Button>
         ))}

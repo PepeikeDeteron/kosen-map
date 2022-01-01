@@ -46,7 +46,19 @@ const Component: React.VFC<Props> = ({
             {changeModel ? <SenkokaModel /> : <SenkokaSplitModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="inherit" data={senkokaSplit} />
+            {changeModel ? (
+              <GuideButton
+                color="inherit"
+                data={senkokaSplit}
+                disabled={true}
+              />
+            ) : (
+              <GuideButton
+                color="inherit"
+                data={senkokaSplit}
+                disabled={false}
+              />
+            )}
           </div>
         </div>
         <div className="button-list">
