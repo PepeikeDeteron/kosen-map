@@ -1,15 +1,15 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
-import Kanri from '.';
+import Kyoiku from '.';
 
 export default {
-  title: 'components/templates/Kanri',
-  components: Kanri,
+  title: 'components/templates/Kyoiku',
+  components: Kyoiku,
   argTypes: {},
 } as Meta;
 
-const Template: Story<ComponentProps<typeof Kanri>> = (props) => (
-  <Kanri {...props} />
+const Template: Story<ComponentProps<typeof Kyoiku>> = (props) => (
+  <Kyoiku {...props} />
 );
 
 export const Default = Template.bind({});
