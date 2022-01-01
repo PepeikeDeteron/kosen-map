@@ -25,7 +25,7 @@ import {
 } from '@/data/3Dmap/SenkokaSplit';
 import { GuideProps } from '@/models/guide';
 
-export const senkoka: GuideProps[] = [
+export const senkokaSplit: GuideProps[] = [
   {
     id: 101,
     name: `${process.env.SENKOKA_101}`,

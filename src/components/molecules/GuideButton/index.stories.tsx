@@ -2,7 +2,7 @@ import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
 import GuideButton from '.';
 import { senkoka101, senkoka102, senkoka103 } from '@/data/3Dmap/SenkokaSplit';
-import { senkoka } from '@/data/Guide/senkoka';
+import { senkokaSplit } from '@/data/Guide/senkoka';
 import { kyoiku } from '@/data/Guide/kyoiku';
 
 export default {
@@ -47,7 +47,7 @@ Default.args = {
 export const SenkokaSplit = Template.bind({});
 SenkokaSplit.args = {
   color: 'inherit',
-  data: senkoka,
+  data: senkokaSplit,
 };
 
 export const Kyoiku = Template.bind({});
