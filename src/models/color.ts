@@ -1,1 +1,7 @@
-export type ColorProps = 'primary' | 'secondary';
+export type ColorProps =
+  | 'primary'
+  | 'secondary'
+  | 'success'
+  | 'error'
+  | 'info'
+  | 'warning';
