@@ -36,7 +36,7 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
             <HomeButton onClick={() => router.push('/')} />
           </div>
           <SwitchButton
-            color="secondary"
+            color="success"
             label="管理・教育棟"
             onClick={() => router.push('/Kyoiku')}
           />

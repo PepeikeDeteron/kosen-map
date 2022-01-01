@@ -9,7 +9,7 @@ import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
-import { senkoka } from '@/data/Guide/senkoka';
+import { senkokaSplit } from '@/data/Guide/senkoka';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -46,7 +46,7 @@ const Component: React.VFC<Props> = ({
             {changeModel ? <SenkokaModel /> : <SenkokaSplitModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="primary" data={senkoka} />
+            <GuideButton color="inherit" data={senkokaSplit} />
           </div>
         </div>
         <div className="button-list">

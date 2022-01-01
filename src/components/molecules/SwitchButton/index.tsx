@@ -15,7 +15,7 @@ type Props = {
 
 const Component: React.VFC<Props> = ({ color, label, ...restProps }) => {
   return (
-    <Button variant="outlined" color={color} {...restProps}>
+    <Button variant="contained" color={color} {...restProps}>
       {label}
     </Button>
   );
