@@ -19,6 +19,7 @@ const Component: React.VFC<Props> = ({ color, data, ...restProps }) => {
     <ButtonGroup
       orientation="vertical"
       aria-label="vertical outlined button group"
+      variant="contained"
       color={color}
       {...restProps}
     >
