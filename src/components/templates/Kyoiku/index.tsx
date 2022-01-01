@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
@@ -6,27 +6,35 @@ import styled from 'styled-components';
 import GuideButton from '@/components/molecules/GuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
+import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { kyoiku } from '@/data/Guide/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
+  readonly changeModel: boolean;
+  readonly onChangeModel: () => void;
 };
 
 type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-// const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
-//   ssr: false,
-// });
+const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
+  ssr: false,
+});
 
 const KyoikuSplitModel = dynamic(() => import('@/data/3Dmap/KyoikuSplit'), {
   ssr: false,
 });
 
-const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
+const Component: React.VFC<Props> = ({
+  className,
+  isMobileScreen,
+  changeModel,
+  onChangeModel,
+}) => {
   const router = useRouter();
 
   return (
@@ -35,8 +43,7 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            {/* <KyoikuModel /> */}
-            <KyoikuSplitModel />
+            {changeModel ? <KyoikuModel /> : <KyoikuSplitModel />}
           </MapDisplay>
           <div className="guide-button">
             <GuideButton color="secondary" data={kyoiku} />
@@ -46,6 +53,11 @@ const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
           <div className="home-button">
             <HomeButton onClick={() => router.push('/')} />
           </div>
+          <SwitchButton
+            color="secondary"
+            label={changeModel ? '分割表示モード' : '全体表示モード'}
+            onClick={onChangeModel}
+          />
         </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
@@ -93,11 +105,19 @@ const StyledComponent = styled(Component)`
 `;
 
 const Container: React.VFC<Partial<ContainerProps>> = () => {
+  const [changeModel, setChangeModel] = useState(false);
+
+  const onChangeModel = () => setChangeModel(!changeModel);
+
   const isMobileScreen = useMediaQuery({
     query: `(max-width: ${mobileMaxWidth})`,
   });
 
-  const containerProps = { isMobileScreen };
+  const containerProps = {
+    isMobileScreen,
+    changeModel,
+    onChangeModel,
+  };
 
   return <StyledComponent {...{ ...containerProps }} />;
 };
