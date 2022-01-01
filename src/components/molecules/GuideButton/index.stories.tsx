@@ -44,6 +44,13 @@ Default.args = {
   ],
 };
 
+export const Senkoka = Template.bind({});
+Senkoka.args = {
+  color: 'inherit',
+  data: senkokaSplit,
+  disabled: true,
+};
+
 export const SenkokaSplit = Template.bind({});
 SenkokaSplit.args = {
   color: 'inherit',
