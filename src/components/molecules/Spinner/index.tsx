@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { CommonLoading } from 'react-loadingg';
-import { LoaderColorProps, LoaderSizeProps } from '@/types/loader';
+import { SpinnerColorProps, SpinnerSizeProps } from '@/models/spinner';
 
 type ContainerProps = {
-  readonly color: LoaderColorProps;
-  readonly size: LoaderSizeProps;
+  readonly color: SpinnerColorProps;
+  readonly size: SpinnerSizeProps;
 };
 
 type Props = {

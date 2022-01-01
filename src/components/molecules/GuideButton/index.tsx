@@ -2,8 +2,8 @@ import React from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
 import { ButtonGroup } from '@mui/material';
-import { ColorProps } from '@/types/color';
-import { GuideProps } from '@/types/guide';
+import { ColorProps } from '@/models/color';
+import { GuideProps } from '@/models/guide';
 
 type ContainerProps = {
   readonly color: ColorProps;

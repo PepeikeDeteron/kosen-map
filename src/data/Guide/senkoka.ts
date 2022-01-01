@@ -23,7 +23,7 @@ import {
   senkoka503,
   senkoka504,
 } from '@/data/3Dmap/SenkokaSplit';
-import { GuideProps } from '@/types/guide';
+import { GuideProps } from '@/models/guide';
 
 export const senkoka: GuideProps[] = [
   {
