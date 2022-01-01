@@ -244,7 +244,7 @@ export const kyoiku000 = (): void => {
   guide0.rotation.set(65, 0, 0);
   guide8.rotation.set(65, 0, 0);
   guide0.position.set(500, 150, 1950);
-  guide8.position.set(-1550, -500, 2900);
+  guide8.position.set(-1550, -200, 2500);
 };
 
 export const kyoiku100 = (): void => {
