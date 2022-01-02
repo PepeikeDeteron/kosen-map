@@ -1,54 +1,56 @@
 import {
-  kyoiku000,
-  kyoiku100,
-  kyoiku200,
-  kyoiku300,
-  kyoiku400,
-  kyoiku500,
-  kyoiku600,
-  kyoiku700,
+  kyoiku0000,
+  kyoiku1000,
+  kyoiku2000,
+  kyoiku3000,
+  kyoiku4000,
+  kyoiku5000,
+  kyoiku6000,
+  kyoiku7000,
 } from '@/data/3Dmap/Kyoiku';
 import { GuideProps } from '@/models/guide';
 
 export const kyoiku: GuideProps[] = [
   {
-    id: 99,
-    name: `${process.env.KYOIKU_000}`,
-    position: kyoiku000,
+    id: 0,
+    name: `${process.env.KYOIKU_0000}`,
+    position: kyoiku0000,
   },
   {
-    id: 100,
-    name: `${process.env.KYOIKU_100}`,
-    position: kyoiku100,
+    id: 1000,
+    name: `${process.env.KYOIKU_1000}`,
+    position: kyoiku1000,
   },
   {
-    id: 200,
-    name: `${process.env.KYOIKU_200}`,
-    position: kyoiku200,
+    id: 2000,
+    name: `${process.env.KYOIKU_2000}`,
+    position: kyoiku2000,
   },
   {
-    id: 300,
-    name: `${process.env.KYOIKU_300}`,
-    position: kyoiku300,
+    id: 3000,
+    name: `${process.env.KYOIKU_3000}`,
+    position: kyoiku3000,
   },
   {
-    id: 400,
-    name: `${process.env.KYOIKU_400}`,
-    position: kyoiku400,
+    id: 4000,
+    name: `${process.env.KYOIKU_4000}`,
+    position: kyoiku4000,
   },
   {
-    id: 500,
-    name: `${process.env.KYOIKU_500}`,
-    position: kyoiku500,
+    id: 5000,
+    name: `${process.env.KYOIKU_5000}`,
+    position: kyoiku5000,
   },
   {
-    id: 600,
-    name: `${process.env.KYOIKU_600}`,
-    position: kyoiku600,
+    id: 6000,
+    name: `${process.env.KYOIKU_6000}`,
+    position: kyoiku6000,
   },
   {
-    id: 700,
-    name: `${process.env.KYOIKU_700}`,
-    position: kyoiku700,
+    id: 7000,
+    name: `${process.env.KYOIKU_7000}`,
+    position: kyoiku7000,
   },
 ];
+
+export const kyoikuDivide: GuideProps[] = [];
