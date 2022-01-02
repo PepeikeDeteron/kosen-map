@@ -13,7 +13,7 @@ const Model: React.VFC = () => {
     });
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, 16 / 10, 1, 1000000);
-    const light = new THREE.AmbientLight(0xffffff, 1.75);
+    const light = new THREE.AmbientLight(0xffffff, 1.65);
     const controls = new OrbitControls(camera, renderer.domElement);
 
     camera.position.set(0, 5500, 15000);
