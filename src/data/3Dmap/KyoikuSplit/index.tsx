@@ -33,8 +33,8 @@ const Model: React.VFC = () => {
       (gltf) => {
         const model = gltf.scene;
 
-        model.scale.set(50, 50, 50);
-        model.rotation.set(0.15, -120, 0);
+        model.scale.set(45, 45, 45);
+        model.rotation.set(0.25, -119.8, 0);
         model.position.set(200, -3000, 0);
 
         scene.add(model);
