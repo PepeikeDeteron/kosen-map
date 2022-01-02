@@ -30,7 +30,7 @@ const Model: React.VFC = () => {
 
     gltfLoader.setDRACOLoader(dracoLoader);
     gltfLoader.load(
-      'senkoka_split_draco.glb',
+      'senkoka_divide_draco.glb',
       (gltf) => {
         const model = gltf.scene;
 
