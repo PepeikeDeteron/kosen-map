@@ -229,7 +229,7 @@ const guide9 = new THREE.Mesh(
 );
 
 // ガイドを配置する位置 -------------------------
-export const kyoiku000 = (): void => {
+export const kyoiku0000 = (): void => {
   guide0.visible = true;
   guide1.visible = false;
   guide2.visible = false;
@@ -247,7 +247,7 @@ export const kyoiku000 = (): void => {
   guide8.position.set(-1550, -200, 2500);
 };
 
-export const kyoiku100 = (): void => {
+export const kyoiku1000 = (): void => {
   guide0.visible = false;
   guide1.visible = true;
   guide2.visible = false;
@@ -265,7 +265,7 @@ export const kyoiku100 = (): void => {
   guide9.position.set(-2820, 1425, 35);
 };
 
-export const kyoiku200 = (): void => {
+export const kyoiku2000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = true;
@@ -281,7 +281,7 @@ export const kyoiku200 = (): void => {
   guide2.position.set(-1100, 2600, -1350);
 };
 
-export const kyoiku300 = (): void => {
+export const kyoiku3000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = false;
@@ -297,7 +297,7 @@ export const kyoiku300 = (): void => {
   guide3.position.set(-3000, 2300, -1550);
 };
 
-export const kyoiku400 = (): void => {
+export const kyoiku4000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = false;
@@ -313,7 +313,7 @@ export const kyoiku400 = (): void => {
   guide4.position.set(2200, 2500, -1100);
 };
 
-export const kyoiku500 = (): void => {
+export const kyoiku5000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = false;
@@ -329,7 +329,7 @@ export const kyoiku500 = (): void => {
   guide5.position.set(500, 3500, -2800);
 };
 
-export const kyoiku600 = (): void => {
+export const kyoiku6000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = false;
@@ -345,7 +345,7 @@ export const kyoiku600 = (): void => {
   guide6.position.set(-700, 3500, -3250);
 };
 
-export const kyoiku700 = (): void => {
+export const kyoiku7000 = (): void => {
   guide0.visible = false;
   guide1.visible = false;
   guide2.visible = false;
