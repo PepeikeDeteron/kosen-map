@@ -44,6 +44,16 @@ const StyledComponent = styled(Component)`
   flex-basis: 0;
   flex-grow: 1;
   overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
 `;
 
 const Container: React.VFC<ContainerProps> = (props) => {
