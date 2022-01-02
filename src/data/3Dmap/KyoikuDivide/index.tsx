@@ -29,7 +29,7 @@ const Model: React.VFC = () => {
 
     gltfLoader.setDRACOLoader(dracoLoader);
     gltfLoader.load(
-      'kyoiku_split_draco.glb',
+      'kyoiku_divide_draco.glb',
       (gltf) => {
         const model = gltf.scene;
 

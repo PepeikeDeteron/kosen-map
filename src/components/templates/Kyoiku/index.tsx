@@ -25,7 +25,7 @@ const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
   ssr: false,
 });
 
-const KyoikuSplitModel = dynamic(() => import('@/data/3Dmap/KyoikuSplit'), {
+const KyoikuDivideModel = dynamic(() => import('@/data/3Dmap/KyoikuDivide'), {
   ssr: false,
 });
 
@@ -43,7 +43,7 @@ const Component: React.VFC<Props> = ({
         <h2 className="title">Map</h2>
         <div className="display">
           <MapDisplay>
-            {changeModel ? <KyoikuModel /> : <KyoikuSplitModel />}
+            {changeModel ? <KyoikuModel /> : <KyoikuDivideModel />}
           </MapDisplay>
           <div className="guide-button">
             <GuideButton color="inherit" data={kyoiku} />

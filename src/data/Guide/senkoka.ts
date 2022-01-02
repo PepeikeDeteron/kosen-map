@@ -22,10 +22,10 @@ import {
   senkoka502,
   senkoka503,
   senkoka504,
-} from '@/data/3Dmap/SenkokaSplit';
+} from '@/data/3Dmap/SenkokaDivide';
 import { GuideProps } from '@/models/guide';
 
-export const senkokaSplit: GuideProps[] = [
+export const senkokaDivide: GuideProps[] = [
   {
     id: 101,
     name: `${process.env.SENKOKA_101}`,
