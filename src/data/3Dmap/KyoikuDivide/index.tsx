@@ -16,7 +16,7 @@ const Model: React.VFC = () => {
     const light = new THREE.AmbientLight(0xffffff, 1.75);
     const controls = new OrbitControls(camera, renderer.domElement);
 
-    camera.position.set(0, 0, 15000);
+    camera.position.set(0, 5500, 15000);
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
     scene.add(light);
@@ -33,9 +33,9 @@ const Model: React.VFC = () => {
       (gltf) => {
         const model = gltf.scene;
 
-        model.scale.set(45, 45, 45);
-        model.rotation.set(0.25, -119.8, 0);
-        model.position.set(200, -3000, 0);
+        model.scale.set(50, 50, 50);
+        model.rotation.set(0, -120, 0);
+        model.position.set(0, -2900, 0);
 
         scene.add(model);
       },
