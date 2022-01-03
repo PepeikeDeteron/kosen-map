@@ -34,7 +34,7 @@ const StyledComponent = styled(Component)`
   text-align: center;
   height: 25vh;
   transform: translateX(-50%);
-  line-height: 30px;
+  line-height: 25px;
 `;
 
 const Container: React.VFC<ContainerProps> = (props) => {
