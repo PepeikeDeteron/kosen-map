@@ -10,6 +10,7 @@ import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { kyoiku } from '@/data/Guide/kyoiku';
+import { kyoikuDivide } from '@/data/Guide/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -46,7 +47,11 @@ const Component: React.VFC<Props> = ({
             {changeModel ? <KyoikuModel /> : <KyoikuDivideModel />}
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="inherit" data={kyoiku} />
+            {changeModel ? (
+              <GuideButton color="inherit" data={kyoiku} />
+            ) : (
+              <GuideButton color="inherit" data={kyoikuDivide} />
+            )}
           </div>
         </div>
         <div className="button-list">

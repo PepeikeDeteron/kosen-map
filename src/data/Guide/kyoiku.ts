@@ -8,6 +8,28 @@ import {
   kyoiku6000,
   kyoiku7000,
 } from '@/data/3Dmap/Kyoiku';
+import {
+  kyoiku0101,
+  kyoiku0102,
+  kyoiku0103,
+  kyoiku0104,
+  kyoiku0105,
+  kyoiku0106,
+  kyoiku0107,
+  kyoiku0108,
+  kyoiku0109,
+  kyoiku0110,
+  kyoiku0111,
+  kyoiku0112,
+  kyoiku0113,
+  kyoiku0114,
+  kyoiku0115,
+  kyoiku0116,
+  kyoiku0117,
+  kyoiku0118,
+  kyoiku0119,
+  kyoiku0120,
+} from '@/data/3Dmap/KyoikuDivide';
 import { GuideProps } from '@/models/guide';
 
 export const kyoiku: GuideProps[] = [
@@ -53,4 +75,105 @@ export const kyoiku: GuideProps[] = [
   },
 ];
 
-export const kyoikuDivide: GuideProps[] = [];
+export const kyoikuDivide: GuideProps[] = [
+  {
+    id: 101,
+    name: `${process.env.KYOIKU_0101}`,
+    position: kyoiku0101,
+  },
+  {
+    id: 102,
+    name: `${process.env.KYOIKU_0102}`,
+    position: kyoiku0102,
+  },
+  {
+    id: 103,
+    name: `${process.env.KYOIKU_0103}`,
+    position: kyoiku0103,
+  },
+  {
+    id: 104,
+    name: `${process.env.KYOIKU_0104}`,
+    position: kyoiku0104,
+  },
+  {
+    id: 105,
+    name: `${process.env.KYOIKU_0105}`,
+    position: kyoiku0105,
+  },
+  {
+    id: 106,
+    name: `${process.env.KYOIKU_0106}`,
+    position: kyoiku0106,
+  },
+  {
+    id: 107,
+    name: `${process.env.KYOIKU_0107}`,
+    position: kyoiku0107,
+  },
+  {
+    id: 108,
+    name: `${process.env.KYOIKU_0108}`,
+    position: kyoiku0108,
+  },
+  {
+    id: 109,
+    name: `${process.env.KYOIKU_0109}`,
+    position: kyoiku0109,
+  },
+  {
+    id: 110,
+    name: `${process.env.KYOIKU_0110}`,
+    position: kyoiku0110,
+  },
+  {
+    id: 111,
+    name: `${process.env.KYOIKU_0111}`,
+    position: kyoiku0111,
+  },
+  {
+    id: 112,
+    name: `${process.env.KYOIKU_0112}`,
+    position: kyoiku0112,
+  },
+  {
+    id: 113,
+    name: `${process.env.KYOIKU_0113}`,
+    position: kyoiku0113,
+  },
+  {
+    id: 114,
+    name: `${process.env.KYOIKU_0114}`,
+    position: kyoiku0114,
+  },
+  {
+    id: 115,
+    name: `${process.env.KYOIKU_0115}`,
+    position: kyoiku0115,
+  },
+  {
+    id: 116,
+    name: `${process.env.KYOIKU_0116}`,
+    position: kyoiku0116,
+  },
+  {
+    id: 117,
+    name: `${process.env.KYOIKU_0117}`,
+    position: kyoiku0117,
+  },
+  {
+    id: 118,
+    name: `${process.env.KYOIKU_0118}`,
+    position: kyoiku0118,
+  },
+  {
+    id: 119,
+    name: `${process.env.KYOIKU_0119}`,
+    position: kyoiku0119,
+  },
+  {
+    id: 120,
+    name: `${process.env.KYOIKU_0120}`,
+    position: kyoiku0120,
+  },
+];
