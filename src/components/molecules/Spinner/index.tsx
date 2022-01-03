@@ -30,11 +30,11 @@ const StyledComponent = styled(Component)`
   left: 50%;
   bottom: 0;
   color: gray;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   height: 25vh;
   transform: translateX(-50%);
-  line-height: 30px;
+  line-height: 25px;
 `;
 
 const Container: React.VFC<ContainerProps> = (props) => {
