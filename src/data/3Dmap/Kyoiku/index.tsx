@@ -4,7 +4,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
-import { guideInitialValue } from '@/constants/common';
+import { guideBoxProperties } from '@/constants/common';
 
 const Model: React.VFC = () => {
   const createModel = () => {
@@ -81,42 +81,12 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = [];
 
-    guide0.position.y =
-      guide1.position.y =
-      guide2.position.y =
-      guide3.position.y =
-      guide4.position.y =
-      guide5.position.y =
-      guide6.position.y =
-      guide7.position.y =
-      guide8.position.y =
-      guide9.position.y =
-        guideInitialValue;
+    guide.map((obj) => {
+      guides.push(obj);
+      scene.add(obj);
 
-    guides.push(
-      guide0,
-      guide1,
-      guide2,
-      guide3,
-      guide4,
-      guide5,
-      guide6,
-      guide7,
-      guide8,
-      guide9
-    );
-    scene.add(
-      guide0,
-      guide1,
-      guide2,
-      guide3,
-      guide4,
-      guide5,
-      guide6,
-      guide7,
-      guide8,
-      guide9
-    );
+      obj.visible = false;
+    });
 
     tick();
     onResize();
@@ -137,228 +107,144 @@ const Model: React.VFC = () => {
   );
 };
 
-// 特定の箇所を光らせるためのガイド -------------------
-const guide0 = new THREE.Mesh(
-  new THREE.BoxGeometry(1150, 7000, 1500),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
-);
-
+// 特定の箇所を光らせるためのガイド
 const guide1 = new THREE.Mesh(
-  new THREE.BoxGeometry(4200, 1150, 1250),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(1150, 7000, 1500),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide2 = new THREE.Mesh(
-  new THREE.BoxGeometry(2150, 1450, 1600),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(4200, 1150, 1250),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide3 = new THREE.Mesh(
-  new THREE.BoxGeometry(2200, 1450, 800),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(2150, 1450, 1600),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide4 = new THREE.Mesh(
-  new THREE.BoxGeometry(4200, 1150, 1650),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(2200, 1450, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide5 = new THREE.Mesh(
-  new THREE.BoxGeometry(1000, 3500, 1250),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(4200, 1150, 1650),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide6 = new THREE.Mesh(
-  new THREE.BoxGeometry(1500, 1500, 800),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(1000, 3500, 1250),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide7 = new THREE.Mesh(
-  new THREE.BoxGeometry(2000, 1500, 800),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(1500, 1500, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide8 = new THREE.Mesh(
-  new THREE.BoxGeometry(2950, 1600, 1500),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(2000, 1500, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
 const guide9 = new THREE.Mesh(
-  new THREE.BoxGeometry(1200, 1400, 1250),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.BoxGeometry(2950, 1600, 1500),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
-// ガイドを配置する位置 -------------------------
-export const kyoiku0000 = (): void => {
-  guide0.visible = true;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = true;
-  guide9.visible = false;
+const guide10 = new THREE.Mesh(
+  new THREE.BoxGeometry(1200, 1400, 1250),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
 
-  guide0.rotation.set(65, 0, 0);
-  guide8.rotation.set(65, 0, 0);
-  guide0.position.set(500, 150, 1950);
-  guide8.position.set(-1550, -200, 2500);
+const guide = [
+  guide1,
+  guide2,
+  guide3,
+  guide4,
+  guide5,
+  guide6,
+  guide7,
+  guide8,
+  guide9,
+  guide10,
+];
+
+// 非表示にするガイドの番号を抽出
+const hideNumber = (i: number) => {
+  return [...Array(guide.length)].map((_, m) => m + 1).filter((n) => n !== i);
+};
+
+// ガイドを配置する位置
+export const kyoiku0000 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide9.visible = true;
+  guide1.rotation.set(65, 0, 0);
+  guide9.rotation.set(65, 0, 0);
+  guide1.position.set(500, 150, 1950);
+  guide9.position.set(-1550, -200, 2500);
 };
 
 export const kyoiku1000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = true;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = true;
+  hideNumber(2).map((i) => (guide[i - 1].visible = false));
 
-  guide1.rotation.set(65, 0, 0);
-  guide9.rotation.set(65, 0, 0);
-  guide1.position.set(-2300, 800, 1000);
-  guide9.position.set(-2820, 1425, 35);
+  guide2.visible = true;
+  guide10.visible = true;
+  guide2.rotation.set(65, 0, 0);
+  guide10.rotation.set(65, 0, 0);
+  guide2.position.set(-2300, 800, 1000);
+  guide10.position.set(-2820, 1425, 35);
 };
 
 export const kyoiku2000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = true;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(3).map((i) => (guide[i - 1].visible = false));
 
-  guide2.rotation.set(65, 0, 0);
-  guide2.position.set(-1100, 2600, -1350);
+  guide3.visible = true;
+  guide3.rotation.set(65, 0, 0);
+  guide3.position.set(-1100, 2600, -1350);
 };
 
 export const kyoiku3000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = true;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(4).map((i) => (guide[i - 1].visible = false));
 
-  guide3.rotation.set(65, 0, 0);
-  guide3.position.set(-3000, 2300, -1550);
+  guide4.visible = true;
+  guide4.rotation.set(65, 0, 0);
+  guide4.position.set(-3000, 2300, -1550);
 };
 
 export const kyoiku4000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = true;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(5).map((i) => (guide[i - 1].visible = false));
 
-  guide4.rotation.set(65, 0, 0);
-  guide4.position.set(2200, 2500, -1100);
+  guide5.visible = true;
+  guide5.rotation.set(65, 0, 0);
+  guide5.position.set(2200, 2500, -1100);
 };
 
 export const kyoiku5000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = true;
-  guide6.visible = false;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(6).map((i) => (guide[i - 1].visible = false));
 
-  guide5.rotation.set(65, 0, 0);
-  guide5.position.set(500, 3500, -2800);
+  guide6.visible = true;
+  guide6.rotation.set(65, 0, 0);
+  guide6.position.set(500, 3500, -2800);
 };
 
 export const kyoiku6000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = true;
-  guide7.visible = false;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(7).map((i) => (guide[i - 1].visible = false));
 
-  guide6.rotation.set(65, 0, 0);
-  guide6.position.set(-700, 3500, -3250);
+  guide7.visible = true;
+  guide7.rotation.set(65, 0, 0);
+  guide7.position.set(-700, 3500, -3250);
 };
 
 export const kyoiku7000 = (): void => {
-  guide0.visible = false;
-  guide1.visible = false;
-  guide2.visible = false;
-  guide3.visible = false;
-  guide4.visible = false;
-  guide5.visible = false;
-  guide6.visible = false;
-  guide7.visible = true;
-  guide8.visible = false;
-  guide9.visible = false;
+  hideNumber(8).map((i) => (guide[i - 1].visible = false));
 
-  guide7.rotation.set(65, 0, 0);
-  guide7.position.set(3400, 3300, -3000);
+  guide8.visible = true;
+  guide8.rotation.set(65, 0, 0);
+  guide8.position.set(3400, 3300, -3000);
 };
 
 export default React.memo(Model);
