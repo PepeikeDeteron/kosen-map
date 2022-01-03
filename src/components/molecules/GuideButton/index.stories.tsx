@@ -1,9 +1,9 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
 import GuideButton from '.';
-import { senkoka101, senkoka102, senkoka103 } from '@/data/3Dmap/SenkokaDivide';
-import { senkokaDivide } from '@/data/Guide/senkoka';
-import { kyoiku } from '@/data/Guide/kyoiku';
+import { senkoka101, senkoka102, senkoka103 } from '@/libs/Three/SenkokaDivide';
+import { senkokaDivide } from '@/data/senkoka';
+import { kyoiku } from '@/data/kyoiku';
 
 export default {
   title: 'components/molecules/GuideButton',
