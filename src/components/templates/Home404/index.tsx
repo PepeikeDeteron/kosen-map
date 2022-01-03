@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import NotFoundTopPage from '../../../../public/not_found_top_page.svg';
+import NotFoundTopPage from '../../../../public/assets/Images/not_found_top_page.svg';
 
 type Props = {
   readonly className?: string;
