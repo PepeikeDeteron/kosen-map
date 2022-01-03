@@ -26,7 +26,9 @@ const Model: React.VFC = () => {
     const gltfLoader = new GLTFLoader();
 
     dracoLoader.setDecoderConfig({ type: 'js' });
-    dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+    dracoLoader.setDecoderPath(
+      'https://www.gstatic.com/draco/versioned/decoders/1.4.3/'
+    );
 
     gltfLoader.setDRACOLoader(dracoLoader);
     gltfLoader.load(
