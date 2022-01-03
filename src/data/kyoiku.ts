@@ -7,7 +7,7 @@ import {
   kyoiku5000,
   kyoiku6000,
   kyoiku7000,
-} from '@/data/3Dmap/Kyoiku';
+} from '@/libs/Three/Kyoiku';
 import {
   kyoiku0101,
   kyoiku0102,
@@ -29,7 +29,7 @@ import {
   kyoiku0118,
   kyoiku0119,
   kyoiku0120,
-} from '@/data/3Dmap/KyoikuDivide';
+} from '@/libs/Three/KyoikuDivide';
 import { GuideProps } from '@/models/guide';
 
 export const kyoiku: GuideProps[] = [

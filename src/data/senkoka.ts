@@ -22,7 +22,7 @@ import {
   senkoka502,
   senkoka503,
   senkoka504,
-} from '@/data/3Dmap/SenkokaDivide';
+} from '@/libs/Three/SenkokaDivide';
 import { GuideProps } from '@/models/guide';
 
 export const senkokaDivide: GuideProps[] = [

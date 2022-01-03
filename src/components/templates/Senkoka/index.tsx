@@ -9,7 +9,7 @@ import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
-import { senkokaDivide } from '@/data/Guide/senkoka';
+import { senkokaDivide } from '@/data/senkoka';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -21,11 +21,11 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const SenkokaModel = dynamic(() => import('@/data/3Dmap/Senkoka'), {
+const SenkokaModel = dynamic(() => import('@/libs/Three/Senkoka'), {
   ssr: false,
 });
 
-const SenkokaDivideModel = dynamic(() => import('@/data/3Dmap/SenkokaDivide'), {
+const SenkokaDivideModel = dynamic(() => import('@/libs/Three/SenkokaDivide'), {
   ssr: false,
 });
 

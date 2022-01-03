@@ -9,8 +9,7 @@ import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
-import { kyoiku } from '@/data/Guide/kyoiku';
-import { kyoikuDivide } from '@/data/Guide/kyoiku';
+import { kyoiku, kyoikuDivide } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -22,11 +21,11 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const KyoikuModel = dynamic(() => import('@/data/3Dmap/Kyoiku'), {
+const KyoikuModel = dynamic(() => import('@/libs/Three/Kyoiku'), {
   ssr: false,
 });
 
-const KyoikuDivideModel = dynamic(() => import('@/data/3Dmap/KyoikuDivide'), {
+const KyoikuDivideModel = dynamic(() => import('@/libs/Three/KyoikuDivide'), {
   ssr: false,
 });
 
