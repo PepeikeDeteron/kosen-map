@@ -4,7 +4,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
-import { guideInitialValue } from '@/constants/common';
+import { guideBoxProperties } from '@/constants/common';
 
 const Model: React.VFC = () => {
   const createModel = () => {
@@ -80,10 +80,12 @@ const Model: React.VFC = () => {
 
     const guides: THREE.Mesh[] = [];
 
-    guide1.position.y = guide2.position.y = guideInitialValue;
+    guide.map((obj) => {
+      guides.push(obj);
+      scene.add(obj);
 
-    guides.push(guide1, guide2);
-    scene.add(guide1, guide2);
+      obj.visible = false;
+    });
 
     tick();
     onResize();
@@ -104,27 +106,20 @@ const Model: React.VFC = () => {
   );
 };
 
-// 特定の箇所を光らせるためのガイド -----------------
+// 特定の箇所を光らせるためのガイド
 const guide1 = new THREE.Mesh(
   new THREE.BoxGeometry(2500, 1200, 2500),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
-// 専-102, 専-103, 専-104, 専-105, 専-203, 専-204
 const guide2 = new THREE.Mesh(
   new THREE.BoxGeometry(1250, 1200, 2500),
-  new THREE.MeshBasicMaterial({
-    color: 0xff476e,
-    transparent: true,
-    opacity: 0.5,
-  })
+  new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
-// ガイドを配置する位置 (専-101 ~) -------------
+const guide = [guide1, guide2];
+
+// ガイドを配置する位置
 export const senkoka101 = (): void => {
   guide1.visible = true;
   guide2.visible = false;
