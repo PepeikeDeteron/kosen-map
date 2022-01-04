@@ -705,4 +705,76 @@ export const kyoiku1111 = (): void => {
   guide3.position.set(-2300, -2600, -2700);
 };
 
+export const kyoiku1201 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(-925, 1500, -600);
+};
+
+export const kyoiku1202 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(-1250, 1500, -800);
+};
+
+export const kyoiku1203 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(-1525, 1500, -1025);
+};
+
+export const kyoiku1204 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(-1800, 1500, -1225);
+};
+
+export const kyoiku1205 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(-2075, 1500, -1400);
+};
+
+export const kyoiku1206 = (): void => {
+  hideNumber(13).map((i) => (guide[i - 1].visible = false));
+
+  guide13.visible = true;
+  guide13.rotation.set(0, -120, 0);
+  guide13.position.set(-2900, 1500, -1800);
+};
+
+export const kyoiku1207 = (): void => {
+  hideNumber(13).map((i) => (guide[i - 1].visible = false));
+
+  guide13.visible = true;
+  guide13.rotation.set(0, -120, 0);
+  guide13.position.set(-3475, 1500, -2200);
+};
+
+export const kyoiku1208 = (): void => {
+  hideNumber(2).map((i) => (guide[i - 1].visible = false));
+
+  guide2.visible = true;
+  guide2.rotation.set(0, -120, 0);
+  guide2.position.set(-4400, 1500, -3050);
+};
+
+export const kyoiku1209 = (): void => {
+  hideNumber(15).map((i) => (guide[i - 1].visible = false));
+
+  guide15.visible = true;
+  guide15.rotation.set(0, -120, 0);
+  guide15.position.set(-2425, 1500, -3710);
+};
+
 export default React.memo(Model);
