@@ -1373,4 +1373,68 @@ export const kyoiku4207 = (): void => {
   guide33.position.set(5050, 1500, -575);
 };
 
+export const kyoiku4301 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(2750, 3800, -3100);
+};
+
+export const kyoiku4302 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(3025, 3800, -2900);
+};
+
+export const kyoiku4303 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(3325, 3800, -2650);
+};
+
+export const kyoiku4304 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(3625, 3800, -2425);
+};
+
+export const kyoiku4305 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(3900, 3800, -2200);
+};
+
+export const kyoiku4306 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(4180, 3800, -2000);
+};
+
+export const kyoiku4307 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(4440, 3800, -1820);
+};
+
+export const kyoiku4308 = (): void => {
+  hideNumber(33).map((i) => (guide[i - 1].visible = false));
+
+  guide33.visible = true;
+  guide33.rotation.set(0, -120, 0);
+  guide33.position.set(5475, 3800, -1350);
+};
+
 export default React.memo(Model);
