@@ -240,6 +240,11 @@ const guide26 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide27 = new THREE.Mesh(
+  new THREE.BoxGeometry(800, 600, 1800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -267,6 +272,7 @@ const guide = [
   guide24,
   guide25,
   guide26,
+  guide27,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -969,6 +975,70 @@ export const kyoiku2109 = (): void => {
   guide26.visible = true;
   guide26.rotation.set(0, -120, 0);
   guide26.position.set(1475, -2600, -2900);
+};
+
+export const kyoiku2201 = (): void => {
+  hideNumber(13).map((i) => (guide[i - 1].visible = false));
+
+  guide13.visible = true;
+  guide13.rotation.set(0, -120, 0);
+  guide13.position.set(880, 1500, -3400);
+};
+
+export const kyoiku2202 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(400, 1500, -3750);
+};
+
+export const kyoiku2203 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(125, 1500, -3950);
+};
+
+export const kyoiku2204 = (): void => {
+  hideNumber(27).map((i) => (guide[i - 1].visible = false));
+
+  guide27.visible = true;
+  guide27.rotation.set(0, -120, 0);
+  guide27.position.set(-200, 1500, -4800);
+};
+
+export const kyoiku2205 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(450, 1500, -4900);
+};
+
+export const kyoiku2206 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(650, 1500, -4750);
+};
+
+export const kyoiku2207 = (): void => {
+  hideNumber(12).map((i) => (guide[i - 1].visible = false));
+
+  guide12.visible = true;
+  guide12.rotation.set(0, -120, 0);
+  guide12.position.set(950, 1500, -4525);
+};
+
+export const kyoiku2208 = (): void => {
+  hideNumber(13).map((i) => (guide[i - 1].visible = false));
+
+  guide13.visible = true;
+  guide13.rotation.set(0, -120, 0);
+  guide13.position.set(1400, 1500, -4150);
 };
 
 export default React.memo(Model);
