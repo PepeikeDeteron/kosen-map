@@ -270,6 +270,11 @@ const guide32 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide33 = new THREE.Mesh(
+  new THREE.BoxGeometry(1700, 600, 1000),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -303,6 +308,7 @@ const guide = [
   guide30,
   guide31,
   guide32,
+  guide33,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1309,6 +1315,62 @@ export const kyoiku4106 = (): void => {
   guide2.visible = true;
   guide2.rotation.set(0, -120, 0);
   guide2.position.set(4950, -2600, 600);
+};
+
+export const kyoiku4201 = (): void => {
+  hideNumber(24).map((i) => (guide[i - 1].visible = false));
+
+  guide24.visible = true;
+  guide24.rotation.set(0, -120, 0);
+  guide24.position.set(2500, 1500, -2250);
+};
+
+export const kyoiku4202 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide1.rotation.set(0, -120, 0);
+  guide1.position.set(2900, 1500, -1925);
+};
+
+export const kyoiku4203 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide1.rotation.set(0, -120, 0);
+  guide1.position.set(3200, 1500, -1700);
+};
+
+export const kyoiku4204 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide1.rotation.set(0, -120, 0);
+  guide1.position.set(3475, 1500, -1500);
+};
+
+export const kyoiku4205 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide1.rotation.set(0, -120, 0);
+  guide1.position.set(3750, 1500, -1300);
+};
+
+export const kyoiku4206 = (): void => {
+  hideNumber(1).map((i) => (guide[i - 1].visible = false));
+
+  guide1.visible = true;
+  guide1.rotation.set(0, -120, 0);
+  guide1.position.set(3975, 1500, -1125);
+};
+
+export const kyoiku4207 = (): void => {
+  hideNumber(33).map((i) => (guide[i - 1].visible = false));
+
+  guide33.visible = true;
+  guide33.rotation.set(0, -120, 0);
+  guide33.position.set(5050, 1500, -575);
 };
 
 export default React.memo(Model);
