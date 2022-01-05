@@ -265,6 +265,11 @@ const guide31 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide32 = new THREE.Mesh(
+  new THREE.BoxGeometry(1200, 600, 1600),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -297,6 +302,7 @@ const guide = [
   guide29,
   guide30,
   guide31,
+  guide32,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1231,6 +1237,30 @@ export const kyoiku3104 = (): void => {
   guide30.visible = true;
   guide30.rotation.set(0, -120, 0);
   guide30.position.set(-850, -2600, -4450);
+};
+
+export const kyoiku3201 = (): void => {
+  hideNumber(32).map((i) => (guide[i - 1].visible = false));
+
+  guide32.visible = true;
+  guide32.rotation.set(0, -120, 0);
+  guide32.position.set(-900, 1500, -5300);
+};
+
+export const kyoiku3202 = (): void => {
+  hideNumber(28).map((i) => (guide[i - 1].visible = false));
+
+  guide28.visible = true;
+  guide28.rotation.set(0, -120, 0);
+  guide28.position.set(-1485, 1500, -6000);
+};
+
+export const kyoiku3203 = (): void => {
+  hideNumber(28).map((i) => (guide[i - 1].visible = false));
+
+  guide28.visible = true;
+  guide28.rotation.set(0, -120, 0);
+  guide28.position.set(-1250, 1500, -6250);
 };
 
 export default React.memo(Model);
