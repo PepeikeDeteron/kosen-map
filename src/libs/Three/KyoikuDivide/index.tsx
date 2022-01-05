@@ -255,6 +255,16 @@ const guide29 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide30 = new THREE.Mesh(
+  new THREE.BoxGeometry(1200, 800, 700),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide31 = new THREE.Mesh(
+  new THREE.BoxGeometry(1200, 800, 1000),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -285,6 +295,8 @@ const guide = [
   guide27,
   guide28,
   guide29,
+  guide30,
+  guide31,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1187,6 +1199,38 @@ export const kyoiku2408 = (): void => {
   guide12.visible = true;
   guide12.rotation.set(0, -120, 0);
   guide12.position.set(1650, 5500, -5275);
+};
+
+export const kyoiku3101 = (): void => {
+  hideNumber(30).map((i) => (guide[i - 1].visible = false));
+
+  guide30.visible = true;
+  guide30.rotation.set(0, -120, 0);
+  guide30.position.set(-1400, -2600, -3675);
+};
+
+export const kyoiku3102 = (): void => {
+  hideNumber(31).map((i) => (guide[i - 1].visible = false));
+
+  guide31.visible = true;
+  guide31.rotation.set(0, -120, 0);
+  guide31.position.set(-2450, -2600, -4600);
+};
+
+export const kyoiku3103 = (): void => {
+  hideNumber(22).map((i) => (guide[i - 1].visible = false));
+
+  guide22.visible = true;
+  guide22.rotation.set(0, -120, 0);
+  guide22.position.set(-1650, -2600, -5100);
+};
+
+export const kyoiku3104 = (): void => {
+  hideNumber(30).map((i) => (guide[i - 1].visible = false));
+
+  guide30.visible = true;
+  guide30.rotation.set(0, -120, 0);
+  guide30.position.set(-850, -2600, -4450);
 };
 
 export default React.memo(Model);
