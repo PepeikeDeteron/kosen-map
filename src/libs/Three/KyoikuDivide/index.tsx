@@ -280,6 +280,11 @@ const guide34 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide35 = new THREE.Mesh(
+  new THREE.BoxGeometry(700, 600, 400),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -315,6 +320,7 @@ const guide = [
   guide32,
   guide33,
   guide34,
+  guide35,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1545,6 +1551,62 @@ export const kyoiku5107 = (): void => {
   guide24.visible = true;
   guide24.rotation.set(0, -120, 0);
   guide24.position.set(4300, -2600, -4700);
+};
+
+export const kyoiku5201 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(2650, 1500, -3425);
+};
+
+export const kyoiku5202 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(2850, 1500, -3700);
+};
+
+export const kyoiku5203 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(3050, 1500, -3980);
+};
+
+export const kyoiku5204 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(3250, 1500, -4275);
+};
+
+export const kyoiku5205 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(3475, 1500, -4575);
+};
+
+export const kyoiku5206 = (): void => {
+  hideNumber(35).map((i) => (guide[i - 1].visible = false));
+
+  guide35.visible = true;
+  guide35.rotation.set(0, -120, 0);
+  guide35.position.set(3700, 1500, -4875);
+};
+
+export const kyoiku5207 = (): void => {
+  hideNumber(27).map((i) => (guide[i - 1].visible = false));
+
+  guide27.visible = true;
+  guide27.rotation.set(0, -120, 0);
+  guide27.position.set(4200, 1500, -5750);
 };
 
 export default React.memo(Model);
