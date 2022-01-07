@@ -182,6 +182,9 @@ import {
   kyoiku6203,
   kyoiku6204,
   kyoiku6205,
+  kyoiku7101,
+  kyoiku7102,
+  kyoiku7103,
 } from '@/libs/Three/KyoikuDivide';
 import { GuideProps } from '@/models/guide';
 
@@ -1093,5 +1096,20 @@ export const kyoikuDivide: GuideProps[] = [
     id: 6205,
     name: `${process.env.KYOIKU_6205}`,
     position: kyoiku6205,
+  },
+  {
+    id: 7101,
+    name: `${process.env.KYOIKU_7101}`,
+    position: kyoiku7101,
+  },
+  {
+    id: 7102,
+    name: `${process.env.KYOIKU_7102}`,
+    position: kyoiku7102,
+  },
+  {
+    id: 7103,
+    name: `${process.env.KYOIKU_7103}`,
+    position: kyoiku7103,
   },
 ];
