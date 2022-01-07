@@ -200,6 +200,11 @@ module.exports = {
     KYOIKU_6102: process.env.KYOIKU_6102,
     KYOIKU_6103: process.env.KYOIKU_6103,
     KYOIKU_6104: process.env.KYOIKU_6104,
+    KYOIKU_6201: process.env.KYOIKU_6201,
+    KYOIKU_6202: process.env.KYOIKU_6202,
+    KYOIKU_6203: process.env.KYOIKU_6203,
+    KYOIKU_6204: process.env.KYOIKU_6204,
+    KYOIKU_6205: process.env.KYOIKU_6205,
     KYOIKU_7000: process.env.KYOIKU_7000,
   },
 };

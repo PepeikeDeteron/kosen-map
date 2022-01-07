@@ -305,6 +305,26 @@ const guide39 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide40 = new THREE.Mesh(
+  new THREE.BoxGeometry(450, 600, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide41 = new THREE.Mesh(
+  new THREE.BoxGeometry(600, 600, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide42 = new THREE.Mesh(
+  new THREE.BoxGeometry(1150, 600, 800),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide43 = new THREE.Mesh(
+  new THREE.BoxGeometry(450, 600, 400),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -345,6 +365,10 @@ const guide = [
   guide37,
   guide38,
   guide39,
+  guide40,
+  guide41,
+  guide42,
+  guide43,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1695,6 +1719,46 @@ export const kyoiku6104 = (): void => {
   guide39.visible = true;
   guide39.rotation.set(0, -120, 0);
   guide39.position.set(3075, -2600, -5025);
+};
+
+export const kyoiku6201 = (): void => {
+  hideNumber(40).map((i) => (guide[i - 1].visible = false));
+
+  guide40.visible = true;
+  guide40.rotation.set(0, -120, 0);
+  guide40.position.set(2525, 1500, -5340);
+};
+
+export const kyoiku6202 = (): void => {
+  hideNumber(41).map((i) => (guide[i - 1].visible = false));
+
+  guide41.visible = true;
+  guide41.rotation.set(0, -120, 0);
+  guide41.position.set(2125, 1500, -5625);
+};
+
+export const kyoiku6203 = (): void => {
+  hideNumber(41).map((i) => (guide[i - 1].visible = false));
+
+  guide41.visible = true;
+  guide41.rotation.set(0, -120, 0);
+  guide41.position.set(1620, 1500, -6000);
+};
+
+export const kyoiku6204 = (): void => {
+  hideNumber(42).map((i) => (guide[i - 1].visible = false));
+
+  guide42.visible = true;
+  guide42.rotation.set(0, -120, 0);
+  guide42.position.set(2400, 1500, -6675);
+};
+
+export const kyoiku6205 = (): void => {
+  hideNumber(43).map((i) => (guide[i - 1].visible = false));
+
+  guide43.visible = true;
+  guide43.rotation.set(0, -120, 0);
+  guide43.position.set(3175, 1500, -6300);
 };
 
 export default React.memo(Model);
