@@ -35,4 +35,3 @@ yarn-error.log*
 
 .vscode
 TODO
-/src/data/room.ts
