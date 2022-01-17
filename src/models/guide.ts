@@ -3,3 +3,8 @@ export type GuideProps = {
   name: string;
   position: () => void;
 };
+
+export type CarouselGuideProps = {
+  name: string;
+  guide: GuideProps[];
+};
