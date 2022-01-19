@@ -1,12 +1,15 @@
 import { VFC } from 'react';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
+import GuideButton from '@/components/molecules/GuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
+import { top } from '@/data/top';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -16,6 +19,10 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
+const TopModel = dynamic(() => import('@/libs/Three/Top'), {
+  ssr: false,
+});
+
 const Component: VFC<Props> = ({ className, isMobileScreen }) => {
   const router = useRouter();
 
@@ -24,21 +31,26 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
-          <MapDisplay>トップページ用の校内案内図をここに表示</MapDisplay>
+          <MapDisplay>
+            <TopModel />
+          </MapDisplay>
+          <div className="guide-button">
+            <GuideButton color="inherit" data={top} />
+          </div>
         </div>
         <div className="button-list">
           <SwitchButton
-            color="primary"
-            label="専攻科・教育棟"
-            onClick={() => router.push('/Senkoka')}
+            color="success"
+            label="管理・教育棟"
+            onClick={() => router.push('/Kyoiku')}
           />
           <div className="home-button">
             <HomeButton onClick={() => router.push('/')} />
           </div>
           <SwitchButton
-            color="success"
-            label="管理・教育棟"
-            onClick={() => router.push('/Kyoiku')}
+            color="primary"
+            label="専攻科・教育棟"
+            onClick={() => router.push('/Senkoka')}
           />
         </div>
       </div>
@@ -61,7 +73,14 @@ const StyledComponent = styled(Component)`
   }
 
   .display {
-    text-align: center;
+    display: flex;
+  }
+
+  .guide-button {
+    display: flex;
+    height: 60vh;
+    margin-left: -14rem;
+    padding-top: 10rem;
   }
 
   .button-list {

@@ -1,9 +1,8 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
 import GuideButton from '.';
-import { senkoka101, senkoka102, senkoka103 } from '@/libs/Three/SenkokaDivide';
-import { senkokaDivide } from '@/data/senkoka';
-import { kyoiku } from '@/data/kyoiku';
+import { senkoka101, senkoka102, senkoka103 } from '@/libs/Three/Senkoka';
+import { senkoka } from '@/data/senkoka';
 
 export default {
   title: 'components/molecules/GuideButton',
@@ -47,18 +46,6 @@ Default.args = {
 export const Senkoka = Template.bind({});
 Senkoka.args = {
   color: 'inherit',
-  data: senkokaDivide,
+  data: senkoka,
   disabled: true,
-};
-
-export const SenkokaDivide = Template.bind({});
-SenkokaDivide.args = {
-  color: 'inherit',
-  data: senkokaDivide,
-};
-
-export const Kyoiku = Template.bind({});
-Kyoiku.args = {
-  color: 'inherit',
-  data: kyoiku,
 };

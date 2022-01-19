@@ -47,10 +47,10 @@ import {
   senkoka502,
   senkoka503,
   senkoka504,
-} from '@/libs/Three/SenkokaDivide';
+} from '@/libs/Three/Senkoka';
 import { GuideProps } from '@/models/guide';
 
-export const senkokaDivide: GuideProps[] = [
+export const senkoka: GuideProps[] = [
   {
     id: 101,
     name: SENKOKA_101,
