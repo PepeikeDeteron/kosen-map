@@ -23,7 +23,7 @@ const Component: VFC<Props> = ({ color, label, ...restProps }) => {
 
 const StyledComponent = styled(Component)`
   width: 15rem;
-  height: 5rem;
+  height: 6rem;
   font-size: 1.5rem;
 `;
 

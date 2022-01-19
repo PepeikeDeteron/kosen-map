@@ -2,7 +2,7 @@
 
 exports[`Storyshots components/molecules/SwitchButton Error 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedError MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-hr2hmm-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedError MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-18gtg4i-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -25,7 +25,7 @@ exports[`Storyshots components/molecules/SwitchButton Error 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Info 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedInfo MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-18u1aar-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedInfo MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1pw09na-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -48,7 +48,7 @@ exports[`Storyshots components/molecules/SwitchButton Info 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Inherit 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit MuiButtonBase-root css-ybxkcm-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedInherit MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorInherit MuiButtonBase-root css-6j2uvb-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -71,7 +71,7 @@ exports[`Storyshots components/molecules/SwitchButton Inherit 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Primary 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1vobx45-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1mjrpop-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -94,7 +94,7 @@ exports[`Storyshots components/molecules/SwitchButton Primary 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Secondary 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1otuxdw-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedSecondary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-q23dus-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -117,7 +117,7 @@ exports[`Storyshots components/molecules/SwitchButton Secondary 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Success 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-2b8zr-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedSuccess MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-svlm5d-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
@@ -140,7 +140,7 @@ exports[`Storyshots components/molecules/SwitchButton Success 1`] = `
 
 exports[`Storyshots components/molecules/SwitchButton Warning 1`] = `
 <button
-  className="MuiButton-root MuiButton-contained MuiButton-containedWarning MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-1zgix4-MuiButtonBase-root-MuiButton-root"
+  className="MuiButton-root MuiButton-contained MuiButton-containedWarning MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root css-18ezx6-MuiButtonBase-root-MuiButton-root"
   disabled={false}
   onBlur={[Function]}
   onContextMenu={[Function]}
