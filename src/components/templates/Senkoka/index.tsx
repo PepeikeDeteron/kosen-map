@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { VFC, useState } from 'react';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
@@ -29,7 +29,7 @@ const SenkokaDivideModel = dynamic(() => import('@/libs/Three/SenkokaDivide'), {
   ssr: false,
 });
 
-const Component: React.VFC<Props> = ({
+const Component: VFC<Props> = ({
   className,
   isMobileScreen,
   changeModel,
@@ -108,7 +108,7 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<Partial<ContainerProps>> = () => {
+const Container: VFC<Partial<ContainerProps>> = () => {
   const [changeModel, setChangeModel] = useState(false);
 
   const onChangeModel = () => setChangeModel(!changeModel);

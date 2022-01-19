@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import styled from 'styled-components';
@@ -16,7 +16,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ className, isMobileScreen }) => {
+const Component: VFC<Props> = ({ className, isMobileScreen }) => {
   const router = useRouter();
 
   return (
@@ -79,7 +79,7 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<Partial<ContainerProps>> = () => {
+const Container: VFC<Partial<ContainerProps>> = () => {
   const isMobileScreen = useMediaQuery({
     query: `(max-width: ${mobileMaxWidth})`,
   });

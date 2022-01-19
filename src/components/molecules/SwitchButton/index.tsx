@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
 import { ColorProps } from '@/models/color';
@@ -13,7 +13,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ color, label, ...restProps }) => {
+const Component: VFC<Props> = ({ color, label, ...restProps }) => {
   return (
     <Button variant="contained" color={color} {...restProps}>
       {label}
@@ -27,8 +27,8 @@ const StyledComponent = styled(Component)`
   font-size: 1.5rem;
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default Container;

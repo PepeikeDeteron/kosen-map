@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import styled from 'styled-components';
 import { CommonLoading } from 'react-loadingg';
 import { SpinnerColorProps, SpinnerSizeProps } from '@/models/spinner';
@@ -12,7 +12,7 @@ type Props = {
   className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ className, color, size }) => {
+const Component: VFC<Props> = ({ className, color, size }) => {
   return (
     <>
       <CommonLoading color={color} size={size} />
@@ -37,8 +37,8 @@ const StyledComponent = styled(Component)`
   line-height: 25px;
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default Container;

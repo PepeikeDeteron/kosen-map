@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import styled from 'styled-components';
 import NotFoundTopPage from '../../../../public/assets/Images/not_found_top_page.svg';
 
@@ -6,7 +6,7 @@ type Props = {
   readonly className?: string;
 };
 
-const Component: React.VFC<Props> = ({ className }) => {
+const Component: VFC<Props> = ({ className }) => {
   return (
     <div className={className}>
       <h2>
@@ -31,7 +31,7 @@ const StyledComponent = styled(Component)`
   margin: 15rem 0 0;
 `;
 
-const Container: React.VFC<Props> = (props) => {
+const Container: VFC<Props> = (props) => {
   return <StyledComponent {...props} />;
 };
 

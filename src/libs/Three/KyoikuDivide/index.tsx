@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { VFC, useEffect } from 'react';
 import * as THREE from 'three';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
@@ -6,7 +6,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
 import { guideBoxProperties } from '@/constants/common';
 
-const Model: React.VFC = () => {
+const Model: VFC = () => {
   const createModel = () => {
     const renderer = new THREE.WebGLRenderer({
       canvas: document.querySelector('#canvas') as HTMLCanvasElement,
@@ -1827,4 +1827,4 @@ export const kyoiku7203 = (): void => {
   guide46.position.set(6825, 1500, -3200);
 };
 
-export default React.memo(Model);
+export default Model;

@@ -1,8 +1,8 @@
-import React from 'react';
+import { VFC } from 'react';
 import Head from 'next/head';
 import Template from '@/components/templates/Home';
 
-const Home: React.VFC = () => {
+const Home: VFC = () => {
   return (
     <>
       <Head>

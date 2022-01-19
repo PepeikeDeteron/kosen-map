@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import { styled } from '@mui/system';
 import { Paper } from '@mui/material';
 import { tabletMaxWidth } from '@/constants/common';
@@ -11,7 +11,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ className, children, ...restProps }) => {
+const Component: VFC<Props> = ({ className, children, ...restProps }) => {
   return (
     <div className={className} id="map-display">
       <Paper className={'paper'} {...restProps}>
@@ -49,8 +49,8 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default Container;

@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC } from 'react';
 import { styled } from '@mui/system';
 import { IconButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
@@ -11,7 +11,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ className, ...restProps }) => {
+const Component: VFC<Props> = ({ className, ...restProps }) => {
   return (
     <IconButton className={className} aria-label="ホームボタン" {...restProps}>
       <HomeIcon className="icon" />
@@ -28,8 +28,8 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default Container;

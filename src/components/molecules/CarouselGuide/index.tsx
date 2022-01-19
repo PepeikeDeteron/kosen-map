@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { VFC, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import GuideButton from '@/components/molecules/GuideButton';
@@ -16,7 +16,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({ color, data, className }) => {
+const Component: VFC<Props> = ({ color, data, className }) => {
   const [nav1, setNav1] = useState<string>('');
   const [nav2, setNav2] = useState<GuideProps[]>([]);
 
@@ -107,8 +107,8 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default Container;

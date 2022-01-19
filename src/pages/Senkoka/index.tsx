@@ -1,8 +1,8 @@
-import React from 'react';
+import { VFC } from 'react';
 import Head from 'next/head';
 import Template from '@/components/templates/Senkoka';
 
-const Senkoka: React.VFC = () => {
+const Senkoka: VFC = () => {
   return (
     <>
       <Head>
