@@ -12,10 +12,10 @@ type Props = {
   className?: string;
 } & ContainerProps;
 
-const Component: VFC<Props> = ({ className, color, size }) => {
+const Component: VFC<Props> = ({ className, color, size, ...restProps }) => {
   return (
     <>
-      <CommonLoading color={color} size={size} />
+      <CommonLoading color={color} size={size} {...restProps} />
       <span className={className}>
         <p>ネットワークの接続状況により、</p>
         <p>読み込みが遅くなる場合があります。</p>

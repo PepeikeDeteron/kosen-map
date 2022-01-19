@@ -16,7 +16,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: VFC<Props> = ({ color, data, className }) => {
+const Component: VFC<Props> = ({ className, color, data, ...restProps }) => {
   const [nav1, setNav1] = useState<string>('');
   const [nav2, setNav2] = useState<GuideProps[]>([]);
 
@@ -28,7 +28,7 @@ const Component: VFC<Props> = ({ color, data, className }) => {
   } as const;
 
   return (
-    <div className={className}>
+    <div className={className} {...restProps}>
       <div className="carousel-name">
         <Slider asNavFor={nav2} ref={(slider: string) => setNav1(slider)}>
           {data &&
@@ -57,12 +57,11 @@ const StyledComponent = styled(Component)`
   display: flex;
   flex-flow: column;
   width: 14rem;
-  // position: sticky;
 
   .carousel-name {
     flex-basis: 0;
     flex-grow: 1;
-    margin-bottom: -35vh;
+    margin-bottom: -33vh;
     font-size: 1.4rem;
     text-align: center;
 
