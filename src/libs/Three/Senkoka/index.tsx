@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import { VFC, useEffect } from 'react';
 import * as THREE from 'three';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
 
-const Model: React.VFC = () => {
+const Model: VFC = () => {
   const createModel = () => {
     const renderer = new THREE.WebGLRenderer({
       canvas: document.querySelector('#canvas') as HTMLCanvasElement,
@@ -98,4 +98,4 @@ const Model: React.VFC = () => {
   );
 };
 
-export default React.memo(Model);
+export default Model;

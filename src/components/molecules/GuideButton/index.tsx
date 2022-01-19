@@ -1,4 +1,4 @@
-import React from 'react';
+import { VFC, memo } from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
 import { ButtonGroup } from '@mui/material';
@@ -15,12 +15,7 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const Component: React.VFC<Props> = ({
-  color,
-  data,
-  disabled,
-  ...restProps
-}) => {
+const Component: VFC<Props> = ({ color, data, disabled, ...restProps }) => {
   return (
     <ButtonGroup
       orientation="vertical"
@@ -57,8 +52,8 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.VFC<ContainerProps> = (props) => {
+const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default React.memo(Container);
+export default memo(Container);
