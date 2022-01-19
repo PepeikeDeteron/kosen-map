@@ -3,29 +3,20 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import Carousel from '@/components/molecules/Carousel';
+import CarouselGuide from '@/components/molecules/CarouselGuide';
 import GuideButton from '@/components/molecules/GuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
-import {
-  kyoiku,
-  kyoikuCommonFacilities,
-  kyoikuMachineGroup,
-  kyoikuElectricGroup,
-  kyoikuInformationTechnologyGroup,
-  kyoikuChemistryGroup,
-  kyoikuIntegratedScience,
-} from '@/data/kyoiku';
-import { GuideProps } from '@/models/guide';
+import { carouselGuide } from '@/data/carousel';
+import { kyoiku } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
   readonly changeModel: boolean;
   readonly onChangeModel: () => void;
-  readonly carouselData: GuideProps[][];
 };
 
 type Props = {
@@ -45,7 +36,6 @@ const Component: React.VFC<Props> = ({
   isMobileScreen,
   changeModel,
   onChangeModel,
-  carouselData,
 }) => {
   const router = useRouter();
 
@@ -61,8 +51,7 @@ const Component: React.VFC<Props> = ({
             {changeModel ? (
               <GuideButton color="inherit" data={kyoiku} />
             ) : (
-              // <GuideButton color="inherit" data={kyoikuBuildingAll} />
-              <Carousel color="inherit" data={carouselData} />
+              <CarouselGuide color="inherit" data={carouselGuide} />
             )}
           </div>
         </div>
@@ -130,20 +119,10 @@ const Container: React.VFC<Partial<ContainerProps>> = () => {
     query: `(max-width: ${mobileMaxWidth})`,
   });
 
-  const carouselData = [
-    kyoikuCommonFacilities,
-    kyoikuMachineGroup,
-    kyoikuElectricGroup,
-    kyoikuInformationTechnologyGroup,
-    kyoikuChemistryGroup,
-    kyoikuIntegratedScience,
-  ];
-
   const containerProps = {
     isMobileScreen,
     changeModel,
     onChangeModel,
-    carouselData,
   };
 
   return <StyledComponent {...{ ...containerProps }} />;
