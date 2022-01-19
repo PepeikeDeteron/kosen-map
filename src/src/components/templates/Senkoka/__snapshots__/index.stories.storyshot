@@ -26,7 +26,7 @@ Array [
       >
         <div
           aria-label="vertical outlined button group"
-          className="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-vertical css-5e9jkn-MuiButtonGroup-root"
+          className="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-vertical css-16yjs81-MuiButtonGroup-root"
           role="group"
         >
           <button
