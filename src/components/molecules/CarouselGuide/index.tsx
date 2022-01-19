@@ -1,4 +1,4 @@
-import { VFC, useState } from 'react';
+import { VFC, memo, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import GuideButton from '@/components/molecules/GuideButton';
@@ -111,4 +111,4 @@ const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default Container;
+export default memo(Container);

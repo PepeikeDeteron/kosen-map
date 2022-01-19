@@ -1,4 +1,4 @@
-import { VFC } from 'react';
+import { VFC, memo } from 'react';
 import { styled } from '@mui/system';
 import { Paper } from '@mui/material';
 import { tabletMaxWidth } from '@/constants/common';
@@ -53,4 +53,4 @@ const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default Container;
+export default memo(Container);

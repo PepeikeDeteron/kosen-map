@@ -1,4 +1,4 @@
-import { VFC } from 'react';
+import { VFC, memo } from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
 import { ColorProps } from '@/models/color';
@@ -31,4 +31,4 @@ const Container: VFC<ContainerProps> = (props) => {
   return <StyledComponent {...props} />;
 };
 
-export default Container;
+export default memo(Container);
