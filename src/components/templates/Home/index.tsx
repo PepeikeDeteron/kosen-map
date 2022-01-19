@@ -41,7 +41,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         <div className="button-list">
           <SwitchButton
             color="success"
-            label="管理・教育棟"
+            label="管理・教育棟 1~7号棟"
             onClick={() => router.push('/Kyoiku')}
           />
           <div className="home-button">
