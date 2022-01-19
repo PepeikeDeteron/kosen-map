@@ -40,9 +40,10 @@ const Component: React.VFC<Props> = ({
 };
 
 const StyledComponent = styled(Component)`
-  width: 14rem;
+  display: flex;
   flex-basis: 0;
   flex-grow: 1;
+  width: 14rem;
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
