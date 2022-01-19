@@ -196,7 +196,7 @@ import {
   kyoiku5000,
   kyoiku6000,
   kyoiku7000,
-} from '@/libs/Three/Kyoiku';
+} from '@/libs/Three/Top';
 import {
   kyoiku0101,
   kyoiku0102,
@@ -377,7 +377,7 @@ import {
   kyoiku7201,
   kyoiku7202,
   kyoiku7203,
-} from '@/libs/Three/KyoikuDivide';
+} from '@/libs/Three/Kyoiku';
 import { GuideProps } from '@/models/guide';
 
 // 管理・教育棟全体図

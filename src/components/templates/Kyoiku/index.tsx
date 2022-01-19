@@ -23,11 +23,11 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
-const KyoikuModel = dynamic(() => import('@/libs/Three/Kyoiku'), {
+const KyoikuModel = dynamic(() => import('@/libs/Three/Top'), {
   ssr: false,
 });
 
-const KyoikuDivideModel = dynamic(() => import('@/libs/Three/KyoikuDivide'), {
+const KyoikuDivideModel = dynamic(() => import('@/libs/Three/Kyoiku'), {
   ssr: false,
 });
 

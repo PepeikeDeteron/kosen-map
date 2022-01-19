@@ -4,6 +4,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
+import { guideBoxProperties } from '@/constants/common';
 
 const Model: VFC = () => {
   const createModel = () => {
@@ -35,9 +36,8 @@ const Model: VFC = () => {
       (gltf) => {
         const model = gltf.scene;
 
-        model.scale.set(130, 180, 150);
-        model.rotation.set(0, -100, 0);
-        model.position.set(-300, -4000, 0);
+        model.scale.set(110, 110, 110);
+        model.position.set(0, -4800, 0);
 
         scene.add(model);
       },
@@ -61,6 +61,7 @@ const Model: VFC = () => {
     );
 
     const tick = () => {
+      controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(tick);
     };
@@ -79,6 +80,15 @@ const Model: VFC = () => {
       camera.updateProjectionMatrix();
     };
 
+    const guides: THREE.Mesh[] = [];
+
+    guide.map((obj) => {
+      guides.push(obj);
+      scene.add(obj);
+
+      obj.visible = false;
+    });
+
     tick();
     onResize();
     window.addEventListener('resize', onResize, false);
@@ -96,6 +106,181 @@ const Model: VFC = () => {
       </div>
     </>
   );
+};
+
+// 特定の箇所を光らせるためのガイド
+const guide1 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 1200, 2500),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide2 = new THREE.Mesh(
+  new THREE.BoxGeometry(1250, 1200, 2500),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
+const guide = [guide1, guide2];
+
+// ガイドを配置する位置
+export const senkoka101 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, -4100, 1000);
+};
+
+export const senkoka102 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(-2700, -4100, -2000);
+};
+
+export const senkoka103 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(-1350, -4100, -2000);
+};
+
+export const senkoka104 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(1350, -4100, -2000);
+};
+
+export const senkoka105 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(2700, -4100, -2000);
+};
+
+export const senkoka106 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, -4100, 1000);
+};
+
+export const senkoka201 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, -2300, 1000);
+};
+
+export const senkoka202 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, -2300, -2000);
+};
+
+export const senkoka203 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(1350, -2300, -2000);
+};
+
+export const senkoka204 = (): void => {
+  guide1.visible = false;
+  guide2.visible = true;
+
+  guide2.position.set(2700, -2300, -2000);
+};
+
+export const senkoka205 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, -2300, 1000);
+};
+
+export const senkoka301 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, -450, 1000);
+};
+
+export const senkoka302 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, -450, -2000);
+};
+
+export const senkoka303 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, -450, -2000);
+};
+
+export const senkoka304 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, -450, 1000);
+};
+
+export const senkoka401 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, 1500, 1000);
+};
+
+export const senkoka402 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, 1500, -2000);
+};
+
+export const senkoka403 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, 1500, -2000);
+};
+
+export const senkoka404 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, 1500, 1000);
+};
+
+export const senkoka501 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, 3400, 1000);
+};
+
+export const senkoka502 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(-2100, 3400, -2000);
+};
+
+export const senkoka503 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, 3400, -2000);
+};
+
+export const senkoka504 = (): void => {
+  guide1.visible = true;
+  guide2.visible = false;
+
+  guide1.position.set(2100, 3400, 1000);
 };
 
 export default Model;
