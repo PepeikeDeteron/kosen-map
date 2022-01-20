@@ -256,10 +256,10 @@ export const KYOIKU_4406 = [
 
 // 5号棟 1階案内
 export const KYOIKU_5101 = [
-  `${process.env.NMGMXYJY6R} 研究室`,
+  `${process.env.GIO8B24IBN} 研究室`,
   '制御応用・電子工学実験室',
 ];
-export const KYOIKU_5102 = [`教員室 (${process.env.NMGMXYJY6R})`];
+export const KYOIKU_5102 = [`教員室 (${process.env.GIO8B24IBN})`];
 export const KYOIKU_5103 = [`教員室 (${process.env.FJ4BCBWV24})`];
 export const KYOIKU_5104 = [`教員室 (${process.env.XXYXGW76OI})`];
 export const KYOIKU_5105 = ['物質化学(工学)研究室'];
