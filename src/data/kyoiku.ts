@@ -366,82 +366,77 @@ import { GuideProps } from '@/models/guide';
 export const kyoikuCommonFacilities: GuideProps[] = [
   {
     id: 205,
-    name: KYOIKU_0205,
+    name: KYOIKU_0205[0],
     position: kyoiku0205,
   },
   {
     id: 103,
-    name: KYOIKU_0103,
+    name: KYOIKU_0103[0],
     position: kyoiku0103,
   },
   {
     id: 111,
-    name: KYOIKU_0111,
+    name: KYOIKU_0111[0],
     position: kyoiku0111,
   },
   {
     id: 105,
-    name: KYOIKU_0105,
+    name: KYOIKU_0105[0],
     position: kyoiku0105,
   },
   {
     id: 106,
-    name: KYOIKU_0106,
+    name: KYOIKU_0106[0],
     position: kyoiku0106,
   },
   {
     id: 104,
-    name: KYOIKU_0104,
+    name: KYOIKU_0104[0],
     position: kyoiku0104,
   },
   {
-    id: 106,
-    name: KYOIKU_0106,
-    position: kyoiku0106,
-  },
-  {
-    id: 114,
-    name: KYOIKU_0114,
-    position: kyoiku0114,
-  },
-  {
     id: 201,
-    name: KYOIKU_0201,
+    name: KYOIKU_0201[0],
     position: kyoiku0201,
   },
   {
-    id: 202,
-    name: KYOIKU_0202,
-    position: kyoiku0202,
-  },
-  {
-    id: 203,
-    name: KYOIKU_0203,
-    position: kyoiku0203,
-  },
-  {
-    id: 204,
-    name: KYOIKU_0204,
-    position: kyoiku0204,
-  },
-  {
     id: 206,
-    name: KYOIKU_0206,
+    name: KYOIKU_0206[0],
     position: kyoiku0206,
   },
   {
     id: 207,
-    name: KYOIKU_0207,
+    name: KYOIKU_0207[0],
     position: kyoiku0207,
   },
   {
+    id: 204,
+    name: KYOIKU_0204[0],
+    position: kyoiku0204,
+  },
+  {
+    id: 114,
+    name: KYOIKU_0114[0],
+    position: kyoiku0114,
+  },
+  {
+    id: 202,
+    name: KYOIKU_0202[0],
+    position: kyoiku0202,
+  },
+  {
+    id: 203,
+    name: KYOIKU_0203[0],
+    position: kyoiku0203,
+  },
+  {
     id: 112,
-    name: KYOIKU_0112,
+    name: KYOIKU_0112[0],
     position: kyoiku0112,
   },
   {
     id: 113,
-    name: KYOIKU_0113,
+    name: KYOIKU_0113[0],
     position: kyoiku0113,
   },
 ];
@@ -550,7 +545,17 @@ export const kyoikuMachineGroup: GuideProps[] = [
   },
   {
     id: 1207,
-    name: KYOIKU_1207,
+    name: KYOIKU_1207[0],
+    position: kyoiku1207,
+  },
+  {
+    id: 1207,
+    name: KYOIKU_1207[1],
+    position: kyoiku1207,
+  },
+  {
+    id: 1207,
+    name: KYOIKU_1207[2],
     position: kyoiku1207,
   },
   {
