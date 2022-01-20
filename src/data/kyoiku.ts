@@ -445,113 +445,64 @@ export const kyoikuCommonFacilities: GuideProps[] = [
 export const kyoikuMachineGroup: GuideProps[] = [
   {
     id: 314,
-    name: KYOIKU_0314,
+    name: KYOIKU_0314[0],
     position: kyoiku0314,
   },
   {
     id: 313,
-    name: KYOIKU_0313,
+    name: KYOIKU_0313[0],
     position: kyoiku0313,
   },
-  {
-    id: 1306,
-    name: KYOIKU_1306,
-    position: kyoiku1306,
-  },
-  {
-    id: 1310,
-    name: KYOIKU_1310,
-    position: kyoiku1310,
-  },
-  {
-    id: 1106,
-    name: KYOIKU_1106,
-    position: kyoiku1106,
-  },
-  {
-    id: 1303,
-    name: KYOIKU_1303,
-    position: kyoiku1303,
-  },
-  {
-    id: 1105,
-    name: KYOIKU_1105,
-    position: kyoiku1105,
-  },
-  {
-    id: 1104,
-    name: KYOIKU_1104,
-    position: kyoiku1104,
-  },
-  {
-    id: 1305,
-    name: KYOIKU_1305,
-    position: kyoiku1305,
-  },
-  {
-    id: 1304,
-    name: KYOIKU_1304,
-    position: kyoiku1304,
-  },
-  {
-    id: 3203,
-    name: KYOIKU_3203,
-    position: kyoiku3203,
-  },
-  {
-    id: 1302,
-    name: KYOIKU_1302,
-    position: kyoiku1302,
-  },
+
   {
     id: 1102,
-    name: KYOIKU_1102,
+    name: KYOIKU_1102[0],
     position: kyoiku1102,
   },
   {
     id: 1107,
-    name: KYOIKU_1107,
+    name: KYOIKU_1107[1],
     position: kyoiku1107,
   },
   {
     id: 1108,
-    name: KYOIKU_1108,
+    name: KYOIKU_1108[1],
     position: kyoiku1108,
   },
   {
     id: 1109,
-    name: KYOIKU_1109,
+    name: KYOIKU_1109[0],
     position: kyoiku1109,
   },
   {
     id: 1110,
-    name: KYOIKU_1110,
+    name: KYOIKU_1110[0],
     position: kyoiku1110,
   },
   {
     id: 1111,
-    name: KYOIKU_1111,
+    name: KYOIKU_1111[1],
     position: kyoiku1111,
   },
   {
-    id: 1205,
-    name: KYOIKU_1205,
-    position: kyoiku1205,
+    id: 1208,
+    name: KYOIKU_1208[0],
+    position: kyoiku1208,
+  },
+  {
+    id: 1209,
+    name: KYOIKU_1209[0],
+    position: kyoiku1209,
+  },
+  {
+    id: 1313,
+    name: KYOIKU_1313[0],
+    position: kyoiku1313,
   },
   {
     id: 1206,
-    name: KYOIKU_1206,
+    name: KYOIKU_1206[1],
     position: kyoiku1206,
-  },
-  {
-    id: 1207,
-    name: KYOIKU_1207[0],
-    position: kyoiku1207,
-  },
-  {
-    id: 1207,
-    name: KYOIKU_1207[1],
-    position: kyoiku1207,
   },
   {
     id: 1207,
@@ -559,44 +510,121 @@ export const kyoikuMachineGroup: GuideProps[] = [
     position: kyoiku1207,
   },
   {
-    id: 1208,
-    name: KYOIKU_1208,
-    position: kyoiku1208,
-  },
-  {
-    id: 1209,
-    name: KYOIKU_1209,
-    position: kyoiku1209,
-  },
-  {
-    id: 1313,
-    name: KYOIKU_1313,
-    position: kyoiku1313,
-  },
-  {
     id: 3101,
-    name: KYOIKU_3101,
+    name: KYOIKU_3101[0],
     position: kyoiku3101,
   },
   {
     id: 3102,
-    name: KYOIKU_3102,
+    name: KYOIKU_3102[1],
     position: kyoiku3102,
   },
   {
-    id: 3103,
-    name: KYOIKU_3103,
-    position: kyoiku3103,
-  },
-  {
     id: 3104,
-    name: KYOIKU_3104,
+    name: KYOIKU_3104[1],
     position: kyoiku3104,
   },
   {
+    id: 3103,
+    name: KYOIKU_3103[0],
+    position: kyoiku3103,
+  },
+  {
     id: 3201,
-    name: KYOIKU_3201,
+    name: KYOIKU_3201[1],
     position: kyoiku3201,
+  },
+
+  {
+    id: 1306,
+    name: KYOIKU_1306[0],
+    position: kyoiku1306,
+  },
+  {
+    id: 1310,
+    name: KYOIKU_1310[0],
+    position: kyoiku1310,
+  },
+  {
+    id: 1106,
+    name: KYOIKU_1106[0],
+    position: kyoiku1106,
+  },
+  {
+    id: 1303,
+    name: KYOIKU_1303[0],
+    position: kyoiku1303,
+  },
+  {
+    id: 1105,
+    name: KYOIKU_1105[0],
+    position: kyoiku1105,
+  },
+  {
+    id: 1104,
+    name: KYOIKU_1104[0],
+    position: kyoiku1104,
+  },
+  {
+    id: 1305,
+    name: KYOIKU_1305[0],
+    position: kyoiku1305,
+  },
+  {
+    id: 1304,
+    name: KYOIKU_1304[0],
+    position: kyoiku1304,
+  },
+  {
+    id: 3203,
+    name: KYOIKU_3203[0],
+    position: kyoiku3203,
+  },
+  {
+    id: 1302,
+    name: KYOIKU_1302[0],
+    position: kyoiku1302,
+  },
+
+  {
+    id: 3102,
+    name: KYOIKU_3102[0],
+    position: kyoiku3102,
+  },
+  {
+    id: 1111,
+    name: KYOIKU_1111[0],
+    position: kyoiku1111,
+  },
+  {
+    id: 1107,
+    name: KYOIKU_1107[0],
+    position: kyoiku1107,
+  },
+  {
+    id: 1108,
+    name: KYOIKU_1108[0],
+    position: kyoiku1108,
+  },
+  {
+    id: 1103,
+    name: KYOIKU_1103[0],
+    position: kyoiku1103,
+  },
+  {
+    id: 1206,
+    name: KYOIKU_1206[0],
+    position: kyoiku1206,
+  },
+  {
+    id: 3201,
+    name: KYOIKU_3201[0],
+    position: kyoiku3201,
+  },
+  {
+    id: 3104,
+    name: KYOIKU_3104[0],
+    position: kyoiku3104,
   },
 ];
 
