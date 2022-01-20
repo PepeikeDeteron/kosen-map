@@ -395,6 +395,21 @@ export const kyoikuCommonFacilities: GuideProps[] = [
     position: kyoiku0104,
   },
   {
+    id: 107,
+    name: KYOIKU_0107[0],
+    position: kyoiku0107,
+  },
+  {
+    id: 116,
+    name: KYOIKU_0116[0],
+    position: kyoiku0116,
+  },
+  {
+    id: 1101,
+    name: KYOIKU_1101[0],
+    position: kyoiku1101,
+  },
+  {
     id: 201,
     name: KYOIKU_0201[0],
     position: kyoiku0201,
@@ -438,6 +453,31 @@ export const kyoikuCommonFacilities: GuideProps[] = [
     id: 113,
     name: KYOIKU_0113[0],
     position: kyoiku0113,
+  },
+  {
+    id: 2201,
+    name: KYOIKU_2201[0],
+    position: kyoiku2201,
+  },
+  {
+    id: 110,
+    name: KYOIKU_0110[0],
+    position: kyoiku0110,
+  },
+  {
+    id: 108,
+    name: KYOIKU_0108[0],
+    position: kyoiku0108,
+  },
+  {
+    id: 109,
+    name: KYOIKU_0109[0],
+    position: kyoiku0109,
+  },
+  {
+    id: 2109,
+    name: KYOIKU_2109[0],
+    position: kyoiku2109,
   },
 ];
 
@@ -788,6 +828,11 @@ export const kyoikuInformationTechnologyGroup: GuideProps[] = [
     name: KYOIKU_7202[0],
     position: kyoiku7202,
   },
+  {
+    id: 1205,
+    name: KYOIKU_1205[0],
+    position: kyoiku1205,
+  },
 
   {
     id: 1309,
@@ -924,6 +969,11 @@ export const kyoikuChemistryGroup: GuideProps[] = [
     id: 2204,
     name: KYOIKU_2204[0],
     position: kyoiku2204,
+  },
+  {
+    id: 2205,
+    name: KYOIKU_2205[0],
+    position: kyoiku2205,
   },
   {
     id: 2208,
@@ -1137,6 +1187,17 @@ export const kyoikuChemistryGroup: GuideProps[] = [
 // 総合科学
 export const kyoikuIntegratedScience: GuideProps[] = [
   {
+    id: 5301,
+    name: KYOIKU_5301[0],
+    position: kyoiku5301,
+  },
+  {
+    id: 309,
+    name: KYOIKU_0309[0],
+    position: kyoiku0309,
+  },
+
+  {
     id: 5204,
     name: KYOIKU_5204[0],
     position: kyoiku5204,
@@ -1215,6 +1276,21 @@ export const kyoikuIntegratedScience: GuideProps[] = [
     id: 311,
     name: KYOIKU_0311[0],
     position: kyoiku0311,
+  },
+  {
+    id: 5302,
+    name: KYOIKU_5302[0],
+    position: kyoiku5302,
+  },
+  {
+    id: 308,
+    name: KYOIKU_0308[0],
+    position: kyoiku0308,
+  },
+  {
+    id: 1201,
+    name: KYOIKU_1201[0],
+    position: kyoiku1201,
   },
 ];
 
