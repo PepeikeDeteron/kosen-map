@@ -52,118 +52,128 @@ import { GuideProps } from '@/models/guide';
 
 export const senkoka: GuideProps[] = [
   {
-    id: 101,
-    name: SENKOKA_101,
-    position: senkoka101,
-  },
-  {
-    id: 106,
-    name: SENKOKA_106,
-    position: senkoka106,
-  },
-  {
-    id: 102,
-    name: SENKOKA_102,
-    position: senkoka102,
-  },
-  {
-    id: 103,
-    name: SENKOKA_103,
-    position: senkoka103,
-  },
-  {
-    id: 104,
-    name: SENKOKA_104,
-    position: senkoka104,
-  },
-  {
-    id: 105,
-    name: SENKOKA_105,
-    position: senkoka105,
-  },
-  {
-    id: 201,
-    name: SENKOKA_201,
-    position: senkoka201,
-  },
-  {
-    id: 202,
-    name: SENKOKA_202,
-    position: senkoka202,
-  },
-  {
-    id: 205,
-    name: SENKOKA_205,
-    position: senkoka205,
-  },
-  {
-    id: 203,
-    name: SENKOKA_203,
-    position: senkoka203,
-  },
-  {
-    id: 204,
-    name: SENKOKA_204,
-    position: senkoka204,
-  },
-  {
     id: 301,
-    name: SENKOKA_301,
+    name: SENKOKA_301[0],
     position: senkoka301,
   },
   {
     id: 302,
-    name: SENKOKA_302,
+    name: SENKOKA_302[0],
     position: senkoka302,
   },
   {
     id: 303,
-    name: SENKOKA_303,
+    name: SENKOKA_303[0],
     position: senkoka303,
   },
   {
     id: 304,
-    name: SENKOKA_304,
+    name: SENKOKA_304[0],
     position: senkoka304,
   },
   {
     id: 403,
-    name: SENKOKA_403,
+    name: SENKOKA_403[0],
     position: senkoka403,
   },
   {
     id: 404,
-    name: SENKOKA_404,
+    name: SENKOKA_404[0],
     position: senkoka404,
   },
   {
     id: 401,
-    name: SENKOKA_401,
+    name: SENKOKA_401[0],
     position: senkoka401,
   },
   {
     id: 402,
-    name: SENKOKA_402,
+    name: SENKOKA_402[0],
     position: senkoka402,
   },
   {
     id: 501,
-    name: SENKOKA_501,
+    name: SENKOKA_501[0],
     position: senkoka501,
   },
   {
     id: 503,
-    name: SENKOKA_503,
+    name: SENKOKA_503[0],
     position: senkoka503,
   },
   {
     id: 504,
-    name: SENKOKA_504,
+    name: SENKOKA_504[0],
     position: senkoka504,
   },
   {
     id: 502,
-    name: SENKOKA_502,
+    name: SENKOKA_502[0],
     position: senkoka502,
+  },
+  {
+    id: 101,
+    name: SENKOKA_101[0],
+    position: senkoka101,
+  },
+  {
+    id: 106,
+    name: SENKOKA_106[0],
+    position: senkoka106,
+  },
+  {
+    id: 201,
+    name: SENKOKA_201[0],
+    position: senkoka201,
+  },
+  {
+    id: 202,
+    name: SENKOKA_202[0],
+    position: senkoka202,
+  },
+  {
+    id: 205,
+    name: SENKOKA_205[0],
+    position: senkoka205,
+  },
+  {
+    id: 102,
+    name: SENKOKA_102[0],
+    position: senkoka102,
+  },
+  {
+    id: 103,
+    name: SENKOKA_103[0],
+    position: senkoka103,
+  },
+  {
+    id: 104,
+    name: SENKOKA_104[1],
+    position: senkoka104,
+  },
+  {
+    id: 105,
+    name: SENKOKA_105[1],
+    position: senkoka105,
+  },
+  {
+    id: 203,
+    name: SENKOKA_203[0],
+    position: senkoka203,
+  },
+  {
+    id: 204,
+    name: SENKOKA_204[0],
+    position: senkoka204,
+  },
+  {
+    id: 104,
+    name: SENKOKA_104[0],
+    position: senkoka104,
+  },
+  {
+    id: 105,
+    name: SENKOKA_105[0],
+    position: senkoka105,
   },
 ];
