@@ -1193,27 +1193,27 @@ export const kyoikuIntegratedScience: GuideProps[] = [
   },
   {
     id: 5103,
-    name: KYOIKU_5103,
+    name: KYOIKU_5103[0],
     position: kyoiku5103,
   },
   {
     id: 302,
-    name: KYOIKU_0302,
+    name: KYOIKU_0302[0],
     position: kyoiku0302,
   },
   {
     id: 305,
-    name: KYOIKU_0305,
+    name: KYOIKU_0305[0],
     position: kyoiku0305,
   },
   {
     id: 5202,
-    name: KYOIKU_5202,
+    name: KYOIKU_5202[0],
     position: kyoiku5202,
   },
   {
     id: 311,
-    name: KYOIKU_0311,
+    name: KYOIKU_0311[0],
     position: kyoiku0311,
   },
 ];
