@@ -61,7 +61,7 @@ const StyledComponent = styled(Component)`
   .carousel-name {
     flex-basis: 0;
     flex-grow: 1;
-    margin-bottom: -33vh;
+    margin-bottom: -40vh;
     font-size: 1.4rem;
     text-align: center;
 
