@@ -263,7 +263,7 @@ export const KYOIKU_5102 = [`教員室 (${process.env.GIO8B24IBN})`];
 export const KYOIKU_5103 = [`教員室 (${process.env.FJ4BCBWV24})`];
 export const KYOIKU_5104 = [`教員室 (${process.env.XXYXGW76OI})`];
 export const KYOIKU_5105 = ['物質化学(工学)研究室'];
-export const KYOIKU_5106 = ['化学・バイオ系工作室'];
+export const KYOIKU_5106 = ['化学バイオ系工作室'];
 export const KYOIKU_5107 = [''];
 
 // 5号棟 2階案内
@@ -277,7 +277,7 @@ export const KYOIKU_5207 = ['情報セキュリティ 演習室'];
 
 // 5号棟 3階案内
 export const KYOIKU_5301 = ['物理実験室'];
-export const KYOIKU_5302 = [`教員室 (${process.env.XGF326WJ4X})`];
+export const KYOIKU_5302 = [`教員室 (${process.env.IF1UP5N6GP})`];
 export const KYOIKU_5303 = [
   `${process.env.AX8L2QJOKL} 研究室`,
   `${process.env.ITMWB0TRXM} 研究室`,

@@ -905,164 +905,232 @@ export const kyoikuInformationTechnologyGroup: GuideProps[] = [
 // 化学・バイオ系
 export const kyoikuChemistryGroup: GuideProps[] = [
   {
-    id: 2301,
-    name: KYOIKU_2301,
-    position: kyoiku2301,
+    id: 209,
+    name: KYOIKU_0209[0],
+    position: kyoiku0209,
   },
   {
-    id: 2406,
-    name: KYOIKU_2406,
-    position: kyoiku2406,
+    id: 316,
+    name: KYOIKU_0316[0],
+    position: kyoiku0316,
   },
-  {
-    id: 115,
-    name: KYOIKU_0115,
-    position: kyoiku0115,
-  },
-  {
-    id: 2106,
-    name: KYOIKU_2106,
-    position: kyoiku2106,
-  },
-  {
-    id: 2203,
-    name: KYOIKU_2203,
-    position: kyoiku2203,
-  },
-  {
-    id: 2103,
-    name: KYOIKU_2103,
-    position: kyoiku2103,
-  },
-  {
-    id: 2304,
-    name: KYOIKU_2304,
-    position: kyoiku2304,
-  },
-  {
-    id: 2403,
-    name: KYOIKU_2403,
-    position: kyoiku2403,
-  },
-  {
-    id: 6101,
-    name: KYOIKU_6101,
-    position: kyoiku6101,
-  },
-  {
-    id: 2206,
-    name: KYOIKU_2206,
-    position: kyoiku2206,
-  },
-  {
-    id: 2401,
-    name: KYOIKU_2401,
-    position: kyoiku2401,
-  },
-  {
-    id: 6201,
-    name: KYOIKU_6201,
-    position: kyoiku6201,
-  },
-  {
-    id: 2101,
-    name: KYOIKU_2101,
-    position: kyoiku2101,
-  },
+
   {
     id: 2104,
-    name: KYOIKU_2104,
+    name: KYOIKU_2104[0],
     position: kyoiku2104,
   },
   {
     id: 2204,
-    name: KYOIKU_2204,
+    name: KYOIKU_2204[0],
     position: kyoiku2204,
   },
   {
     id: 2208,
-    name: KYOIKU_2208,
+    name: KYOIKU_2208[0],
     position: kyoiku2208,
   },
   {
+    id: 6102,
+    name: KYOIKU_6102[0],
+    position: kyoiku6102,
+  },
+  {
     id: 2305,
-    name: KYOIKU_2305,
+    name: KYOIKU_2305[0],
     position: kyoiku2305,
   },
   {
-    id: 2307,
-    name: KYOIKU_2307,
-    position: kyoiku2307,
-  },
-  {
     id: 2308,
-    name: KYOIKU_2308,
+    name: KYOIKU_2308[0],
     position: kyoiku2308,
   },
   {
-    id: 2402,
-    name: KYOIKU_2402,
-    position: kyoiku2402,
-  },
-  {
     id: 2404,
-    name: KYOIKU_2404,
+    name: KYOIKU_2404[0],
     position: kyoiku2404,
   },
   {
+    id: 2402,
+    name: KYOIKU_2402[0],
+    position: kyoiku2402,
+  },
+  {
     id: 2407,
-    name: KYOIKU_2407,
+    name: KYOIKU_2407[0],
     position: kyoiku2407,
   },
   {
     id: 5105,
-    name: KYOIKU_5105,
+    name: KYOIKU_5105[0],
     position: kyoiku5105,
   },
   {
     id: 5106,
-    name: KYOIKU_5106,
+    name: KYOIKU_5106[0],
     position: kyoiku5106,
   },
   {
-    id: 6102,
-    name: KYOIKU_6102,
-    position: kyoiku6102,
-  },
-  {
     id: 6103,
-    name: KYOIKU_6103,
+    name: KYOIKU_6103[1],
     position: kyoiku6103,
   },
   {
     id: 6204,
-    name: KYOIKU_6204,
+    name: KYOIKU_6204[1],
     position: kyoiku6204,
   },
   {
     id: 6203,
-    name: KYOIKU_6203,
+    name: KYOIKU_6203[1],
     position: kyoiku6203,
   },
   {
     id: 6202,
-    name: KYOIKU_6202,
+    name: KYOIKU_6202[1],
     position: kyoiku6202,
   },
   {
+    id: 6203,
+    name: KYOIKU_6203[2],
+    position: kyoiku6203,
+  },
+  {
+    id: 2101,
+    name: KYOIKU_2101[0],
+    position: kyoiku2101,
+  },
+  {
+    id: 2307,
+    name: KYOIKU_2307[0],
+    position: kyoiku2307,
+  },
+  {
     id: 6205,
-    name: KYOIKU_6205,
+    name: KYOIKU_6205[0],
     position: kyoiku6205,
   },
   {
     id: 2108,
-    name: KYOIKU_2108,
+    name: KYOIKU_2108[0],
     position: kyoiku2108,
   },
   {
     id: 2408,
-    name: KYOIKU_2408,
+    name: KYOIKU_2408[0],
     position: kyoiku2408,
+  },
+
+  {
+    id: 2301,
+    name: KYOIKU_2301[0],
+    position: kyoiku2301,
+  },
+  {
+    id: 2406,
+    name: KYOIKU_2406[0],
+    position: kyoiku2406,
+  },
+  {
+    id: 115,
+    name: KYOIKU_0115[1],
+    position: kyoiku0115,
+  },
+  {
+    id: 2106,
+    name: KYOIKU_2106[0],
+    position: kyoiku2106,
+  },
+  {
+    id: 2203,
+    name: KYOIKU_2203[0],
+    position: kyoiku2203,
+  },
+  {
+    id: 2103,
+    name: KYOIKU_2103[0],
+    position: kyoiku2103,
+  },
+  {
+    id: 2304,
+    name: KYOIKU_2304[0],
+    position: kyoiku2304,
+  },
+  {
+    id: 2403,
+    name: KYOIKU_2403[0],
+    position: kyoiku2403,
+  },
+  {
+    id: 6101,
+    name: KYOIKU_6101[0],
+    position: kyoiku6101,
+  },
+  {
+    id: 2206,
+    name: KYOIKU_2206[0],
+    position: kyoiku2206,
+  },
+  {
+    id: 2401,
+    name: KYOIKU_2401[0],
+    position: kyoiku2401,
+  },
+  {
+    id: 6201,
+    name: KYOIKU_6201[0],
+    position: kyoiku6201,
+  },
+
+  {
+    id: 2302,
+    name: KYOIKU_2302[0],
+    position: kyoiku2302,
+  },
+  {
+    id: 2107,
+    name: KYOIKU_2107[0],
+    position: kyoiku2107,
+  },
+  {
+    id: 2202,
+    name: KYOIKU_2202[0],
+    position: kyoiku2202,
+  },
+  {
+    id: 2102,
+    name: KYOIKU_2102[0],
+    position: kyoiku2102,
+  },
+  {
+    id: 2303,
+    name: KYOIKU_2303[0],
+    position: kyoiku2303,
+  },
+  {
+    id: 6202,
+    name: KYOIKU_6202[0],
+    position: kyoiku6202,
+  },
+  {
+    id: 6103,
+    name: KYOIKU_6103[0],
+    position: kyoiku6103,
+  },
+  {
+    id: 2207,
+    name: KYOIKU_2207[0],
+    position: kyoiku2207,
+  },
+  {
+    id: 6203,
+    name: KYOIKU_6203[0],
+    position: kyoiku6203,
+  },
+  {
+    id: 6204,
+    name: KYOIKU_6204[0],
+    position: kyoiku6204,
   },
 ];
 
@@ -1070,57 +1138,57 @@ export const kyoikuChemistryGroup: GuideProps[] = [
 export const kyoikuIntegratedScience: GuideProps[] = [
   {
     id: 5204,
-    name: KYOIKU_5204,
+    name: KYOIKU_5204[0],
     position: kyoiku5204,
   },
   {
     id: 5203,
-    name: KYOIKU_5203,
+    name: KYOIKU_5203[0],
     position: kyoiku5203,
   },
   {
     id: 312,
-    name: KYOIKU_0312,
+    name: KYOIKU_0312[0],
     position: kyoiku0312,
   },
   {
     id: 5206,
-    name: KYOIKU_5206,
+    name: KYOIKU_5206[0],
     position: kyoiku5206,
   },
   {
     id: 5205,
-    name: KYOIKU_5205,
+    name: KYOIKU_5205[0],
     position: kyoiku5205,
   },
   {
     id: 5201,
-    name: KYOIKU_5201,
+    name: KYOIKU_5201[0],
     position: kyoiku5201,
   },
   {
     id: 303,
-    name: KYOIKU_0303,
+    name: KYOIKU_0303[0],
     position: kyoiku0303,
   },
   {
     id: 310,
-    name: KYOIKU_0310,
+    name: KYOIKU_0310[0],
     position: kyoiku0310,
   },
   {
     id: 306,
-    name: KYOIKU_0306,
+    name: KYOIKU_0306[0],
     position: kyoiku0306,
   },
   {
     id: 5104,
-    name: KYOIKU_5104,
+    name: KYOIKU_5104[0],
     position: kyoiku5104,
   },
   {
     id: 301,
-    name: KYOIKU_0301,
+    name: KYOIKU_0301[0],
     position: kyoiku0301,
   },
   {
