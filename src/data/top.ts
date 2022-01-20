@@ -7,6 +7,7 @@ import {
   KYOIKU_5000,
   KYOIKU_6000,
   KYOIKU_7000,
+  SENKOKA_000,
 } from '@/data/room';
 import {
   kyoiku0000,
@@ -17,6 +18,7 @@ import {
   kyoiku5000,
   kyoiku6000,
   kyoiku7000,
+  senkoka000,
 } from '@/libs/Three/Top';
 import { GuideProps } from '@/models/guide';
 
@@ -26,6 +28,11 @@ export const top: GuideProps[] = [
     id: 0,
     name: KYOIKU_0000,
     position: kyoiku0000,
+  },
+  {
+    id: 100,
+    name: SENKOKA_000,
+    position: senkoka000,
   },
   {
     id: 1000,

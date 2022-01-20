@@ -160,6 +160,11 @@ const guide10 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(guideBoxProperties)
 );
 
+const guide11 = new THREE.Mesh(
+  new THREE.BoxGeometry(2700, 2000, 2300),
+  new THREE.MeshBasicMaterial(guideBoxProperties)
+);
+
 const guide = [
   guide1,
   guide2,
@@ -171,6 +176,7 @@ const guide = [
   guide8,
   guide9,
   guide10,
+  guide11,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -247,6 +253,14 @@ export const kyoiku7000 = (): void => {
   guide8.visible = true;
   guide8.rotation.set(65, 0, 0);
   guide8.position.set(3400, 3300, -3000);
+};
+
+export const senkoka000 = (): void => {
+  hideNumber(11).map((i) => (guide[i - 1].visible = false));
+
+  guide11.visible = true;
+  guide11.rotation.set(65, 0, 0);
+  guide11.position.set(3000, 1200, 1300);
 };
 
 export default Model;
