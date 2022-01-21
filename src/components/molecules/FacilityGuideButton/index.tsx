@@ -38,6 +38,7 @@ const StyledComponent = styled(Component)`
   flex-basis: 0;
   flex-grow: 1;
   width: 14rem;
+  user-select: none;
 `;
 
 const Container: VFC<ContainerProps> = (props) => {
