@@ -4,9 +4,10 @@ import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import EntranceButton from '@/components/molecules/EntranceButton';
+import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
-import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
+import StairsButton from '@/components/molecules/StairsButton';
 import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
@@ -35,11 +36,17 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         <div className="display">
           <div className="sub-guide-button">
             <EntranceButton
-              color="warning"
+              color="success"
               label={kyoikuEntrance.map((label) => label.name)}
               onClick={() => kyoikuEntrance.map((click) => click.position)}
             />
             <FacilityGuideButton color="inherit" data={kyoikuFacility} />
+            <div className="stairs">
+              <StairsButton
+                color="primary"
+                onClick={() => console.log('階段ガイド')}
+              />
+            </div>
           </div>
           <MapDisplay>
             <KyoikuModel />
@@ -87,6 +94,11 @@ const StyledComponent = styled(Component)`
     flex-flow: column;
     margin: 0 auto;
     height: 30%;
+
+    > .stairs {
+      position: relative;
+      left: 70%;
+    }
 
     > * {
       margin-bottom: 3rem;
