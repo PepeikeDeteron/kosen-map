@@ -10,7 +10,7 @@ import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
-import { kyoikuSubGuide } from '@/data/kyoiku';
+import { kyoikuFacility } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -33,7 +33,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <div className="sub-guide-button">
-            <FacilityGuideButton color="inherit" data={kyoikuSubGuide} />
+            <FacilityGuideButton color="inherit" data={kyoikuFacility} />
           </div>
           <MapDisplay>
             <KyoikuModel />

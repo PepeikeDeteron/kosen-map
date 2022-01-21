@@ -1,4 +1,5 @@
 import {
+  KYOIKU_0000,
   KYOIKU_0101,
   KYOIKU_0102,
   KYOIKU_0103,
@@ -44,6 +45,7 @@ import {
   KYOIKU_0314,
   KYOIKU_0315,
   KYOIKU_0316,
+  KYOIKU_1000,
   KYOIKU_1101,
   KYOIKU_1102,
   KYOIKU_1103,
@@ -77,6 +79,7 @@ import {
   KYOIKU_1311,
   KYOIKU_1312,
   KYOIKU_1313,
+  KYOIKU_2000,
   KYOIKU_2101,
   KYOIKU_2102,
   KYOIKU_2103,
@@ -111,6 +114,7 @@ import {
   KYOIKU_2406,
   KYOIKU_2407,
   KYOIKU_2408,
+  KYOIKU_3000,
   KYOIKU_3101,
   KYOIKU_3102,
   KYOIKU_3103,
@@ -118,6 +122,7 @@ import {
   KYOIKU_3201,
   KYOIKU_3202,
   KYOIKU_3203,
+  KYOIKU_4000,
   KYOIKU_4101,
   KYOIKU_4102,
   KYOIKU_4103,
@@ -145,6 +150,7 @@ import {
   KYOIKU_4404,
   KYOIKU_4405,
   KYOIKU_4406,
+  KYOIKU_5000,
   KYOIKU_5101,
   KYOIKU_5102,
   KYOIKU_5103,
@@ -163,6 +169,7 @@ import {
   KYOIKU_5302,
   KYOIKU_5303,
   KYOIKU_5304,
+  KYOIKU_6000,
   KYOIKU_6101,
   KYOIKU_6102,
   KYOIKU_6103,
@@ -172,6 +179,7 @@ import {
   KYOIKU_6203,
   KYOIKU_6204,
   KYOIKU_6205,
+  KYOIKU_7000,
   KYOIKU_7101,
   KYOIKU_7102,
   KYOIKU_7103,
@@ -1291,6 +1299,51 @@ export const kyoikuIntegratedScience: GuideProps[] = [
     id: 1201,
     name: KYOIKU_1201[0],
     position: kyoiku1201,
+  },
+];
+
+// 施設ガイド（管理・教育棟＆1〜7号棟）
+export const kyoikuFacility: GuideProps[] = [
+  //! position: 仮追加
+  {
+    id: 0,
+    name: KYOIKU_0000,
+    position: kyoiku1101,
+  },
+  {
+    id: 1000,
+    name: KYOIKU_1000,
+    position: kyoiku1102,
+  },
+  {
+    id: 2000,
+    name: KYOIKU_2000,
+    position: kyoiku2101,
+  },
+  {
+    id: 3000,
+    name: KYOIKU_3000,
+    position: kyoiku3101,
+  },
+  {
+    id: 4000,
+    name: KYOIKU_4000,
+    position: kyoiku4101,
+  },
+  {
+    id: 5000,
+    name: KYOIKU_5000,
+    position: kyoiku5101,
+  },
+  {
+    id: 6000,
+    name: KYOIKU_6000,
+    position: kyoiku6101,
+  },
+  {
+    id: 7000,
+    name: KYOIKU_7000,
+    position: kyoiku7101,
   },
 ];
 
