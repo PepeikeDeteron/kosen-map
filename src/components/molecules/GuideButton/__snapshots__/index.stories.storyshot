@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Storyshots components/molecules/GuideButton Default 1`] = `
-<div
-  aria-label="vertical outlined button group"
-  className="MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-vertical css-rlchlw-MuiButtonGroup-root"
-  role="group"
-/>
-`;

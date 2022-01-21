@@ -1,7 +1,7 @@
 import { VFC, memo, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import GuideButton from '@/components/molecules/GuideButton';
+import GuideButton from '@/components/molecules/RoomGuideButton';
 import { ColorProps } from '@/models/color';
 import { GuideProps, CarouselGuideProps } from '@/models/guide';
 import 'slick-carousel/slick/slick.css';
@@ -61,13 +61,14 @@ const StyledComponent = styled(Component)`
   .carousel-name {
     flex-basis: 0;
     flex-grow: 1;
-    margin-bottom: -40vh;
+    margin-bottom: -45vh;
     font-size: 1.4rem;
+    font-weight: bold;
     text-align: center;
 
     .slick-prev:before,
     .slick-next:before {
-      color: black;
+      color: grey;
     }
   }
 
@@ -91,17 +92,6 @@ const StyledComponent = styled(Component)`
 
     .slick-slider {
       height: 60vh;
-    }
-
-    ::-webkit-scrollbar {
-      -webkit-appearance: none;
-      width: 7px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 4px;
-      background-color: rgba(0, 0, 0, 0.5);
-      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     }
   }
 `;
