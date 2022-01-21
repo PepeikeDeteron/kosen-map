@@ -36,14 +36,14 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         <div className="display">
           <div className="sub-guide-button">
             <EntranceButton
-              color="success"
+              color="primary"
               label={kyoikuEntrance.map((label) => label.name)}
               onClick={() => kyoikuEntrance.map((click) => click.position)}
             />
             <FacilityGuideButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">
               <StairsButton
-                color="primary"
+                color="inherit"
                 onClick={() => console.log('階段ガイド')}
               />
             </div>

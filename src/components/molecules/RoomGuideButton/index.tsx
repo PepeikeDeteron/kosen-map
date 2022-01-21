@@ -40,6 +40,7 @@ const StyledComponent = styled(Component)`
   flex-grow: 1;
   width: 14rem;
   overflow-y: scroll;
+  user-select: none;
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
