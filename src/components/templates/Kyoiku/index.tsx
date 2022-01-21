@@ -3,12 +3,14 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import CarouselGuide from '@/components/molecules/CarouselGuide';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
+import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
+import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
+import { kyoikuSubGuide } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -30,6 +32,9 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
+          <div className="sub-guide-button">
+            <FacilityGuideButton color="inherit" data={kyoikuSubGuide} />
+          </div>
           <MapDisplay>
             <KyoikuModel />
           </MapDisplay>
@@ -57,7 +62,7 @@ const StyledComponent = styled(Component)`
     letter-spacing: 1rem;
     color: #808080;
     text-align: right;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
     user-select: none;
   }
 
@@ -67,17 +72,20 @@ const StyledComponent = styled(Component)`
 
   .guide-button {
     display: flex;
-    position: relative;
-    top: 5rem;
-    padding: 2rem;
-    margin-left: -15rem;
+    margin 0 auto;
     height: 60vh;
+  }
+
+  .sub-guide-button {
+    display: flex;
+    margin: 0 auto;
+    height: 30%;
   }
 
   .button-list {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .home-button {

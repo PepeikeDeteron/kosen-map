@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import GuideButton from '@/components/molecules/GuideButton';
+import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import SwitchButton from '@/components/molecules/SwitchButton';
@@ -35,7 +35,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
             <TopModel />
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="inherit" data={top} />
+            <FacilityGuideButton color="inherit" data={top} />
           </div>
         </div>
         <div className="button-list">
@@ -68,7 +68,7 @@ const StyledComponent = styled(Component)`
     letter-spacing: 1rem;
     color: #808080;
     text-align: right;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
     user-select: none;
   }
 
@@ -78,17 +78,15 @@ const StyledComponent = styled(Component)`
 
   .guide-button {
     display: flex;
-    position: relative;
-    top: 5rem;
     padding: 2rem;
-    margin-left: -15rem;
-    height: 60vh;
+    margin-left: -18rem;
+    height: 30%;
   }
 
   .button-list {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .home-button {

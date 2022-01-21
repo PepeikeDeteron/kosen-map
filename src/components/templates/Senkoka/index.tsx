@@ -3,9 +3,9 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import GuideButton from '@/components/molecules/GuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
+import RoomGuideButton from '@/components/molecules/RoomGuideButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { senkoka } from '@/data/senkoka';
@@ -34,7 +34,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
             <SenkokaModel />
           </MapDisplay>
           <div className="guide-button">
-            <GuideButton color="inherit" data={senkoka} />
+            <RoomGuideButton color="inherit" data={senkoka} />
           </div>
         </div>
         <div className="button-list">
@@ -57,7 +57,7 @@ const StyledComponent = styled(Component)`
     letter-spacing: 1rem;
     color: #808080;
     text-align: right;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
     user-select: none;
   }
 
@@ -67,17 +67,15 @@ const StyledComponent = styled(Component)`
 
   .guide-button {
     display: flex;
-    position: relative;
-    top: 5rem;
     padding: 2rem;
-    margin-left: -15rem;
+    margin-left: -18rem;
     height: 60vh;
   }
 
   .button-list {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .home-button {
