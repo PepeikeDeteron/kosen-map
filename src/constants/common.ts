@@ -6,3 +6,8 @@ export const guideBoxProperties = {
   opacity: 0.65,
   transparent: true,
 };
+export const facilityBoxProperties = {
+  color: 0xffff00,
+  opacity: 0.5,
+  transparent: true,
+};

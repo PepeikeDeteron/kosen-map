@@ -367,6 +367,7 @@ import {
   kyoiku7201,
   kyoiku7202,
   kyoiku7203,
+  kyoiku0000,
 } from '@/libs/Three/Kyoiku';
 import { GuideProps } from '@/models/guide';
 
@@ -1308,7 +1309,7 @@ export const kyoikuFacility: GuideProps[] = [
   {
     id: 0,
     name: KYOIKU_0000,
-    position: kyoiku1101,
+    position: kyoiku0000,
   },
   {
     id: 1000,
