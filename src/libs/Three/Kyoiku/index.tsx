@@ -456,6 +456,26 @@ const facility12 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(facilityBoxProperties)
 );
 
+const facility13 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 600, 1500),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility14 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 400, 1500),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility15 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 400, 1500),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility16 = new THREE.Mesh(
+  new THREE.BoxGeometry(2500, 400, 1500),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
 const facility = [
   facility1,
   facility2,
@@ -469,6 +489,10 @@ const facility = [
   facility10,
   facility11,
   facility12,
+  facility13,
+  facility14,
+  facility15,
+  facility16,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1959,6 +1983,23 @@ export const kyoiku1000 = (): void => {
   facility10.position.set(-2700, 1500, -3700);
   facility11.position.set(-2350, 3800, -2750);
   facility12.position.set(-2300, 3800, -4425);
+};
+
+export const kyoiku2000 = (): void => {
+  hideFacilityNumber(13).map((i) => (facility[i - 1].visible = false));
+
+  facility13.visible = true;
+  facility14.visible = true;
+  facility15.visible = true;
+  facility16.visible = true;
+  facility13.rotation.set(0, -120, 0);
+  facility14.rotation.set(0, -120, 0);
+  facility15.rotation.set(0, -120, 0);
+  facility16.rotation.set(0, -120, 0);
+  facility13.position.set(300, -2600, -3000);
+  facility14.position.set(450, 1500, -4300);
+  facility15.position.set(840, 3800, -5025);
+  facility16.position.set(550, 5500, -5400);
 };
 
 export default Model;
