@@ -188,6 +188,7 @@ import {
   KYOIKU_7203,
 } from '@/data/room';
 import {
+  kyoiku0000,
   kyoiku0101,
   kyoiku0102,
   kyoiku0103,
@@ -233,6 +234,7 @@ import {
   kyoiku0314,
   kyoiku0315,
   kyoiku0316,
+  kyoiku1000,
   kyoiku1101,
   kyoiku1102,
   kyoiku1103,
@@ -367,7 +369,6 @@ import {
   kyoiku7201,
   kyoiku7202,
   kyoiku7203,
-  kyoiku0000,
 } from '@/libs/Three/Kyoiku';
 import { GuideProps } from '@/models/guide';
 
@@ -1305,7 +1306,6 @@ export const kyoikuIntegratedScience: GuideProps[] = [
 
 // 施設ガイド（管理・教育棟＆1〜7号棟）
 export const kyoikuFacility: GuideProps[] = [
-  //! position: 仮追加
   {
     id: 0,
     name: KYOIKU_0000,
@@ -1314,7 +1314,7 @@ export const kyoikuFacility: GuideProps[] = [
   {
     id: 1000,
     name: KYOIKU_1000,
-    position: kyoiku1102,
+    position: kyoiku1000,
   },
   {
     id: 2000,

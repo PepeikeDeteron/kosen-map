@@ -426,6 +426,36 @@ const facility6 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(facilityBoxProperties)
 );
 
+const facility7 = new THREE.Mesh(
+  new THREE.BoxGeometry(5500, 600, 1000),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility8 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 600, 2000),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility9 = new THREE.Mesh(
+  new THREE.BoxGeometry(5500, 400, 1000),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility10 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 400, 2000),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility11 = new THREE.Mesh(
+  new THREE.BoxGeometry(5500, 400, 1000),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility12 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 400, 1900),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
 const facility = [
   facility1,
   facility2,
@@ -433,6 +463,12 @@ const facility = [
   facility4,
   facility5,
   facility6,
+  facility7,
+  facility8,
+  facility9,
+  facility10,
+  facility11,
+  facility12,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -1900,6 +1936,29 @@ export const kyoiku0000 = (): void => {
   facility4.position.set(-2925, 1500, 850);
   facility5.position.set(300, 3800, -600);
   facility6.position.set(-2500, 3800, 200);
+};
+
+export const kyoiku1000 = (): void => {
+  hideFacilityNumber(7).map((i) => (facility[i - 1].visible = false));
+
+  facility7.visible = true;
+  facility8.visible = true;
+  facility9.visible = true;
+  facility10.visible = true;
+  facility11.visible = true;
+  facility12.visible = true;
+  facility7.rotation.set(0, -120, 0);
+  facility8.rotation.set(0, -120, 0);
+  facility9.rotation.set(0, -120, 0);
+  facility10.rotation.set(0, -120, 0);
+  facility11.rotation.set(0, -120, 0);
+  facility12.rotation.set(0, -120, 0);
+  facility7.position.set(-3000, -2600, -725);
+  facility8.position.set(-2800, -2600, -2400);
+  facility9.position.set(-2800, 1500, -2000);
+  facility10.position.set(-2700, 1500, -3700);
+  facility11.position.set(-2350, 3800, -2750);
+  facility12.position.set(-2300, 3800, -4425);
 };
 
 export default Model;
