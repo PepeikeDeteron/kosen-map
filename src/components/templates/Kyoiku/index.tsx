@@ -16,6 +16,7 @@ import { kyoikuFacility, senkokaFacility } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
+  readonly handleSenkokaGuide: () => void;
 };
 
 type Props = {
@@ -26,7 +27,11 @@ const KyoikuModel = dynamic(() => import('@/libs/Three/Kyoiku'), {
   ssr: false,
 });
 
-const Component: VFC<Props> = ({ className, isMobileScreen }) => {
+const Component: VFC<Props> = ({
+  className,
+  isMobileScreen,
+  handleSenkokaGuide,
+}) => {
   const router = useRouter();
 
   return (
@@ -38,7 +43,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
             <FacilitySingleGuideButton
               color="primary"
               label={senkokaFacility.map((data) => data.name)}
-              onClick={() => senkokaFacility.map((data) => data.position())}
+              onClick={() => handleSenkokaGuide()}
             />
             <FacilityGuideButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">
@@ -122,11 +127,26 @@ const StyledComponent = styled(Component)`
 `;
 
 const Container: VFC<Partial<ContainerProps>> = () => {
+  const router = useRouter();
+
   const isMobileScreen = useMediaQuery({
     query: `(max-width: ${mobileMaxWidth})`,
   });
 
-  const containerProps = { isMobileScreen };
+  const handleSenkokaGuide = () => {
+    senkokaFacility.map((data) => data.position());
+
+    setTimeout(() => {
+      if (confirm('専攻科・教育棟のガイドページに移動しますか？')) {
+        router.push('/Senkoka');
+      }
+    }, 100);
+  };
+
+  const containerProps = {
+    isMobileScreen,
+    handleSenkokaGuide,
+  };
 
   return <StyledComponent {...{ ...containerProps }} />;
 };
