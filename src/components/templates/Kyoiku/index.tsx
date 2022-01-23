@@ -4,8 +4,8 @@ import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import EntranceButton from '@/components/molecules/EntranceButton';
-import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
-import FacilitySingleGuideButton from '@/components/molecules/FacilitySingleGuideButton';
+import FacilityButton from '@/components/molecules/FacilityButton';
+import FacilitySingleButton from '@/components/molecules/FacilitySingleButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import StairsButton from '@/components/molecules/StairsButton';
@@ -41,12 +41,12 @@ const Component: VFC<Props> = ({
         <h2 className="title">Map</h2>
         <div className="display">
           <div className="sub-guide-button">
-            <FacilitySingleGuideButton
+            <FacilitySingleButton
               color="primary"
               label={senkokaFacility.map((data) => data.name)}
               onClick={() => handleSenkokaGuide()}
             />
-            <FacilityGuideButton color="inherit" data={kyoikuFacility} />
+            <FacilityButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">
               <EntranceButton
                 color="inherit"

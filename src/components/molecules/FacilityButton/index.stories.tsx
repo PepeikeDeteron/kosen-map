@@ -1,12 +1,12 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
-import RoomGuideButton from '.';
-import { senkoka101, senkoka102, senkoka103 } from '@/libs/Three/Senkoka';
-import { senkoka } from '@/data/senkoka';
+import FacilityButton from '.';
+import { kyoiku1101, kyoiku1102, kyoiku1103 } from '@/libs/Three/Kyoiku';
+import { kyoikuFacility } from '@/data/kyoiku';
 
 export default {
-  title: 'components/molecules/RoomGuideButton',
-  components: RoomGuideButton,
+  title: 'components/molecules/FacilityButton',
+  components: FacilityButton,
   argTypes: {
     color: {
       control: 'color',
@@ -17,8 +17,8 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ComponentProps<typeof RoomGuideButton>> = (props) => (
-  <RoomGuideButton {...props} />
+const Template: Story<ComponentProps<typeof FacilityButton>> = (props) => (
+  <FacilityButton {...props} />
 );
 
 export const Default = Template.bind({});
@@ -28,24 +28,23 @@ Default.args = {
     {
       id: 101,
       name: 'ガイドボタン1',
-      position: senkoka101,
+      position: kyoiku1101,
     },
     {
       id: 102,
       name: 'ガイドボタン2',
-      position: senkoka102,
+      position: kyoiku1102,
     },
     {
       id: 103,
       name: 'ガイドボタン3',
-      position: senkoka103,
+      position: kyoiku1103,
     },
   ],
 };
 
-export const Senkoka = Template.bind({});
-Senkoka.args = {
+export const KyoikuFacility = Template.bind({});
+KyoikuFacility.args = {
   color: 'inherit',
-  data: senkoka,
-  disabled: true,
+  data: kyoikuFacility,
 };
