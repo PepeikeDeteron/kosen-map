@@ -1,6 +1,7 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
 import FacilitySingleGuideButton from '.';
+import { senkokaFacility } from '@/data/kyoiku';
 
 export default {
   title: 'components/molecules/FacilitySingleGuideButton',
@@ -18,6 +19,6 @@ const Template: Story<ComponentProps<typeof FacilitySingleGuideButton>> = (
 
 export const Default = Template.bind({});
 Default.args = {
-  color: 'warning',
-  label: '正面玄関',
+  color: 'primary',
+  label: senkokaFacility.map((data) => data.name),
 };
