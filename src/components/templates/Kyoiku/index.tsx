@@ -9,6 +9,7 @@ import FacilitySingleButton from '@/components/molecules/FacilitySingleButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import StairsButton from '@/components/molecules/StairsButton';
+import ToiletButton from '@/components/molecules/ToiletButton';
 import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
@@ -48,6 +49,10 @@ const Component: VFC<Props> = ({
             />
             <FacilityButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">
+              <ToiletButton
+                color="inherit"
+                onClick={() => console.log('トイレガイド')}
+              />
               <EntranceButton
                 color="inherit"
                 onClick={() => console.log('玄関ガイド')}
@@ -106,8 +111,8 @@ const StyledComponent = styled(Component)`
     height: 30%;
 
     > .stairs {
-      position: relative;
-      left: 35%;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     > * {
