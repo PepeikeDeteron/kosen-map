@@ -368,6 +368,7 @@ import {
   kyoiku6203,
   kyoiku6204,
   kyoiku6205,
+  kyoiku7000,
   kyoiku7101,
   kyoiku7102,
   kyoiku7103,
@@ -1349,7 +1350,7 @@ export const kyoikuFacility: GuideProps[] = [
   {
     id: 7000,
     name: KYOIKU_7000,
-    position: kyoiku7101,
+    position: kyoiku7000,
   },
 ];
 
