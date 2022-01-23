@@ -1,11 +1,11 @@
 import React, { ComponentProps } from 'react';
 import { Meta, Story } from '@storybook/react';
-import FacilitySingleGuideButton from '.';
+import FacilitySingleButton from '.';
 import { senkokaFacility } from '@/data/kyoiku';
 
 export default {
-  title: 'components/molecules/FacilitySingleGuideButton',
-  components: FacilitySingleGuideButton,
+  title: 'components/molecules/FacilitySingleButton',
+  components: FacilitySingleButton,
   argTypes: {
     onClick: {
       action: 'clicked',
@@ -13,9 +13,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ComponentProps<typeof FacilitySingleGuideButton>> = (
+const Template: Story<ComponentProps<typeof FacilitySingleButton>> = (
   props
-) => <FacilitySingleGuideButton {...props} />;
+) => <FacilitySingleButton {...props} />;
 
 export const Default = Template.bind({});
 Default.args = {

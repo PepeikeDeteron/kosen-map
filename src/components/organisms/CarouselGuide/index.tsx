@@ -1,7 +1,7 @@
 import { VFC, memo, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import GuideButton from '@/components/molecules/RoomGuideButton';
+import RoomButton from '@/components/molecules/RoomButton';
 import { ColorProps } from '@/models/color';
 import { GuideProps, CarouselGuideProps } from '@/models/guide';
 import 'slick-carousel/slick/slick.css';
@@ -16,16 +16,16 @@ type Props = {
   readonly className?: string;
 } & ContainerProps;
 
+const settings = {
+  dots: true,
+  infinite: true,
+  arrows: false,
+  speed: 500,
+} as const;
+
 const Component: VFC<Props> = ({ className, color, data, ...restProps }) => {
   const [nav1, setNav1] = useState<string>('');
   const [nav2, setNav2] = useState<GuideProps[]>([]);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    arrows: false,
-    speed: 500,
-  } as const;
 
   return (
     <div className={className} {...restProps}>
@@ -45,7 +45,7 @@ const Component: VFC<Props> = ({ className, color, data, ...restProps }) => {
         >
           {data &&
             data.map((datum, index) => (
-              <GuideButton key={index} color={color} data={datum.guide} />
+              <RoomButton key={index} color={color} data={datum.guide} />
             ))}
         </Slider>
       </div>

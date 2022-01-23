@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
-import RoomGuideButton from '@/components/molecules/RoomGuideButton';
+import RoomButton from '@/components/molecules/RoomButton';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { senkoka } from '@/data/senkoka';
@@ -34,7 +34,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
             <SenkokaModel />
           </MapDisplay>
           <div className="guide-button">
-            <RoomGuideButton color="inherit" data={senkoka} />
+            <RoomButton color="inherit" data={senkoka} />
           </div>
         </div>
         <div className="button-list">
