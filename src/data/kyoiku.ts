@@ -188,6 +188,7 @@ import {
   KYOIKU_7203,
 } from '@/data/room';
 import {
+  kyoiku0000,
   kyoiku0101,
   kyoiku0102,
   kyoiku0103,
@@ -233,6 +234,7 @@ import {
   kyoiku0314,
   kyoiku0315,
   kyoiku0316,
+  kyoiku1000,
   kyoiku1101,
   kyoiku1102,
   kyoiku1103,
@@ -266,6 +268,7 @@ import {
   kyoiku1311,
   kyoiku1312,
   kyoiku1313,
+  kyoiku2000,
   kyoiku2101,
   kyoiku2102,
   kyoiku2103,
@@ -300,6 +303,7 @@ import {
   kyoiku2406,
   kyoiku2407,
   kyoiku2408,
+  kyoiku3000,
   kyoiku3101,
   kyoiku3102,
   kyoiku3103,
@@ -307,6 +311,7 @@ import {
   kyoiku3201,
   kyoiku3202,
   kyoiku3203,
+  kyoiku4000,
   kyoiku4101,
   kyoiku4102,
   kyoiku4103,
@@ -334,6 +339,7 @@ import {
   kyoiku4404,
   kyoiku4405,
   kyoiku4406,
+  kyoiku5000,
   kyoiku5101,
   kyoiku5102,
   kyoiku5103,
@@ -352,6 +358,7 @@ import {
   kyoiku5302,
   kyoiku5303,
   kyoiku5304,
+  kyoiku6000,
   kyoiku6101,
   kyoiku6102,
   kyoiku6103,
@@ -361,6 +368,7 @@ import {
   kyoiku6203,
   kyoiku6204,
   kyoiku6205,
+  kyoiku7000,
   kyoiku7101,
   kyoiku7102,
   kyoiku7103,
@@ -1304,46 +1312,45 @@ export const kyoikuIntegratedScience: GuideProps[] = [
 
 // 施設ガイド（管理・教育棟＆1〜7号棟）
 export const kyoikuFacility: GuideProps[] = [
-  //! position: 仮追加
   {
     id: 0,
     name: KYOIKU_0000,
-    position: kyoiku1101,
+    position: kyoiku0000,
   },
   {
     id: 1000,
     name: KYOIKU_1000,
-    position: kyoiku1102,
+    position: kyoiku1000,
   },
   {
     id: 2000,
     name: KYOIKU_2000,
-    position: kyoiku2101,
+    position: kyoiku2000,
   },
   {
     id: 3000,
     name: KYOIKU_3000,
-    position: kyoiku3101,
+    position: kyoiku3000,
   },
   {
     id: 4000,
     name: KYOIKU_4000,
-    position: kyoiku4101,
+    position: kyoiku4000,
   },
   {
     id: 5000,
     name: KYOIKU_5000,
-    position: kyoiku5101,
+    position: kyoiku5000,
   },
   {
     id: 6000,
     name: KYOIKU_6000,
-    position: kyoiku6101,
+    position: kyoiku6000,
   },
   {
     id: 7000,
     name: KYOIKU_7000,
-    position: kyoiku7101,
+    position: kyoiku7000,
   },
 ];
 
