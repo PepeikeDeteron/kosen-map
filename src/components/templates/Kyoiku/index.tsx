@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
+import EntranceButton from '@/components/molecules/EntranceButton';
 import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
 import FacilitySingleGuideButton from '@/components/molecules/FacilitySingleGuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
@@ -47,6 +48,10 @@ const Component: VFC<Props> = ({
             />
             <FacilityGuideButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">
+              <EntranceButton
+                color="inherit"
+                onClick={() => console.log('玄関ガイド')}
+              />
               <StairsButton
                 color="inherit"
                 onClick={() => console.log('階段ガイド')}
@@ -102,7 +107,7 @@ const StyledComponent = styled(Component)`
 
     > .stairs {
       position: relative;
-      left: 70%;
+      left: 35%;
     }
 
     > * {
