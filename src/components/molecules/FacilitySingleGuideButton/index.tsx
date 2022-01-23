@@ -1,6 +1,7 @@
 import { VFC, memo } from 'react';
 import { styled } from '@mui/system';
 import { Button } from '@mui/material';
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import { ColorProps } from '@/models/color';
 
 type ContainerProps = {
@@ -17,6 +18,7 @@ const Component: VFC<Props> = ({ color, label, ...restProps }) => {
   return (
     <Button variant="contained" color={color} {...restProps}>
       {label}
+      <DoubleArrowIcon />
     </Button>
   );
 };
@@ -24,7 +26,6 @@ const Component: VFC<Props> = ({ color, label, ...restProps }) => {
 const StyledComponent = styled(Component)`
   width: 14rem;
   height: 4rem;
-  font-size: 1rem;
 `;
 
 const Container: VFC<ContainerProps> = (props) => {
