@@ -536,6 +536,16 @@ const facility28 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(facilityBoxProperties)
 );
 
+const facility29 = new THREE.Mesh(
+  new THREE.BoxGeometry(3200, 600, 2300),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
+const facility30 = new THREE.Mesh(
+  new THREE.BoxGeometry(3200, 400, 2300),
+  new THREE.MeshBasicMaterial(facilityBoxProperties)
+);
+
 const facility = [
   facility1,
   facility2,
@@ -565,6 +575,8 @@ const facility = [
   facility26,
   facility27,
   facility28,
+  facility29,
+  facility30,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -2136,6 +2148,17 @@ export const kyoiku7000 = (): void => {
   facility28.rotation.set(0, -120, 0);
   facility27.position.set(6100, -2600, -1650);
   facility28.position.set(6250, 1500, -2900);
+};
+
+export const senkoka000 = (): void => {
+  hideFacilityNumber(29).map((i) => (facility[i - 1].visible = false));
+
+  facility29.visible = true;
+  facility30.visible = true;
+  facility29.rotation.set(0, -120, 0);
+  facility30.rotation.set(0, -120, 0);
+  facility29.position.set(2300, -2600, 2900);
+  facility30.position.set(2400, 1500, 1600);
 };
 
 export default Model;
