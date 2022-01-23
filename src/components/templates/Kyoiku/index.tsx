@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import EntranceButton from '@/components/molecules/EntranceButton';
 import FacilityGuideButton from '@/components/molecules/FacilityGuideButton';
+import FacilitySingleGuideButton from '@/components/molecules/FacilitySingleGuideButton';
 import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import StairsButton from '@/components/molecules/StairsButton';
@@ -12,7 +12,7 @@ import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
-import { kyoikuFacility, kyoikuEntrance } from '@/data/kyoiku';
+import { kyoikuFacility, senkokaFacility } from '@/data/kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -35,10 +35,10 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         <h2 className="title">Map</h2>
         <div className="display">
           <div className="sub-guide-button">
-            <EntranceButton
+            <FacilitySingleGuideButton
               color="primary"
-              label={kyoikuEntrance.map((label) => label.name)}
-              onClick={() => kyoikuEntrance.map((click) => click.position)}
+              label={senkokaFacility.map((data) => data.name)}
+              onClick={() => senkokaFacility.map((data) => data.position())}
             />
             <FacilityGuideButton color="inherit" data={kyoikuFacility} />
             <div className="stairs">

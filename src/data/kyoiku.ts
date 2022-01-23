@@ -186,6 +186,7 @@ import {
   KYOIKU_7201,
   KYOIKU_7202,
   KYOIKU_7203,
+  SENKOKA_000,
 } from '@/data/room';
 import {
   kyoiku0000,
@@ -1350,6 +1351,14 @@ export const kyoikuFacility: GuideProps[] = [
   {
     id: 7000,
     name: KYOIKU_7000,
+    position: kyoiku7000,
+  },
+];
+
+export const senkokaFacility: GuideProps[] = [
+  {
+    id: 0,
+    name: SENKOKA_000,
     position: kyoiku7000,
   },
 ];
