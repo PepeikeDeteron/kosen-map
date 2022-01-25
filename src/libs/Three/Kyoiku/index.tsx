@@ -8,6 +8,7 @@ import {
   guideBoxProperties,
   facilityBoxProperties,
   stairsBoxProperties,
+  entranceBoxProperties,
 } from '@/constants/common';
 
 const Model: VFC = () => {
@@ -635,6 +636,16 @@ const subGuide9 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
+const subGuide10 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 800, 1200),
+  new THREE.MeshBasicMaterial(entranceBoxProperties)
+);
+
+const subGuide11 = new THREE.Mesh(
+  new THREE.BoxGeometry(1000, 800, 1200),
+  new THREE.MeshBasicMaterial(entranceBoxProperties)
+);
+
 const subGuide = [
   subGuide1,
   subGuide2,
@@ -645,6 +656,8 @@ const subGuide = [
   subGuide7,
   subGuide8,
   subGuide9,
+  subGuide10,
+  subGuide11,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -2265,6 +2278,17 @@ export const stairs = (): void => {
   subGuide7.position.set(4125, -800, 200);
   subGuide8.position.set(2900, -800, -4400);
   subGuide9.position.set(5650, -800, -2500);
+};
+
+export const entrance = (): void => {
+  hideSubGuideNumber(10).map((i) => (subGuide[i - 1].visible = false));
+
+  subGuide10.visible = true;
+  // subGuide11.visible = true;
+  subGuide10.rotation.set(0, -120, 0);
+  subGuide11.rotation.set(0, -120, 0);
+  subGuide10.position.set(-1200, -2600, 3200);
+  subGuide11.position.set(2000, -2600, 3400);
 };
 
 export default Model;
