@@ -3,7 +3,7 @@
 exports[`Storyshots components/templates/Senkoka Default 1`] = `
 Array [
   <div
-    className="Senkoka__StyledComponent-sc-1owotod-0 hqbTsu"
+    className="Senkoka__StyledComponent-sc-1owotod-0 iLZGgz"
   >
     <h2
       className="title"
@@ -573,6 +573,7 @@ Array [
       </div>
     </div>
   </div>,
+  <div />,
   <div />,
 ]
 `;
