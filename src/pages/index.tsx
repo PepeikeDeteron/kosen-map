@@ -6,7 +6,7 @@ const Home: VFC = () => {
   return (
     <>
       <Head>
-        <title>一関高専Map｜校内案内図</title>
+        <title>一関高専Map｜校舎案内</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
