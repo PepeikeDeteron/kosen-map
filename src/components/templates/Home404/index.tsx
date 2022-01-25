@@ -11,7 +11,8 @@ const Component: VFC<Props> = ({ className }) => {
     <div className={className}>
       <h2>
         <p>このページは、</p>
-        <p>現在スマートフォンには対応しておりません。</p>
+        <p>現在縦画面には対応しておりません。</p>
+        <p>デバイスを横向きにしてお使いください。</p>
       </h2>
       <StyledNotFoundTopPage />
     </div>
