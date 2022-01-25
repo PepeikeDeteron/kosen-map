@@ -12,13 +12,14 @@ import StairsButton from '@/components/molecules/StairsButton';
 import ToiletButton from '@/components/molecules/ToiletButton';
 import CarouselGuide from '@/components/organisms/CarouselGuide';
 import Home404 from '@/components/templates/Home404';
-import { mobileMaxWidth } from '@/constants/common';
+import { mobileMaxWidth, tabletMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
 import { kyoikuFacility, senkokaFacility } from '@/data/kyoiku';
 import { stairs, entrance } from '@/libs/Three/Kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
+  readonly isTabletScreen: boolean;
   readonly handleSenkokaGuide: () => void;
   readonly handleStairsGuide: () => void;
   readonly handleEntranceGuide: () => void;
@@ -35,6 +36,7 @@ const KyoikuModel = dynamic(() => import('@/libs/Three/Kyoiku'), {
 const Component: VFC<Props> = ({
   className,
   isMobileScreen,
+  isTabletScreen,
   handleSenkokaGuide,
   handleStairsGuide,
   handleEntranceGuide,
@@ -82,6 +84,7 @@ const Component: VFC<Props> = ({
         </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
+      <div>{isTabletScreen && <Home404 />}</div>
     </>
   );
 };
@@ -139,6 +142,10 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
+
+  @media only screen and (max-width: ${tabletMaxWidth}) and (orientation:portrait) {
+    display: none;
+  }
 `;
 
 const Container: VFC<Partial<ContainerProps>> = () => {
@@ -146,6 +153,10 @@ const Container: VFC<Partial<ContainerProps>> = () => {
 
   const isMobileScreen = useMediaQuery({
     query: `(max-width: ${mobileMaxWidth})`,
+  });
+
+  const isTabletScreen = useMediaQuery({
+    query: `(max-width: ${tabletMaxWidth})`,
   });
 
   const handleSenkokaGuide = () => {
@@ -163,6 +174,7 @@ const Container: VFC<Partial<ContainerProps>> = () => {
 
   const containerProps = {
     isMobileScreen,
+    isTabletScreen,
     handleSenkokaGuide,
     handleStairsGuide,
     handleEntranceGuide,
