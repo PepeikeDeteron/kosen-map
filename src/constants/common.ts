@@ -18,3 +18,9 @@ export const stairsBoxProperties = {
   opacity: 0.5,
   transparent: true,
 };
+
+export const entranceBoxProperties = {
+  color: 0x5e35b1,
+  opacity: 0.65,
+  transparent: true,
+};
