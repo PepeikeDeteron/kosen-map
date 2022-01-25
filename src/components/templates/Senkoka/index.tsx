@@ -7,11 +7,12 @@ import HomeButton from '@/components/molecules/HomeButton';
 import MapDisplay from '@/components/molecules/MapDisplay';
 import RoomButton from '@/components/molecules/RoomButton';
 import Home404 from '@/components/templates/Home404';
-import { mobileMaxWidth } from '@/constants/common';
+import { mobileMaxWidth, tabletMaxWidth } from '@/constants/common';
 import { senkoka } from '@/data/senkoka';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
+  readonly isTabletScreen: boolean;
 };
 
 type Props = {
@@ -22,7 +23,11 @@ const SenkokaModel = dynamic(() => import('@/libs/Three/Senkoka'), {
   ssr: false,
 });
 
-const Component: VFC<Props> = ({ className, isMobileScreen }) => {
+const Component: VFC<Props> = ({
+  className,
+  isMobileScreen,
+  isTabletScreen,
+}) => {
   const router = useRouter();
 
   return (
@@ -44,6 +49,7 @@ const Component: VFC<Props> = ({ className, isMobileScreen }) => {
         </div>
       </div>
       <div>{isMobileScreen && <Home404 />}</div>
+      <div>{isTabletScreen && <Home404 />}</div>
     </>
   );
 };
@@ -85,6 +91,10 @@ const StyledComponent = styled(Component)`
   @media screen and (max-width: ${mobileMaxWidth}) {
     display: none;
   }
+
+  @media only screen and (max-width: ${tabletMaxWidth}) and (orientation: portrait) {
+    display: none;
+  }
 `;
 
 const Container: VFC<Partial<ContainerProps>> = () => {
@@ -92,7 +102,11 @@ const Container: VFC<Partial<ContainerProps>> = () => {
     query: `(max-width: ${mobileMaxWidth})`,
   });
 
-  const containerProps = { isMobileScreen };
+  const isTabletScreen = useMediaQuery({
+    query: `(max-width: ${tabletMaxWidth})`,
+  });
+
+  const containerProps = { isMobileScreen, isTabletScreen };
 
   return <StyledComponent {...{ ...containerProps }} />;
 };
