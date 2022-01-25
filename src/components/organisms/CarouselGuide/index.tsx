@@ -57,7 +57,6 @@ const StyledComponent = styled(Component)`
   display: flex;
   flex-flow: column;
   width: 14rem;
-  user-select: none;
 
   .carousel-name {
     flex-basis: 0;
@@ -77,6 +76,7 @@ const StyledComponent = styled(Component)`
     flex-basis: 0;
     flex-grow: 1;
     padding-top: 4rem;
+    user-select: none;
     overflow-y: scroll;
 
     * {

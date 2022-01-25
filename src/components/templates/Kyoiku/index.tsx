@@ -15,10 +15,12 @@ import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
 import { kyoikuFacility, senkokaFacility } from '@/data/kyoiku';
+import { stairs } from '@/libs/Three/Kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
   readonly handleSenkokaGuide: () => void;
+  readonly handleStairsGuide: () => void;
 };
 
 type Props = {
@@ -33,6 +35,7 @@ const Component: VFC<Props> = ({
   className,
   isMobileScreen,
   handleSenkokaGuide,
+  handleStairsGuide,
 }) => {
   const router = useRouter();
 
@@ -41,14 +44,14 @@ const Component: VFC<Props> = ({
       <div className={className}>
         <h2 className="title">Map</h2>
         <div className="display">
-          <div className="sub-guide-button">
+          <div className="facility-button">
             <FacilitySingleButton
               color="primary"
               label={senkokaFacility.map((data) => data.name)}
               onClick={() => handleSenkokaGuide()}
             />
             <FacilityButton color="inherit" data={kyoikuFacility} />
-            <div className="stairs">
+            <div className="sub-guide">
               <ToiletButton
                 color="inherit"
                 onClick={() => console.log('トイレガイド')}
@@ -59,7 +62,7 @@ const Component: VFC<Props> = ({
               />
               <StairsButton
                 color="inherit"
-                onClick={() => console.log('階段ガイド')}
+                onClick={() => handleStairsGuide()}
               />
             </div>
           </div>
@@ -104,13 +107,13 @@ const StyledComponent = styled(Component)`
     height: 60vh;
   }
 
-  .sub-guide-button {
+  .facility-button {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     height: 30%;
 
-    > .stairs {
+    > .sub-guide {
       display: flex;
       flex-wrap: wrap;
     }
@@ -153,9 +156,12 @@ const Container: VFC<Partial<ContainerProps>> = () => {
     }, 100);
   };
 
+  const handleStairsGuide = () => stairs();
+
   const containerProps = {
     isMobileScreen,
     handleSenkokaGuide,
+    handleStairsGuide,
   };
 
   return <StyledComponent {...{ ...containerProps }} />;

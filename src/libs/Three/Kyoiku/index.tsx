@@ -4,7 +4,11 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Spinner from '@/components/molecules/Spinner';
-import { guideBoxProperties, facilityBoxProperties } from '@/constants/common';
+import {
+  guideBoxProperties,
+  facilityBoxProperties,
+  stairsBoxProperties,
+} from '@/constants/common';
 
 const Model: VFC = () => {
   const createModel = () => {
@@ -91,6 +95,13 @@ const Model: VFC = () => {
     });
 
     facility.map((obj) => {
+      guides.push(obj);
+      scene.add(obj);
+
+      obj.visible = false;
+    });
+
+    subGuide.map((obj) => {
       guides.push(obj);
       scene.add(obj);
 
@@ -579,6 +590,63 @@ const facility = [
   facility30,
 ];
 
+const subGuide1 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide2 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide3 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide4 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide5 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide6 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide7 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide8 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide9 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.MeshBasicMaterial(stairsBoxProperties)
+);
+
+const subGuide = [
+  subGuide1,
+  subGuide2,
+  subGuide3,
+  subGuide4,
+  subGuide5,
+  subGuide6,
+  subGuide7,
+  subGuide8,
+  subGuide9,
+];
+
 // 非表示にするガイドの番号を抽出
 const hideGuideNumber = (i: number) => {
   return [...Array(guide.length)].map((_, m) => m + 1).filter((n) => n !== i);
@@ -586,6 +654,12 @@ const hideGuideNumber = (i: number) => {
 
 const hideFacilityNumber = (i: number) => {
   return [...Array(facility.length)]
+    .map((_, m) => m + 1)
+    .filter((n) => n !== i);
+};
+
+const hideSubGuideNumber = (i: number) => {
+  return [...Array(subGuide.length)]
     .map((_, m) => m + 1)
     .filter((n) => n !== i);
 };
@@ -2159,6 +2233,38 @@ export const senkoka000 = (): void => {
   facility30.rotation.set(0, -120, 0);
   facility29.position.set(2300, -2600, 2900);
   facility30.position.set(2400, 1500, 1600);
+};
+
+export const stairs = (): void => {
+  hideSubGuideNumber(1).map((i) => (subGuide[i - 1].visible = false));
+
+  subGuide1.visible = true;
+  subGuide2.visible = true;
+  subGuide3.visible = true;
+  subGuide4.visible = true;
+  subGuide5.visible = true;
+  subGuide6.visible = true;
+  subGuide7.visible = true;
+  subGuide8.visible = true;
+  subGuide9.visible = true;
+  subGuide1.rotation.set(0, -120, 0);
+  subGuide2.rotation.set(0, -120, 0);
+  subGuide3.rotation.set(0, -120, 0);
+  subGuide4.rotation.set(0, -120, 0);
+  subGuide5.rotation.set(0, -120, 0);
+  subGuide6.rotation.set(0, -120, 0);
+  subGuide7.rotation.set(0, -120, 0);
+  subGuide8.rotation.set(0, -120, 0);
+  subGuide9.rotation.set(0, -120, 0);
+  subGuide1.position.set(-1875, -800, 2300);
+  subGuide2.position.set(-1000, -800, 600);
+  subGuide3.position.set(-3900, -800, -1300);
+  subGuide4.position.set(1600, -800, -1500);
+  subGuide5.position.set(-150, -800, -3000);
+  subGuide6.position.set(-2000, -800, -4100);
+  subGuide7.position.set(4125, -800, 200);
+  subGuide8.position.set(2900, -800, -4400);
+  subGuide9.position.set(5650, -800, -2500);
 };
 
 export default Model;
