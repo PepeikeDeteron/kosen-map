@@ -9,6 +9,8 @@ import {
   facilityBoxProperties,
   stairsBoxProperties,
   entranceBoxProperties,
+  manWCBoxProperties,
+  womanWCBoxProperties,
 } from '@/constants/common';
 
 const Model: VFC = () => {
@@ -646,6 +648,41 @@ const subGuide11 = new THREE.Mesh(
   new THREE.MeshBasicMaterial(entranceBoxProperties)
 );
 
+const subGuide12 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(manWCBoxProperties)
+);
+
+const subGuide13 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(womanWCBoxProperties)
+);
+
+const subGuide14 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(womanWCBoxProperties)
+);
+
+const subGuide15 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(manWCBoxProperties)
+);
+
+const subGuide16 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(manWCBoxProperties)
+);
+
+const subGuide17 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(womanWCBoxProperties)
+);
+
+const subGuide18 = new THREE.Mesh(
+  new THREE.BoxGeometry(300, 800, 600),
+  new THREE.MeshBasicMaterial(manWCBoxProperties)
+);
+
 const subGuide = [
   subGuide1,
   subGuide2,
@@ -658,6 +695,13 @@ const subGuide = [
   subGuide9,
   subGuide10,
   subGuide11,
+  subGuide12,
+  subGuide13,
+  subGuide14,
+  subGuide15,
+  subGuide16,
+  subGuide17,
+  subGuide18,
 ];
 
 // 非表示にするガイドの番号を抽出
@@ -2289,6 +2333,32 @@ export const entrance = (): void => {
   subGuide11.rotation.set(0, -120, 0);
   subGuide10.position.set(-1200, -2600, 3200);
   subGuide11.position.set(2000, -2600, 3400);
+};
+
+export const WC = (): void => {
+  hideSubGuideNumber(12).map((i) => (subGuide[i - 1].visible = false));
+
+  subGuide12.visible = true;
+  subGuide13.visible = true;
+  subGuide14.visible = true;
+  subGuide15.visible = true;
+  subGuide16.visible = true;
+  subGuide17.visible = true;
+  subGuide18.visible = true;
+  subGuide12.rotation.set(0, -120, 0);
+  subGuide13.rotation.set(0, -120, 0);
+  subGuide14.rotation.set(0, -120, 0);
+  subGuide15.rotation.set(0, -120, 0);
+  subGuide16.rotation.set(0, -120, 0);
+  subGuide17.rotation.set(0, -120, 0);
+  subGuide18.rotation.set(0, -120, 0);
+  subGuide12.position.set(-2700, -2600, 1650);
+  subGuide13.position.set(-2100, -2600, 2100);
+  subGuide14.position.set(-375, -2600, 75);
+  subGuide15.position.set(1900, -2600, -1200);
+  subGuide16.position.set(2700, -2600, -4800);
+  subGuide17.position.set(6050, -2600, -2400);
+  subGuide18.position.set(6300, -2600, -2200);
 };
 
 export default Model;
