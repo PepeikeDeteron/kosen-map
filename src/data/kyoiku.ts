@@ -1364,16 +1364,6 @@ export const senkokaFacility: GuideProps[] = [
   },
 ];
 
-// 正面玄関
-export const kyoikuEntrance: GuideProps[] = [
-  // ! position 仮配置
-  {
-    id: 100,
-    name: '正面玄関',
-    position: kyoiku1101,
-  },
-];
-
 // 管理・教育棟
 export const kyoikuManagementEducation: GuideProps[] = [
   {

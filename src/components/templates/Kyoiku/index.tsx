@@ -15,7 +15,7 @@ import Home404 from '@/components/templates/Home404';
 import { mobileMaxWidth, tabletMaxWidth } from '@/constants/common';
 import { carouselGuide } from '@/data/carousel';
 import { kyoikuFacility, senkokaFacility } from '@/data/kyoiku';
-import { stairs, entrance } from '@/libs/Three/Kyoiku';
+import { stairs, entrance, WC } from '@/libs/Three/Kyoiku';
 
 type ContainerProps = {
   readonly isMobileScreen: boolean;
@@ -23,6 +23,7 @@ type ContainerProps = {
   readonly handleSenkokaGuide: () => void;
   readonly handleStairsGuide: () => void;
   readonly handleEntranceGuide: () => void;
+  readonly handleToiletGuide: () => void;
 };
 
 type Props = {
@@ -40,6 +41,7 @@ const Component: VFC<Props> = ({
   handleSenkokaGuide,
   handleStairsGuide,
   handleEntranceGuide,
+  handleToiletGuide,
 }) => {
   const router = useRouter();
 
@@ -58,7 +60,7 @@ const Component: VFC<Props> = ({
             <div className="sub-guide">
               <ToiletButton
                 color="inherit"
-                onClick={() => console.log('トイレガイド')}
+                onClick={() => handleToiletGuide()}
               />
               <EntranceButton
                 color="inherit"
@@ -171,6 +173,7 @@ const Container: VFC<Partial<ContainerProps>> = () => {
 
   const handleStairsGuide = () => stairs();
   const handleEntranceGuide = () => entrance();
+  const handleToiletGuide = () => WC();
 
   const containerProps = {
     isMobileScreen,
@@ -178,6 +181,7 @@ const Container: VFC<Partial<ContainerProps>> = () => {
     handleSenkokaGuide,
     handleStairsGuide,
     handleEntranceGuide,
+    handleToiletGuide,
   };
 
   return <StyledComponent {...{ ...containerProps }} />;
