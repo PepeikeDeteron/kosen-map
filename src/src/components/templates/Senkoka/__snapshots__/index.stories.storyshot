@@ -3,7 +3,7 @@
 exports[`Storyshots components/templates/Senkoka Default 1`] = `
 Array [
   <div
-    className="Senkoka__StyledComponent-sc-1owotod-0 iLZGgz"
+    className="Senkoka__StyledComponent-sc-1owotod-0 iFkySl"
   >
     <h2
       className="title"
@@ -14,7 +14,7 @@ Array [
       className="display"
     >
       <div
-        className="css-ptn2bx"
+        className="css-1bz9nw2"
         id="map-display"
       >
         <div
