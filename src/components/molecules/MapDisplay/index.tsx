@@ -1,7 +1,6 @@
 import { VFC, memo } from 'react';
 import { styled } from '@mui/system';
 import { Paper } from '@mui/material';
-import { tabletMaxWidth } from '@/constants/common';
 
 type ContainerProps = {
   readonly children: React.ReactNode;
@@ -42,10 +41,6 @@ const StyledComponent = styled(Component)`
     bottom: 0;
     left: 0;
     user-select: none;
-  }
-
-  @media screen and (max-width: ${tabletMaxWidth}) {
-    width: 90%;
   }
 `;
 
