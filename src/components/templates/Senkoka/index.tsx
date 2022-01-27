@@ -88,10 +88,6 @@ const StyledComponent = styled(Component)`
     padding: 0.5rem 4rem;
   }
 
-  @media screen and (max-width: ${mobileMaxWidth}) {
-    display: none;
-  }
-
   @media only screen and (max-width: ${tabletMaxWidth}) and (orientation: portrait) {
     display: none;
   }
