@@ -34,7 +34,12 @@ const Model: VFC = () => {
     gltfLoader.load(
       'assets/3D/top_draco.glb',
       (gltf) => {
-        const model = gltf.scene;
+        let model = gltf.scene;
+
+        if (model instanceof THREE.Group) {
+          model.remove();
+          model = gltf.scene;
+        }
 
         model.scale.set(40, 40, 40);
         model.rotation.set(120, 0, 0);

@@ -34,7 +34,12 @@ const Model: VFC = () => {
     gltfLoader.load(
       'assets/3D/senkoka_draco.glb',
       (gltf) => {
-        const model = gltf.scene;
+        let model = gltf.scene;
+
+        if (model instanceof THREE.Group) {
+          model.remove();
+          model = gltf.scene;
+        }
 
         model.scale.set(110, 110, 110);
         model.position.set(0, -4800, 0);
