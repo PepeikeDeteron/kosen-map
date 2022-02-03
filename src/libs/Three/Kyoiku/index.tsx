@@ -599,47 +599,47 @@ const facility = [
 ];
 
 const subGuide1 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide2 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide3 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide4 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide5 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide6 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide7 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide8 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
 const subGuide9 = new THREE.Mesh(
-  new THREE.BoxGeometry(300, 4300, 300),
+  new THREE.BoxGeometry(300, 1700, 300),
   new THREE.MeshBasicMaterial(stairsBoxProperties)
 );
 
@@ -2318,15 +2318,15 @@ export const stairs = (): void => {
   subGuide7.rotation.set(0, -120, 0);
   subGuide8.rotation.set(0, -120, 0);
   subGuide9.rotation.set(0, -120, 0);
-  subGuide1.position.set(-1875, -800, 2300);
-  subGuide2.position.set(-1000, -800, 600);
-  subGuide3.position.set(-3900, -800, -1300);
-  subGuide4.position.set(1600, -800, -1500);
-  subGuide5.position.set(-150, -800, -3000);
-  subGuide6.position.set(-2000, -800, -4100);
-  subGuide7.position.set(4125, -800, 200);
-  subGuide8.position.set(2900, -800, -4400);
-  subGuide9.position.set(5650, -800, -2500);
+  subGuide1.position.set(-1875, -2100, 2300);
+  subGuide2.position.set(-1000, -2100, 600);
+  subGuide3.position.set(-3900, -2100, -1300);
+  subGuide4.position.set(1600, -2100, -1500);
+  subGuide5.position.set(-150, -2100, -3000);
+  subGuide6.position.set(-2000, -2100, -4100);
+  subGuide7.position.set(4125, -2100, 200);
+  subGuide8.position.set(2900, -2100, -4400);
+  subGuide9.position.set(5650, -2100, -2500);
 };
 
 export const entrance = (): void => {
